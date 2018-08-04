@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\..\src\MGR.Guard\**\*.cs">
+    <Compile Include="..\..\src\MGR.Guard.Source\**\*.cs">
       <Link>_src\%(RecursiveDir)%(FileName)</Link>
     </Compile>
   </ItemGroup>

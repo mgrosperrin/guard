@@ -14,6 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F674354D-D6E6-4930-AD98-E139AADA4991}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		build.ps1 = build.ps1
 		global.json = global.json
 		LICENSE = LICENSE
 		README.md = README.md
@@ -24,7 +26,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{8980C947-6
 		docs\index.md = docs\index.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGR.Guard.Source", "src\MGR.Guard.Source\MGR.Guard.Source.csproj", "{B1A026EB-F152-43A6-9182-63C04C6FF593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGR.Guard.Source", "src\MGR.Guard.Source\MGR.Guard.Source.csproj", "{B1A026EB-F152-43A6-9182-63C04C6FF593}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F14E28C3-77CE-4709-858F-9F00167FEAA7}"
+	ProjectSection(SolutionItems) = preProject
+		build\build.cake = build\build.cake
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

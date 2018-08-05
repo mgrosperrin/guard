@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 
 namespace MGR.Guard
 {
-#if PUBLIC
+#if MGR_GUARD_PUBLIC
     public
 #else
     internal
@@ -16,7 +16,7 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsEqualToZero(int value, [InvokerParameterName] string parameterName)
+        public static void IsEqualToZero(int value, [NotNull] string parameterName)
         {
             if (value != 0)
             {
@@ -30,7 +30,7 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsEqualToZero(long value, [InvokerParameterName] string parameterName)
+        public static void IsEqualToZero(long value, [NotNull] string parameterName)
         {
             if (value != 0)
             {
@@ -43,7 +43,7 @@ namespace MGR.Guard
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
-        public static void IsEqualToZero(double value, [InvokerParameterName] string parameterName)
+        public static void IsEqualToZero(double value, [NotNull] string parameterName)
         {
             if (Math.Abs(value - 0) > double.Epsilon)
             {
@@ -57,7 +57,7 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsEqualToZero(float value, [InvokerParameterName] string parameterName)
+        public static void IsEqualToZero(float value, [NotNull] string parameterName)
         {
             if (Math.Abs(value - 0) > float.Epsilon)
             {

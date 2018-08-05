@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 
 namespace MGR.Guard
 {
-#if PUBLIC
+#if MGR_GUARD_PUBLIC
     public
 #else
     internal
@@ -19,7 +19,7 @@ namespace MGR.Guard
         /// <param name="referenceValue">The reference value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsEqualTo<T>(T value, T referenceValue, [InvokerParameterName] string parameterName)
+        public static void IsEqualTo<T>(T value, T referenceValue, [NotNull] string parameterName)
         {
             var strValue = value as string;
             if (strValue != null)
@@ -41,7 +41,7 @@ namespace MGR.Guard
         /// <param name="parameterName">Name of the parameter.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
-        public static void IsEqualTo<T>(T value, T referenceValue, [InvokerParameterName] string parameterName, IComparer<T> comparer)
+        public static void IsEqualTo<T>(T value, T referenceValue, [NotNull] string parameterName, [NotNull] IComparer<T> comparer)
         {
             if (comparer == null)
             {

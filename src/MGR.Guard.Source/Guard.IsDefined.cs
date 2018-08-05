@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 
 namespace MGR.Guard
 {
-#if PUBLIC
+#if MGR_GUARD_PUBLIC
     public
 #else
     internal
@@ -19,7 +19,7 @@ namespace MGR.Guard
         /// <param name="parameterName">The name of the parameter.</param>
         [PublicAPI]
 #pragma warning disable CS3024 // Constraint type is not CLS-compliant
-        public static void IsDefined<TEnum>(TEnum value, [InvokerParameterName] string parameterName)
+        public static void IsDefined<TEnum>(TEnum value, [NotNull] string parameterName)
 #pragma warning restore CS3024 // Constraint type is not CLS-compliant
             where TEnum : struct, IConvertible
         {

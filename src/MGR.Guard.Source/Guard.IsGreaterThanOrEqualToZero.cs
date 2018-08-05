@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 
 namespace MGR.Guard
 {
-#if PUBLIC
+#if MGR_GUARD_PUBLIC
     public
 #else
     internal
@@ -16,7 +16,7 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsGreaterThanOrEqualToZero(int value, [InvokerParameterName] string parameterName)
+        public static void IsGreaterThanOrEqualToZero(int value, [NotNull] string parameterName)
         {
             if (value < 0)
             {
@@ -30,7 +30,7 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsGreaterThanOrEqualToZero(long value, [InvokerParameterName] string parameterName)
+        public static void IsGreaterThanOrEqualToZero(long value, [NotNull] string parameterName)
         {
             if (value < 0)
             {
@@ -44,7 +44,7 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsGreaterThanOrEqualToZero(double value, [InvokerParameterName] string parameterName)
+        public static void IsGreaterThanOrEqualToZero(double value, [NotNull] string parameterName)
         {
             if (value < 0)
             {
@@ -58,7 +58,7 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsGreaterThanOrEqualToZero(float value, [InvokerParameterName] string parameterName)
+        public static void IsGreaterThanOrEqualToZero(float value, [NotNull] string parameterName)
         {
             if (value < 0)
             {

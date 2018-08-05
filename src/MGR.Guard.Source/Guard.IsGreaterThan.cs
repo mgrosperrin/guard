@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 
 namespace MGR.Guard
 {
-#if PUBLIC
+#if MGR_GUARD_PUBLIC
     public
 #else
     internal
@@ -19,7 +19,7 @@ namespace MGR.Guard
         /// <param name="minLimit">The min limit.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
-        public static void IsGreaterThan<T>(T value, T minLimit, [InvokerParameterName] string parameterName)
+        public static void IsGreaterThan<T>(T value, T minLimit, [NotNull] string parameterName)
         {
             var strValue = value as string;
             if (strValue != null)
@@ -41,10 +41,12 @@ namespace MGR.Guard
         /// <param name="parameterName">Name of the parameter.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
-        public static void IsGreaterThan<T>(T value, T minLimit, [InvokerParameterName] string parameterName, IComparer<T> comparer)
+        public static void IsGreaterThan<T>(T value, T minLimit, [NotNull] string parameterName, [NotNull] IComparer<T> comparer)
         {
-            IsNotNull(comparer, nameof(comparer));
-
+            if (comparer == null)
+            {
+                throw new ArgumentNullException(nameof(comparer), Messages.ComparerNotNullMessage);
+            }
             if (comparer.Compare(value, minLimit) <= 0)
             {
                 throw new ArgumentOutOfRangeException(parameterName, value, Messages.IsGreaterThanFormat<T>()(minLimit));

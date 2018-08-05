@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <DefineConstants>$(DefineConstants);PUBLIC</DefineConstants>
+    <DefineConstants>$(DefineConstants);MGR_GUARD_PUBLIC</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>

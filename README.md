@@ -9,7 +9,7 @@ _**Build status**_
 
 **MyGet** *(preview bits)*:
 
-| MAF.Guard        | [![MyGet package version][myget-svg]][nuget] | [![Number of MyGet downloads][mygetDownload-svg]][mygetDownload] |
+| MAF.Guard        | [![MyGet package version][myget-svg]][myget] | [![Number of MyGet downloads][mygetDownload-svg]][mygetDownload] |
 |--|--|--|
 | **MAF.Guard.Source** | [![MyGet package version][myget-source-svg]][myget-source] | [![Number of MyGet downloads][mygetDownload-source-svg]][mygetDownload-source] |
 

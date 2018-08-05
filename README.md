@@ -7,9 +7,17 @@ _**Build status**_
 |------------|---------------------------------------------------------|
 | **master** | [![Build status][appveyor-master-svg]][appveyor-master] |
 
+**MyGet** *(preview bits)*:
+
+| MAF.Guard        | [![MyGet package version][myget-svg]][nuget] | [![Number of MyGet downloads][mygetDownload-svg]][mygetDownload] |
+|--|--|--|
+| **MAF.Guard.Source** | [![MyGet package version][myget-source-svg]][myget-source] | [![Number of MyGet downloads][mygetDownload-source-svg]][mygetDownload-source] |
+
+**Nuget**:
+
 | MAF.Guard        | [![NuGet package version][nuget-svg]][nuget] | [![Number of NuGet downloads][nugetDownload-svg]][nugetDownload] |
-|--|--|
-| MAF.Guard.Source | [![NuGet package version][nuget-source-svg]][nuget-source] | [![Number of NuGet downloads][nugetDownload-source-svg]][nugetDownload-source] |
+|--|--|--|
+| **MAF.Guard.Source** | [![NuGet package version][nuget-source-svg]][nuget-source] | [![Number of NuGet downloads][nugetDownload-source-svg]][nugetDownload-source] |
 
 [![Number of open issues][githubIssues-svg]][githubIssues]
 
@@ -32,6 +40,14 @@ See the [docs](/docs/index.md) for more infos.
    [nuget-source]: http://www.nuget.org/packages/MGR.Guard.Source/
    [nuget-source-svg]: http://img.shields.io/nuget/v/MGR.Guard.Source.svg
    [nugetDownload-source]: http://www.nuget.org/stats/packages/MGR.Guard.Source?groupby=Version
-   [nugetDownload-source-svg]: http://img.shields.io/nuget/dt/MGR.Guard.Source.svg
+   [nugetDownload-source-svg]: http://img.shields.io/nuget/dt/MGR.Guard.svg
+   [myget]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard/
+   [myget-svg]: http://img.shields.io/nuget/v/MGR.Guard.svg
+   [mygetDownload]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard/
+   [mygetDownload-svg]: http://img.shields.io/myget/mgrosperrin/dt/MGR.Guard.svg
+   [myget-source]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard.Source/
+   [myget-source-svg]: http://img.shields.io/nuget/v/MGR.Guard.Source.svg
+   [mygetDownload-source]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard.Source/
+   [mygetDownload-source-svg]: http://img.shields.io/myget/mgrosperrin/dt/MGR.Guard.Source.svg
    [githubIssues]: https://github.com/mgrosperrin/guard/issues
    [githubIssues-svg]: http://img.shields.io/github/issues/mgrosperrin/guard.svg

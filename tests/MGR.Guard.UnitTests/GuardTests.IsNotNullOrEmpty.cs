@@ -14,6 +14,7 @@ namespace MGR.Guard
                 string test = null;
 
                 // Act & Assert
+                // ReSharper disable once AssignNullToNotNullAttribute
                 ArgumentNullException actual = Assert.Throws<ArgumentNullException>(() => Guard.IsNotNullOrEmpty(test, "test"));
                 Assert.Equal("test", actual.ParamName);
             }

@@ -14,7 +14,7 @@ namespace MGR.Guard
                 Guid test = Guid.Empty;
 
                 // Act & Assert
-                ArgumentException actual = Assert.Throws<ArgumentException>(() => Guard.IsNotEmptyGuid(test, "test"));
+                ArgumentNullException actual = Assert.Throws<ArgumentNullException>(() => Guard.IsNotEmptyGuid(test, "test"));
                 Assert.Equal("test", actual.ParamName);
             }
 

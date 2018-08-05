@@ -129,7 +129,7 @@ Task("Publish-Package")
     .WithCriteria(() => publishPackage)
     .Does(() =>
 {
-    var nugetPackageFiles = GetFiles(srcDir.Path + "\\MGR.Guard.*.nupkg");
+    var nugetPackageFiles = GetFiles(srcDir.Path + "\\**\\MGR.Guard.*.nupkg");
     var nugetPushSettings = new NuGetPushSettings {
         Source = nugetPackagePublicationFeed,
         ApiKey = EnvironmentVariable(packagePublishingApiKeyName),

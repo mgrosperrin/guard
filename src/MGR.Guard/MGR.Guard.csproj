@@ -8,7 +8,7 @@
     <PackageLicenseUrl>https://github.com/mgrosperrin/guard/blob/dev/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/mgrosperrin/guard</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mgrosperrin/guard</RepositoryUrl>
-    <Description>MGR.Guard is a very simple Guard library to check arguments, parameters, variables</Description>
+    <Description>MGR.Guard is a very simple Guard library to check arguments, parameters, variables.</Description>
     <RepositoryType>git</RepositoryType>
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

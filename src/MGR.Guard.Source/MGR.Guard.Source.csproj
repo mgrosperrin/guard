@@ -1,0 +1,41 @@
+﻿<Project>
+
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Authors>Matthias GROSPERRIN</Authors>
+    <Company></Company>
+    <Product></Product>
+    <PackageLicenseUrl>https://github.com/mgrosperrin/guard/blob/dev/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/mgrosperrin/guard</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mgrosperrin/guard</RepositoryUrl>
+    <Description>MGR.Guard.Source is the Source Code Package of a very simple Guard library to check arguments, parameters, variables.</Description>
+    <RepositoryType>git</RepositoryType>
+    <IsPackable>true</IsPackable>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>contentFiles</ContentTargetFolders>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <NoWarn>CS8021</NoWarn>
+    <NoBuild>true</NoBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RootNamespace>MGR.Guard</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="@(Compile)">
+      <Pack>true</Pack>
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+  </ItemGroup>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+  <Target Name="Compile" />
+  <Target Name="CopyFilesToOutputDirectory" />
+
+</Project>

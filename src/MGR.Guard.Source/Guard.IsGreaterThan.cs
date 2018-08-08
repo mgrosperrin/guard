@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using JetBrains.Annotations;
 
 namespace MGR.Guard
@@ -12,7 +13,20 @@ namespace MGR.Guard
         static partial class Guard
     {
         /// <summary>
-        ///     Determines if the specified value is greater than the minLimit.
+        ///     Checks if the specified value is greater than the minLimit.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        /// <param name="minLimit">The min limit.</param>
+        [PublicAPI]
+        public static void IsGreaterThan<T>([NotNull] Expression<Func<T>> expression, T minLimit)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsGreaterThan(value, minLimit, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is greater than the minLimit.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="value">The value.</param>
@@ -33,7 +47,21 @@ namespace MGR.Guard
         }
 
         /// <summary>
-        ///     Determines if the specified value is greater than the minLimit.
+        ///     Checks if the specified value is greater than the minLimit.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        /// <param name="minLimit">The min limit.</param>
+        /// <param name="comparer">The comparer.</param>
+        [PublicAPI]
+        public static void IsGreaterThan<T>([NotNull] Expression<Func<T>> expression, T minLimit, [NotNull] IComparer<T> comparer)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsGreaterThan(value, minLimit, parameterName, comparer);
+        }
+        /// <summary>
+        ///     Checks if the specified value is greater than the minLimit.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="value">The value.</param>

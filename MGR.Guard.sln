@@ -23,6 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{8980C947-6B0B-453B-9E58-1DEA0FE99828}"
 	ProjectSection(SolutionItems) = preProject
+		docs\guard-expression.md = docs\guard-expression.md
 		docs\guard.md = docs\guard.md
 		docs\guard.source.md = docs\guard.source.md
 		docs\index.md = docs\index.md
@@ -35,7 +36,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F14E28C3
 		build\build.cake = build\build.cake
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGR.Guard.PerformanceTests.NetCore", "tests\MGR.Guard.PerformanceTests.NetCore\MGR.Guard.PerformanceTests.NetCore.csproj", "{C3E5EDD7-94EC-4249-8B21-07F1600AF67F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGR.Guard.PerformanceTests.NetCore", "tests\MGR.Guard.PerformanceTests.NetCore\MGR.Guard.PerformanceTests.NetCore.csproj", "{C3E5EDD7-94EC-4249-8B21-07F1600AF67F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

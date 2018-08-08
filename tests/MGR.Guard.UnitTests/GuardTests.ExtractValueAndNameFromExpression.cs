@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System;
+using Xunit;
 
 namespace MGR.Guard
 {
@@ -80,6 +81,18 @@ namespace MGR.Guard
                 // Assert
                 Assert.Equal("test.SubParam.Param", actual.ParameterName);
                 Assert.Equal("World", actual.Value);
+            }
+            [Fact]
+            public void Extract_From_Double_LinkedWith_Null_Part_Expression()
+            {
+                // Arrange
+                SampleClass test = new SampleClass
+                {
+                    Param = "Hello"
+                };
+
+                // Act & Assert
+                Assert.Throws<NullReferenceException>(() => Guard.ExtractValueAndNameFromExpression(() => test.SubParam.Param));
             }
 
             [Fact]

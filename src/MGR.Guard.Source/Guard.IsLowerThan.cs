@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using JetBrains.Annotations;
 
 namespace MGR.Guard
@@ -12,7 +13,20 @@ namespace MGR.Guard
         static partial class Guard
     {
         /// <summary>
-        ///     Determines if the specified value is lower than the maxLimit.
+        ///     Checks if the specified value is lower than the maxLimit.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        /// <param name="maxLimit">The min limit.</param>
+        [PublicAPI]
+        public static void IsLowerThan<T>([NotNull] Expression<Func<T>> expression, T maxLimit)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsLowerThan(value, maxLimit, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is lower than the maxLimit.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="value">The value.</param>
@@ -33,7 +47,21 @@ namespace MGR.Guard
         }
 
         /// <summary>
-        ///     Determines if the specified value is lower than the maxLimit.
+        ///     Checks if the specified value is lower than the maxLimit.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        /// <param name="maxLimit">The min limit.</param>
+        /// <param name="comparer">The comparer.</param>
+        [PublicAPI]
+        public static void IsLowerThan<T>([NotNull] Expression<Func<T>> expression, T maxLimit, [NotNull] IComparer<T> comparer)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsLowerThan(value, maxLimit, parameterName, comparer);
+        }
+        /// <summary>
+        ///     Checks if the specified value is lower than the maxLimit.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="value">The value.</param>

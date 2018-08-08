@@ -19,8 +19,8 @@ namespace MGR.Guard
             internal static readonly Func<object, string> IsEqualToFormat = referenceValue => string.Format(CultureInfo.CurrentCulture, "The argument must be equal to {0}.", referenceValue);
             internal const string ComparerNotNullMessage = "The comparer cannot be null. ";
             internal const string IsEqualToZeroMessage = "The argument must be equal to 0.";
-            internal static readonly Func<string, string> ExistsNotFoundFormat = fileFullName => string.Format(CultureInfo.CurrentCulture, "The specified path {0} doesn't exists.",
-                fileFullName);
+            internal static readonly Func<string, string> ExistsNotFoundFormat = parameterName => string.Format(CultureInfo.CurrentCulture, "The file passed as parameter '{0}' doesn't exists.",
+                parameterName);
             internal static Func<T, string> IsGreaterThanFormat<T>() => minLimit => string.Format(CultureInfo.CurrentCulture, "The argument must be strictly greather than {0}.", minLimit);
             internal static Func<T, string> IsGreaterThanOrEqualToFormat<T>() => minLimit => string.Format(CultureInfo.CurrentCulture, "The argument must be greather than or equal to {0}.", minLimit);
             internal const string IsGreaterThanZeroMessage = "The argument must be strictly greather than 0.";

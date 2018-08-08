@@ -98,11 +98,11 @@ namespace MGR.Guard
             }
             if (memberExpresion.Member is PropertyInfo propertyInfo)
             {
-                return value => propertyInfo.GetValue(value);
+                return value => propertyInfo.GetValue(value ?? throw new NullReferenceException());
             }
             if (memberExpresion.Member is FieldInfo filedInfo)
             {
-                return value => filedInfo.GetValue(value);
+                return value => filedInfo.GetValue(value ?? throw new NullReferenceException());
             }
             throw new NotImplementedException("Only Property and field access are currently implemented.");
         }

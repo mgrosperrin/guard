@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using JetBrains.Annotations;
 
 namespace MGR.Guard
@@ -11,7 +12,19 @@ namespace MGR.Guard
         static partial class Guard
     {
         /// <summary>
-        ///     Determines if the specified value is lower than zero.
+        ///     Checks if the specified value is lower than zero.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsLowerThanZero([NotNull] Expression<Func<int>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsLowerThanZero(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is lower than zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
@@ -25,7 +38,19 @@ namespace MGR.Guard
         }
 
         /// <summary>
-        ///     Determines if the specified value is lower than zero.
+        ///     Checks if the specified value is lower than zero.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsLowerThanZero([NotNull] Expression<Func<long>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsLowerThanZero(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is lower than zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
@@ -39,7 +64,19 @@ namespace MGR.Guard
         }
 
         /// <summary>
-        ///     Determines if the specified value is lower than zero.
+        ///     Checks if the specified value is lower than zero.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsLowerThanZero([NotNull] Expression<Func<double>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsLowerThanZero(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is lower than zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
@@ -52,7 +89,19 @@ namespace MGR.Guard
         }
 
         /// <summary>
-        ///     Determines if the specified value is lower than zero.
+        ///     Checks if the specified value is lower than zero.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsLowerThanZero([NotNull] Expression<Func<float>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsLowerThanZero(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is lower than zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>

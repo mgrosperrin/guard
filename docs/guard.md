@@ -3,7 +3,9 @@ MGR.Guard API
 
 All methods are static and throw exception when the condition is not met.
 
-The methods take the parameter to check, potentialy some complementary values, and the name of the parameter.
+The methods all have two forms:
+1. One that takes the parameter to check, potentialy some complementary values, and the name of the parameter,
+2. One that takes an [expression to specify the value and the name of the parameter](guard-expression.md), and potentially some complementary values.
 
 ## Exists
 Checks if a ```System.IO.FileSystemInfo``` exists.

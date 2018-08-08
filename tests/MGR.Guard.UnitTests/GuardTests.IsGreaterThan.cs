@@ -15,7 +15,7 @@ namespace MGR.Guard
                 string minLimit = "ZZZ";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThan(test, minLimit, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThan(test, "test", minLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -27,7 +27,7 @@ namespace MGR.Guard
                 string minLimit = "AAA";
 
                 // Act
-                Guard.IsGreaterThan(test, minLimit, "test");
+                Guard.IsGreaterThan(test, "test", minLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -40,7 +40,7 @@ namespace MGR.Guard
                 string minLimit = "Value";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThan(test, minLimit, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThan(test, "test", minLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -52,7 +52,7 @@ namespace MGR.Guard
                 int minLimit = 10;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThan(test, minLimit, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThan(test, "test", minLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -64,7 +64,7 @@ namespace MGR.Guard
                 int minLimit = 0;
 
                 // Act
-                Guard.IsGreaterThan(test, minLimit, "test");
+                Guard.IsGreaterThan(test, "test", minLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -77,7 +77,7 @@ namespace MGR.Guard
                 int minLimit = 5;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThan(test, minLimit, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThan(test, "test", minLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
         }

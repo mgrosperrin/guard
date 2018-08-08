@@ -24,26 +24,27 @@ namespace MGR.Guard
             IsNotNull(expression, nameof(expression));
 
             var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsEqualTo(value, referenceValue, parameterName);
+            IsEqualTo(value, parameterName, referenceValue);
         }
+
         /// <summary>
         ///     Checks if the specified value is equal to the reference value.
         /// </summary>
         /// <typeparam name="T">The type of the value</typeparam>
         /// <param name="value">The value.</param>
-        /// <param name="referenceValue">The reference value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
+        /// <param name="referenceValue">The reference value.</param>
         [PublicAPI]
-        public static void IsEqualTo<T>(T value, T referenceValue, [NotNull] string parameterName)
+        public static void IsEqualTo<T>(T value, [NotNull] string parameterName, T referenceValue)
         {
             var strValue = value as string;
             if (strValue != null)
             {
-                IsEqualTo(strValue, referenceValue as string, parameterName, StringComparer.CurrentCulture);
+                IsEqualTo(strValue, parameterName, referenceValue as string, StringComparer.CurrentCulture);
             }
             else
             {
-                IsEqualTo(value, referenceValue, parameterName, Comparer<T>.Default);
+                IsEqualTo(value, parameterName, referenceValue, Comparer<T>.Default);
             }
         }
 
@@ -59,18 +60,20 @@ namespace MGR.Guard
             IsNotNull(expression, nameof(expression));
 
             var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsEqualTo(value, referenceValue, parameterName, comparer);
+            IsEqualTo(value, parameterName, referenceValue, comparer);
         }
+
         /// <summary>
         ///     Checks if the specified value is equal to the reference value.
         /// </summary>
         /// <typeparam name="T">The type of the value</typeparam>
         /// <param name="value">The value.</param>
-        /// <param name="referenceValue">The reference value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
+        /// <param name="referenceValue">The reference value.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
-        public static void IsEqualTo<T>(T value, T referenceValue, [NotNull] string parameterName, [NotNull] IComparer<T> comparer)
+        public static void IsEqualTo<T>(T value, [NotNull] string parameterName, T referenceValue,
+            [NotNull] IComparer<T> comparer)
         {
             if (comparer == null)
             {

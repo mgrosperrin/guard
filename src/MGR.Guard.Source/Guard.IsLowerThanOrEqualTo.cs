@@ -23,26 +23,27 @@ namespace MGR.Guard
             IsNotNull(expression, nameof(expression));
 
             var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsLowerThanOrEqualTo(value, maxLimit, parameterName);
+            IsLowerThanOrEqualTo(value, parameterName, maxLimit);
         }
+
         /// <summary>
         ///     Checks if the specified value is lower than or equal to the maxLimit.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="value">The value.</param>
-        /// <param name="maxLimit">The min limit.</param>
         /// <param name="parameterName">Name of the parameter.</param>
+        /// <param name="maxLimit">The min limit.</param>
         [PublicAPI]
-        public static void IsLowerThanOrEqualTo<T>(T value, T maxLimit, [NotNull] string parameterName)
+        public static void IsLowerThanOrEqualTo<T>(T value, [NotNull] string parameterName, T maxLimit)
         {
             var stringValue = value as string;
             if (stringValue != null)
             {
-                IsLowerThanOrEqualTo(stringValue, maxLimit as string, parameterName, StringComparer.CurrentCulture);
+                IsLowerThanOrEqualTo(stringValue, parameterName, maxLimit as string, StringComparer.CurrentCulture);
             }
             else
             {
-                IsLowerThanOrEqualTo(value, maxLimit, parameterName, Comparer<T>.Default);
+                IsLowerThanOrEqualTo(value, parameterName, maxLimit, Comparer<T>.Default);
             }
         }
 
@@ -58,18 +59,20 @@ namespace MGR.Guard
             IsNotNull(expression, nameof(expression));
 
             var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsLowerThanOrEqualTo(value, maxLimit, parameterName, comparer);
+            IsLowerThanOrEqualTo(value, parameterName, maxLimit, comparer);
         }
+
         /// <summary>
         ///     Checks if the specified value is lower than or equal to the maxLimit.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="value">The value.</param>
-        /// <param name="maxLimit">The min limit.</param>
         /// <param name="parameterName">Name of the parameter.</param>
+        /// <param name="maxLimit">The min limit.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
-        public static void IsLowerThanOrEqualTo<T>(T value, T maxLimit, [NotNull] string parameterName, [NotNull] IComparer<T> comparer)
+        public static void IsLowerThanOrEqualTo<T>(T value, [NotNull] string parameterName, T maxLimit,
+            [NotNull] IComparer<T> comparer)
         {
             if (comparer == null)
             {

@@ -15,7 +15,7 @@ namespace MGR.Guard
                 string referenceValue = "Value";
 
                 // Act
-                Guard.IsEqualTo(test, referenceValue, "test");
+                Guard.IsEqualTo(test, "test", referenceValue);
 
                 // Assert
                 Assert.True(true);
@@ -29,7 +29,7 @@ namespace MGR.Guard
                 string referenceValue = "NotValue";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentException>(() => Guard.IsEqualTo(test, referenceValue, "test"));
+                var actualException = Assert.Throws<ArgumentException>(() => Guard.IsEqualTo(test, "test", referenceValue));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -41,7 +41,7 @@ namespace MGR.Guard
                 string referenceValue = "NotValue";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentException>(() => Guard.IsEqualTo(test, referenceValue, "test", StringComparer.Ordinal));
+                var actualException = Assert.Throws<ArgumentException>(() => Guard.IsEqualTo(test, "test", referenceValue, StringComparer.Ordinal));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -53,7 +53,7 @@ namespace MGR.Guard
                 int referenceValue = 5;
 
                 // Act
-                Guard.IsEqualTo(test, referenceValue, "test");
+                Guard.IsEqualTo(test, "test", referenceValue);
 
                 // Assert
                 Assert.True(true);
@@ -67,7 +67,7 @@ namespace MGR.Guard
                 int referenceValue = 0;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentException>(() => Guard.IsEqualTo(test, referenceValue, "test"));
+                var actualException = Assert.Throws<ArgumentException>(() => Guard.IsEqualTo(test, "test", referenceValue));
                 Assert.Equal("test", actualException.ParamName);
             }
         }

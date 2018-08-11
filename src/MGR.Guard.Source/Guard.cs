@@ -22,6 +22,8 @@ namespace MGR.Guard
             internal static readonly Func<string, string> ExistsNotFoundFormat = parameterName => string.Format(CultureInfo.CurrentCulture, "The file passed as parameter '{0}' doesn't exists.",
                 parameterName);
             internal static Func<T, string> IsGreaterThanFormat<T>() => minLimit => string.Format(CultureInfo.CurrentCulture, "The argument must be strictly greather than {0}.", minLimit);
+            internal static Func<T, T, string> IsStrictlyBetweenFormat<T>() => (minLimit, maxLimit) => string.Format(CultureInfo.CurrentCulture, "The argument must be strictly between {0} and {1}.", minLimit, maxLimit);
+            internal static Func<T, T, string> IsBetweenFormat<T>() => (minLimit, maxLimit) => string.Format(CultureInfo.CurrentCulture, "The argument must be between {0} and {1}.", minLimit, maxLimit);
             internal static Func<T, string> IsGreaterThanOrEqualToFormat<T>() => minLimit => string.Format(CultureInfo.CurrentCulture, "The argument must be greather than or equal to {0}.", minLimit);
             internal const string IsGreaterThanZeroMessage = "The argument must be strictly greather than 0.";
             internal const string IsGreaterThanOrEqualToZeroMessage = "The argument must be greather than or equal to 0.";

@@ -16,7 +16,7 @@ namespace MGR.Guard
         ///     Checks if the specified value is lower than the maxLimit.
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
-        /// <param name="maxLimit">The min limit.</param>
+        /// <param name="maxLimit">The max limit.</param>
         [PublicAPI]
         public static void IsLowerThan<T>([NotNull] Expression<Func<T>> expression, T maxLimit)
         {
@@ -32,7 +32,7 @@ namespace MGR.Guard
         /// <typeparam name="T"></typeparam>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
-        /// <param name="maxLimit">The min limit.</param>
+        /// <param name="maxLimit">The max limit.</param>
         [PublicAPI]
         public static void IsLowerThan<T>(T value, [NotNull] string parameterName, T maxLimit)
         {
@@ -51,7 +51,7 @@ namespace MGR.Guard
         ///     Checks if the specified value is lower than the maxLimit.
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
-        /// <param name="maxLimit">The min limit.</param>
+        /// <param name="maxLimit">The max limit.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
         public static void IsLowerThan<T>([NotNull] Expression<Func<T>> expression, T maxLimit, [NotNull] IComparer<T> comparer)
@@ -68,7 +68,7 @@ namespace MGR.Guard
         /// <typeparam name="T"></typeparam>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
-        /// <param name="maxLimit">The min limit.</param>
+        /// <param name="maxLimit">The max limit.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
         public static void IsLowerThan<T>(T value, [NotNull] string parameterName, T maxLimit,

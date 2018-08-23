@@ -3,13 +3,21 @@ MGR.Guard API
 
 All methods are static and throw exception when the condition is not met.
 
-The methods take the parameter to check, potentialy some complementary values, and the name of the parameter.
+The methods all have two forms:
+1. One that takes the parameter to check, potentialy some complementary values, and the name of the parameter,
+2. One that takes an [expression to specify the value and the name of the parameter](guard-expression.md), and potentially some complementary values.
 
 ## Exists
 Checks if a ```System.IO.FileSystemInfo``` exists.
 
 #### Exception thrown
 ```System.IO.FileNotFoundException``` if the file or directory doesn't exists.
+
+## IsBetween
+Checks if a value is between a min and a max limit.
+
+#### Exception thrown
+```System.ArgumentOutOfRangeException``` if the value is not between the specified min and max limits.
 
 ## IsDefined
 Checks if a value is a defined *enum* value.
@@ -106,4 +114,10 @@ Checks if a ```string``` is not ```null``` or empty.
 
 #### Exception thrown
 ```System.ArgumentNullException``` if the specified value is ```null``` or empty.
+
+## IsStrictlyBetween
+Checks if a value is strictly between a min and a max limit.
+
+#### Exception thrown
+```System.ArgumentOutOfRangeException``` if the value is not strictly between the specified min and max limits.
 

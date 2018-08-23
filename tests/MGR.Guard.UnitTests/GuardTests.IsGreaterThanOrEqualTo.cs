@@ -15,7 +15,7 @@ namespace MGR.Guard
                 string minLimit = "ZZZ";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThanOrEqualTo(test, minLimit, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThanOrEqualTo(test, "test", minLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -53,7 +53,7 @@ namespace MGR.Guard
                 int minLimit = 10;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThanOrEqualTo(test, minLimit, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThanOrEqualTo(test, "test", minLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -65,7 +65,7 @@ namespace MGR.Guard
                 int minLimit = 0;
 
                 // Act
-                Guard.IsGreaterThanOrEqualTo(test, minLimit, "test");
+                Guard.IsGreaterThanOrEqualTo(test, "test", minLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -78,7 +78,7 @@ namespace MGR.Guard
                 int minLimit = 5;
 
                 // Act
-                Guard.IsGreaterThanOrEqualTo(test, minLimit, "test");
+                Guard.IsGreaterThanOrEqualTo(test, "test", minLimit);
                 // Assert
                 Assert.True(true);
             }

@@ -15,7 +15,7 @@ namespace MGR.Guard
                 string maxLimit = "AAA";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanOrEqualTo(test, maxLimit, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanOrEqualTo(test, "test", maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -27,7 +27,7 @@ namespace MGR.Guard
                 string maxLimit = "ZZZ";
 
                 // Act
-                Guard.IsLowerThanOrEqualTo(test, maxLimit, "test");
+                Guard.IsLowerThanOrEqualTo(test, "test", maxLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -40,7 +40,7 @@ namespace MGR.Guard
                 string maxLimit = "Value";
 
                 // Act
-                Guard.IsLowerThanOrEqualTo(test, maxLimit, "test");
+                Guard.IsLowerThanOrEqualTo(test, "test", maxLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -53,7 +53,7 @@ namespace MGR.Guard
                 int maxLimit = 0;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanOrEqualTo(test, maxLimit, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanOrEqualTo(test, "test", maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -65,7 +65,7 @@ namespace MGR.Guard
                 int maxLimit = 10;
 
                 // Act
-                Guard.IsLowerThanOrEqualTo(test, maxLimit, "test");
+                Guard.IsLowerThanOrEqualTo(test, "test", maxLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -78,7 +78,7 @@ namespace MGR.Guard
                 int maxLimit = 5;
 
                 // Act
-                Guard.IsLowerThanOrEqualTo(test, maxLimit, "test");
+                Guard.IsLowerThanOrEqualTo(test, "test", maxLimit);
                 // Assert
                 Assert.True(true);
             }

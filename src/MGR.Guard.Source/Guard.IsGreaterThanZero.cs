@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using JetBrains.Annotations;
 
 namespace MGR.Guard
@@ -11,7 +12,19 @@ namespace MGR.Guard
         static partial class Guard
     {
         /// <summary>
-        ///     Determines if the specified value is greater than zero.
+        ///     Checks if the specified value is greater than zero.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsGreaterThanZero([NotNull] Expression<Func<int>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsGreaterThanZero(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is greater than zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
@@ -24,8 +37,21 @@ namespace MGR.Guard
             }
         }
 
+
         /// <summary>
-        ///     Determines if the specified value is greater than zero.
+        ///     Checks if the specified value is greater than zero.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsGreaterThanZero([NotNull] Expression<Func<long>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsGreaterThanZero(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is greater than zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
@@ -38,8 +64,21 @@ namespace MGR.Guard
             }
         }
 
+
         /// <summary>
-        ///     Determines if the specified value is greater than zero.
+        ///     Checks if the specified value is greater than zero.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsGreaterThanZero([NotNull] Expression<Func<double>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsGreaterThanZero(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is greater than zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
@@ -52,8 +91,21 @@ namespace MGR.Guard
             }
         }
 
+
         /// <summary>
-        ///     Determines if the specified value is greater than zero.
+        ///     Checks if the specified value is greater than zero.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsGreaterThanZero([NotNull] Expression<Func<float>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsGreaterThanZero(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is greater than zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>

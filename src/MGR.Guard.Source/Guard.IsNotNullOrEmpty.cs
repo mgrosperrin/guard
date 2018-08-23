@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using JetBrains.Annotations;
 
 namespace MGR.Guard
@@ -11,7 +12,19 @@ namespace MGR.Guard
         static partial class Guard
     {
         /// <summary>
-        ///     Determines if the specified value is null
+        ///     Checks if the specified value is null
+        /// </summary>
+        /// <param name="expression">The value as an expression.</param>
+        /// <exception cref="ArgumentException">Thrown when the value is <code>null</code></exception>
+        public static void IsNotNull<T>(Expression<Func<T>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsNotNull(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified value is null
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
@@ -26,7 +39,19 @@ namespace MGR.Guard
         }
 
         /// <summary>
-        ///     Determines if the specified <see cref="string" /> value is null or empty
+        ///     Checks if the specified <see cref="string" /> value is null or empty.
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsNotNullOrEmpty([NotNull] Expression<Func<string>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsNotNullOrEmpty(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified <see cref="string" /> value is null or empty.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
@@ -43,7 +68,19 @@ namespace MGR.Guard
         }
 
         /// <summary>
-        ///     Determines if the specified <see cref="Guid" /> value is empty
+        ///     Checks if the specified <see cref="Guid" /> value is empty
+        /// </summary>
+        /// <param name="expression">The value as an Expression.</param>
+        [PublicAPI]
+        public static void IsNotEmptyGuid([NotNull] Expression<Func<Guid>> expression)
+        {
+            IsNotNull(expression, nameof(expression));
+
+            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
+            IsNotEmptyGuid(value, parameterName);
+        }
+        /// <summary>
+        ///     Checks if the specified <see cref="Guid" /> value is empty
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>

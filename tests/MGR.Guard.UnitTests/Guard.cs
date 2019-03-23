@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace MGR.Guard
 {
-    internal static partial class Guard
+    public static partial class Guard
     {
         internal static (T Value,  string ParameterName) ExtractValueAndNameFromExpression<T>(Expression<Func<T>> selector)
         {

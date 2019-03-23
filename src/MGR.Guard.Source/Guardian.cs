@@ -13,10 +13,13 @@ namespace MGR.Guard
 #else
     internal
 #endif
-    static partial class Guard
+        sealed class Guardian : IGuardian
     {
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static ValueAndParameterName<T> ExtractValueAndParameterNameFromExpression<T>(Expression<Func<T>> selector)
+        private Guardian()
+        {
+        }
+
+        ValueAndParameterName<T> IGuardian.ExtractValueAndParameterNameFromExpression<T>(Expression<Func<T>> selector)
         {
             var bodyExpression = selector.Body;
             return ExtractFromExpression<T>(bodyExpression, string.Empty, _ => _);
@@ -36,10 +39,12 @@ namespace MGR.Guard
             {
                 return ExtractFromMemberExpression<T>(memberExpression, finalParameterNamePart, valueExtractor);
             }
+
             if (expression is BinaryExpression binaryExpression)
             {
                 return ExtractFromBinaryExpresion<T>(binaryExpression, finalParameterNamePart, valueExtractor);
             }
+
             throw new NotImplementedException("Unable to parse the expression.");
         }
 
@@ -57,17 +62,19 @@ namespace MGR.Guard
                         "[" + rightValueParameter.ParameterName + "]" + finalParameterNamePart, value =>
                         {
                             var valueType = value.GetType();
-                            var method = valueType.GetRuntimeMethod("Get", new[] { rightValueParameter.Value.GetType() });
+                            var method = valueType.GetRuntimeMethod("Get", new[] {rightValueParameter.Value.GetType()});
                             var tempValue = method.Invoke(value, new[] {rightValueParameter.Value});
                             return valueExtractor(tempValue);
                         });
                 return leftValueParameter;
             }
+
             throw new NotImplementedException("Unable to parse BinaryExpression other than ArrayIndex.");
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static ValueAndParameterName<T> ExtractFromMemberExpression<T>(MemberExpression memberExpresion, string finalParameterNamePart, Func<object, object> valueExtractor)
+        private static ValueAndParameterName<T> ExtractFromMemberExpression<T>(MemberExpression memberExpresion,
+            string finalParameterNamePart, Func<object, object> valueExtractor)
         {
             object SubValueExtractor(object value)
             {
@@ -79,11 +86,13 @@ namespace MGR.Guard
             switch (subExpression)
             {
                 case ConstantExpression constantExpression:
-                    return ExtractFromConstantExpression<T>(memberExpresion, constantExpression, finalParameterNamePart, SubValueExtractor);
+                    return ExtractFromConstantExpression<T>(memberExpresion, constantExpression, finalParameterNamePart,
+                        SubValueExtractor);
                 case MemberExpression _:
                 case BinaryExpression _:
-                    var tempNameAndParam = ExtractFromExpression<object>(subExpression, "." + memberExpresion.Member.Name + finalParameterNamePart, SubValueExtractor);
-                    return new ValueAndParameterName<T>((T)tempNameAndParam.Value, tempNameAndParam.ParameterName);
+                    var tempNameAndParam = ExtractFromExpression<object>(subExpression,
+                        "." + memberExpresion.Member.Name + finalParameterNamePart, SubValueExtractor);
+                    return new ValueAndParameterName<T>((T) tempNameAndParam.Value, tempNameAndParam.ParameterName);
             }
 
             throw new NotImplementedException("Unable to parse the MemberExpression.");
@@ -96,23 +105,27 @@ namespace MGR.Guard
             {
                 return _ => _;
             }
+
             if (memberExpresion.Member is PropertyInfo propertyInfo)
             {
                 return value => propertyInfo.GetValue(value ?? throw new NullReferenceException());
             }
+
             if (memberExpresion.Member is FieldInfo filedInfo)
             {
                 return value => filedInfo.GetValue(value ?? throw new NullReferenceException());
             }
+
             throw new NotImplementedException("Only Property and field access are currently implemented.");
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static ValueAndParameterName<T> ExtractFromConstantExpression<T>(MemberExpression memberExpresion, ConstantExpression constantExpression, string finalParameterNamePart, Func<object, object> valueExtractor)
+        private static ValueAndParameterName<T> ExtractFromConstantExpression<T>(MemberExpression memberExpresion,
+            ConstantExpression constantExpression, string finalParameterNamePart, Func<object, object> valueExtractor)
         {
-            object value = constantExpression.Value;
-            string name = ComputeExpressionMemberName(memberExpresion, value);
-            return new ValueAndParameterName<T>((T)valueExtractor(value), name + finalParameterNamePart);
+            var value = constantExpression.Value;
+            var name = ComputeExpressionMemberName(memberExpresion, value);
+            return new ValueAndParameterName<T>((T) valueExtractor(value), name + finalParameterNamePart);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -122,25 +135,13 @@ namespace MGR.Guard
             {
                 return value == null ? "null" : value.ToString();
             }
+
             return memberExpresion.Member.Name;
         }
 
-        private struct ValueAndParameterName<T>
-        {
-            public T Value { get; }
-            public string ParameterName { get; }
-
-            public ValueAndParameterName(T value, string parameterName)
-            {
-                Value = value;
-                ParameterName = parameterName;
-            }
-
-            public void Deconstruct(out T value, out string parameterName)
-            {
-                value = Value;
-                parameterName = ParameterName;
-            }
-        }
+        /// <summary>
+        /// Gets the current instance of the guardian.
+        /// </summary>
+        public static Guardian ChecksThat { get; } = new Guardian();
     }
 }

@@ -20,12 +20,10 @@ namespace MGR.Guard
         /// <param name="minLimit">The min limit.</param>
         /// <param name="maxLimit">The max limit.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsBetween instead.")]
         public static void IsBetween<T>(Expression<Func<T>> expression, T minLimit, T maxLimit)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsBetween(value, parameterName, minLimit, maxLimit);
+            Guardian.ChecksThat.IsBetween(expression, minLimit, maxLimit);
         }
         /// <summary>
         ///     Checks if the specified value is between the minLimit and the maxLimit.
@@ -36,17 +34,10 @@ namespace MGR.Guard
         /// <param name="minLimit">The min limit.</param>
         /// <param name="maxLimit">The max limit.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsBetween instead.")]
         public static void IsBetween<T>(T value, string parameterName, T minLimit, T maxLimit)
         {
-            var stringValue = value as string;
-            if (stringValue != null)
-            {
-                IsBetween(stringValue, parameterName, minLimit as string, maxLimit as string, StringComparer.CurrentCulture);
-            }
-            else
-            {
-                IsBetween(value, parameterName, minLimit, maxLimit, Comparer<T>.Default);
-            }
+            Guardian.ChecksThat.IsBetween(value, parameterName, minLimit, maxLimit);
         }
         /// <summary>
         ///     Checks if the specified value is between the minLimit and the maxLimit.
@@ -57,12 +48,10 @@ namespace MGR.Guard
         /// <param name="maxLimit">The max limit.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsBetween instead.")]
         public static void IsBetween<T>(Expression<Func<T>> expression, T minLimit, T maxLimit, IComparer<T> comparer)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsLowerThan(value, parameterName, maxLimit, comparer);
+            Guardian.ChecksThat.IsBetween(expression, minLimit, maxLimit, comparer);
         }
 
         /// <summary>
@@ -75,16 +64,10 @@ namespace MGR.Guard
         /// <param name="maxLimit">The max limit.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsBetween instead.")]
         public static void IsBetween<T>(T value, string parameterName, T minLimit, T maxLimit, IComparer<T> comparer)
         {
-            if (comparer == null)
-            {
-                throw new ArgumentNullException(nameof(comparer), Messages.ComparerNotNullMessage);
-            }
-            if (comparer.Compare(value, minLimit) < 0 || comparer.Compare(value, maxLimit) > 0)
-            {
-                throw new ArgumentOutOfRangeException(parameterName, value, Messages.IsBetweenFormat<T>()(minLimit, maxLimit));
-            }
+            Guardian.ChecksThat.IsBetween(value, parameterName, minLimit, maxLimit, comparer);
         }
     }
 }

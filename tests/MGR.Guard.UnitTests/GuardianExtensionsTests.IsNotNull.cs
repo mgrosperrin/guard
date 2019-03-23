@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MGR.Guard
 {
-    public partial class GuardTests
+    public partial class GuardianExtensionsTests
     {
         public class IsNotNull
         {
@@ -15,7 +15,7 @@ namespace MGR.Guard
 
                 // Act & Assert
                 // ReSharper disable once AssignNullToNotNullAttribute
-                ArgumentNullException actual = Assert.Throws<ArgumentNullException>(() => Guard.IsNotNull(test, "test"));
+                ArgumentNullException actual = Assert.Throws<ArgumentNullException>(() => Guardian.ChecksThat.IsNotNull(test, "test"));
                 Assert.Equal("test", actual.ParamName);
             }
 
@@ -26,7 +26,7 @@ namespace MGR.Guard
                 object test = new object();
 
                 // Act
-                Guard.IsNotNull(test, "test");
+                Guardian.ChecksThat.IsNotNull(test, "test");
 
                 // Assert
                 Assert.True(true);

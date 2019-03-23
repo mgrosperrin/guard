@@ -19,12 +19,10 @@ namespace MGR.Guard
         /// <param name="expression">The value as an expression.</param>
         /// <param name="referenceValue">The reference value.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualTo instead.")]
         public static void IsEqualTo<T>([NotNull] Expression<Func<T>> expression, T referenceValue)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsEqualTo(value, parameterName, referenceValue);
+            Guardian.ChecksThat.IsEqualTo(expression, referenceValue);
         }
 
         /// <summary>
@@ -35,17 +33,10 @@ namespace MGR.Guard
         /// <param name="parameterName">Name of the parameter.</param>
         /// <param name="referenceValue">The reference value.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualTo instead.")]
         public static void IsEqualTo<T>(T value, [NotNull] string parameterName, T referenceValue)
         {
-            var strValue = value as string;
-            if (strValue != null)
-            {
-                IsEqualTo(strValue, parameterName, referenceValue as string, StringComparer.CurrentCulture);
-            }
-            else
-            {
-                IsEqualTo(value, parameterName, referenceValue, Comparer<T>.Default);
-            }
+            Guardian.ChecksThat.IsEqualTo(value, parameterName, referenceValue);
         }
 
         /// <summary>
@@ -55,12 +46,10 @@ namespace MGR.Guard
         /// <param name="referenceValue">The reference value.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualTo instead.")]
         public static void IsEqualTo<T>([NotNull] Expression<Func<T>> expression, T referenceValue, [NotNull] IComparer<T> comparer)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsEqualTo(value, parameterName, referenceValue, comparer);
+            Guardian.ChecksThat.IsEqualTo(expression, referenceValue, comparer);
         }
 
         /// <summary>
@@ -72,17 +61,11 @@ namespace MGR.Guard
         /// <param name="referenceValue">The reference value.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualTo instead.")]
         public static void IsEqualTo<T>(T value, [NotNull] string parameterName, T referenceValue,
             [NotNull] IComparer<T> comparer)
         {
-            if (comparer == null)
-            {
-                throw new ArgumentNullException(nameof(comparer), Messages.ComparerNotNullMessage);
-            }
-            if (comparer.Compare(value, referenceValue) != 0)
-            {
-                throw new ArgumentException(Messages.IsEqualToFormat(referenceValue), parameterName);
-            }
+            Guardian.ChecksThat.IsEqualTo(value, parameterName, referenceValue, comparer);
         }
     }
 }

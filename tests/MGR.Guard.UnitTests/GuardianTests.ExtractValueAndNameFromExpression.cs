@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MGR.Guard
 {
-    public partial class GuardTests
+    public class GuardianTests
     {
         public class ExtractValueAndNameFromExpression
         {
@@ -11,9 +11,10 @@ namespace MGR.Guard
             public void Extract_From_Null_Constant_Expression()
             {
                 // Arrange
+                var guardian = Guardian.ChecksThat;
 
                 // Act
-                var actual = Guard.ExtractValueAndNameFromExpression<object>(() => null);
+                var actual = ((IGuardian)guardian).ExtractValueAndParameterNameFromExpression<object>(() => null);
 
                 // Assert
                 Assert.Equal("null", actual.ParameterName);
@@ -23,9 +24,10 @@ namespace MGR.Guard
             public void Extract_From_Constant_Expression()
             {
                 // Arrange
+                var guardian = Guardian.ChecksThat;
 
                 // Act
-                var actual = Guard.ExtractValueAndNameFromExpression(() => 1);
+                var actual = ((IGuardian)guardian).ExtractValueAndParameterNameFromExpression(() => 1);
 
                 // Assert
                 Assert.Equal("1", actual.ParameterName);
@@ -36,9 +38,10 @@ namespace MGR.Guard
             {
                 // Arrange
                 object test = 1;
+                var guardian = Guardian.ChecksThat;
 
                 // Act
-                var actual = Guard.ExtractValueAndNameFromExpression(() => test);
+                var actual = ((IGuardian)guardian).ExtractValueAndParameterNameFromExpression(() => test);
 
                 // Assert
                 Assert.Equal("test", actual.ParameterName);
@@ -53,9 +56,10 @@ namespace MGR.Guard
                 {
                     Param = "Hello"
                 };
+                var guardian = Guardian.ChecksThat;
 
                 // Act
-                var actual = Guard.ExtractValueAndNameFromExpression(() => test.Param);
+                var actual = ((IGuardian)guardian).ExtractValueAndParameterNameFromExpression(() => test.Param);
 
                 // Assert
                 Assert.Equal("test.Param", actual.ParameterName);
@@ -74,9 +78,10 @@ namespace MGR.Guard
                         Param = "World"
                     }
                 };
+                var guardian = Guardian.ChecksThat;
 
                 // Act
-                var actual = Guard.ExtractValueAndNameFromExpression(() => test.SubParam.Param);
+                var actual = ((IGuardian)guardian).ExtractValueAndParameterNameFromExpression(() => test.SubParam.Param);
 
                 // Assert
                 Assert.Equal("test.SubParam.Param", actual.ParameterName);
@@ -90,9 +95,10 @@ namespace MGR.Guard
                 {
                     Param = "Hello"
                 };
+                var guardian = Guardian.ChecksThat;
 
                 // Act & Assert
-                Assert.Throws<NullReferenceException>(() => Guard.ExtractValueAndNameFromExpression(() => test.SubParam.Param));
+                Assert.Throws<NullReferenceException>(() => ((IGuardian)guardian).ExtractValueAndParameterNameFromExpression(() => test.SubParam.Param));
             }
 
             [Fact]
@@ -103,9 +109,10 @@ namespace MGR.Guard
                 {
                     Params = new[] { "Hello" }
                 };
+                var guardian = Guardian.ChecksThat;
 
                 // Act
-                var actual = Guard.ExtractValueAndNameFromExpression(() => test.Params[0]);
+                var actual = ((IGuardian)guardian).ExtractValueAndParameterNameFromExpression(() => test.Params[0]);
 
                 // Assert
                 Assert.Equal("test.Params[0]", actual.ParameterName);
@@ -125,9 +132,10 @@ namespace MGR.Guard
                                         }
                     }
                 };
+                var guardian = Guardian.ChecksThat;
 
                 // Act
-                var actual = Guard.ExtractValueAndNameFromExpression(() => test.SubParams[0].Param);
+                var actual = ((IGuardian)guardian).ExtractValueAndParameterNameFromExpression(() => test.SubParams[0].Param);
 
                 // Assert
                 Assert.Equal("test.SubParams[0].Param", actual.ParameterName);

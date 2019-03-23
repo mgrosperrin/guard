@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MGR.Guard
 {
-    public partial class GuardTests
+    public partial class GuardianExtensionsTests
     {
         public class IsBetween
         {
@@ -16,7 +16,7 @@ namespace MGR.Guard
                 var maxLimit = "WWW";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsBetween(test, "test", minLimit, maxLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -29,7 +29,7 @@ namespace MGR.Guard
                 var maxLimit = "BBB";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsBetween(test, "test", minLimit, maxLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -42,7 +42,7 @@ namespace MGR.Guard
                 var maxLimit = "VVV";
 
                 // Act & Assert
-                Guard.IsBetween(test, "test", minLimit, maxLimit);
+                Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit);
             }
 
             [Fact]
@@ -54,7 +54,7 @@ namespace MGR.Guard
                 var maxLimit = "Value";
 
                 // Act & Assert
-                Guard.IsBetween(test, "test", minLimit, maxLimit);
+                Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit);
             }
 
             [Fact]
@@ -66,7 +66,7 @@ namespace MGR.Guard
                 var maxLimit = "ZZZ";
 
                 // Act & Assert
-                Guard.IsBetween(test, "test", minLimit, maxLimit);
+                Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit);
             }
             [Fact]
             public void Integer_Value_Is_Lower_Than_The_Range()
@@ -77,7 +77,7 @@ namespace MGR.Guard
                 var maxLimit = 15;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsBetween(test, "test", minLimit, maxLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -90,7 +90,7 @@ namespace MGR.Guard
                 var maxLimit = 4;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsBetween(test, "test", minLimit, maxLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -103,7 +103,7 @@ namespace MGR.Guard
                 var maxLimit = 15;
 
                 // Act & Assert
-                Guard.IsBetween(test, "test", minLimit, maxLimit);
+                Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit);
             }
 
             [Fact]
@@ -115,7 +115,7 @@ namespace MGR.Guard
                 var maxLimit = 5;
 
                 // Act & Assert
-                Guard.IsBetween(test, "test", minLimit, maxLimit);
+                Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit);
             }
 
             [Fact]
@@ -127,7 +127,7 @@ namespace MGR.Guard
                 var maxLimit = 15;
 
                 // Act & Assert
-                Guard.IsBetween(test, "test", minLimit, maxLimit);
+                Guardian.ChecksThat.IsBetween(test, "test", minLimit, maxLimit);
             }
         }
     }

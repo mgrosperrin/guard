@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MGR.Guard
 {
-    public partial class GuardTests
+    public partial class GuardianExtensionsTests
     {
         public class IsLowerThan
         {
@@ -15,7 +15,7 @@ namespace MGR.Guard
                 string maxLimit = "AAA";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThan(test, "test", maxLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThan(test, "test", maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -27,7 +27,7 @@ namespace MGR.Guard
                 string maxLimit = "ZZZ";
 
                 // Act
-                Guard.IsLowerThan(test, "test", maxLimit);
+                Guardian.ChecksThat.IsLowerThan(test, "test", maxLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -40,7 +40,7 @@ namespace MGR.Guard
                 string maxLimit = "Value";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThan(test, "test", maxLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThan(test, "test", maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -52,7 +52,7 @@ namespace MGR.Guard
                 int maxLimit = 0;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThan(test, "test", maxLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThan(test, "test", maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -64,7 +64,7 @@ namespace MGR.Guard
                 int maxLimit = 10;
 
                 // Act
-                Guard.IsLowerThan(test, "test", maxLimit);
+                Guardian.ChecksThat.IsLowerThan(test, "test", maxLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -77,7 +77,7 @@ namespace MGR.Guard
                 int maxLimit = 5;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThan(test, "test", maxLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThan(test, "test", maxLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
         }

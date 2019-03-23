@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MGR.Guard
 {
-    public partial class GuardTests
+    public partial class GuardianExtensionsTests
     {
         public class IsNotEmptyGuid
         {
@@ -14,7 +14,7 @@ namespace MGR.Guard
                 Guid test = Guid.Empty;
 
                 // Act & Assert
-                ArgumentNullException actual = Assert.Throws<ArgumentNullException>(() => Guard.IsNotEmptyGuid(test, "test"));
+                ArgumentNullException actual = Assert.Throws<ArgumentNullException>(() => Guardian.ChecksThat.IsNotEmptyGuid(test, "test"));
                 Assert.Equal("test", actual.ParamName);
             }
 
@@ -25,7 +25,7 @@ namespace MGR.Guard
                 Guid test = Guid.NewGuid();
 
                 // Act
-                Guard.IsNotEmptyGuid(test, "test");
+                Guardian.ChecksThat.IsNotEmptyGuid(test, "test");
 
                 // Assert
             }

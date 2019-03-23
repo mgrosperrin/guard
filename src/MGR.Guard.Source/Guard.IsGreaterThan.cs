@@ -18,12 +18,10 @@ namespace MGR.Guard
         /// <param name="expression">The value as an Expression.</param>
         /// <param name="minLimit">The min limit.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThan instead.")]
         public static void IsGreaterThan<T>([NotNull] Expression<Func<T>> expression, T minLimit)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsGreaterThan(value, parameterName, minLimit);
+            Guardian.ChecksThat.IsGreaterThan(expression, minLimit);
         }
 
         /// <summary>
@@ -34,17 +32,10 @@ namespace MGR.Guard
         /// <param name="parameterName">Name of the parameter.</param>
         /// <param name="minLimit">The min limit.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThan instead.")]
         public static void IsGreaterThan<T>(T value, [NotNull] string parameterName, T minLimit)
         {
-            var strValue = value as string;
-            if (strValue != null)
-            {
-                IsGreaterThan(strValue, parameterName, minLimit as string, StringComparer.CurrentCulture);
-            }
-            else
-            {
-                IsGreaterThan(value, parameterName, minLimit, Comparer<T>.Default);
-            }
+            Guardian.ChecksThat.IsGreaterThan(value, parameterName, minLimit);
         }
 
         /// <summary>
@@ -54,12 +45,10 @@ namespace MGR.Guard
         /// <param name="minLimit">The min limit.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThan instead.")]
         public static void IsGreaterThan<T>([NotNull] Expression<Func<T>> expression, T minLimit, [NotNull] IComparer<T> comparer)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsGreaterThan(value, parameterName, minLimit, comparer);
+            Guardian.ChecksThat.IsGreaterThan(expression, minLimit, comparer);
         }
 
         /// <summary>
@@ -71,17 +60,11 @@ namespace MGR.Guard
         /// <param name="minLimit">The min limit.</param>
         /// <param name="comparer">The comparer.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThan instead.")]
         public static void IsGreaterThan<T>(T value, [NotNull] string parameterName, T minLimit,
             [NotNull] IComparer<T> comparer)
         {
-            if (comparer == null)
-            {
-                throw new ArgumentNullException(nameof(comparer), Messages.ComparerNotNullMessage);
-            }
-            if (comparer.Compare(value, minLimit) <= 0)
-            {
-                throw new ArgumentOutOfRangeException(parameterName, value, Messages.IsGreaterThanFormat<T>()(minLimit));
-            }
+            Guardian.ChecksThat.IsGreaterThan(value, parameterName, minLimit, comparer);
         }
     }
 }

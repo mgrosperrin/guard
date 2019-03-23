@@ -14,8 +14,8 @@ var mygetFeed = Argument("mygetFeed", "");
 var absoluteRootDir = MakeAbsolute(Directory("../"));
 var rootDir = Directory(absoluteRootDir.FullPath);
 var artifactsDir = rootDir + Directory("artifacts");
-var toolsDir = artifactsDir + Directory("tools");
 var srcDir = rootDir + Directory("src");
+var toolsDir = artifactsDir + Directory("tools");
 var nugetFile = toolsDir + File("nuget.exe");
 var gitVersionFile = toolsDir + Directory("GitVersion.CommandLine") + Directory("tools") + File("GitVersion.exe");
 var guardUnitTestProjectFile = rootDir + Directory("tests") + Directory("MGR.Guard.UnitTests") + File("MGR.Guard.UnitTests.csproj");
@@ -43,7 +43,8 @@ Task("Install-Tools-Packages")
     var defaultInstallSettings = new NuGetInstallSettings {
         OutputDirectory = toolsDir,
         ExcludeVersion = true,
-        ToolPath = nugetFile
+        ToolPath = nugetFile,
+        Version = "4.0.0"
     };
     NuGetInstall("GitVersion.CommandLine", defaultInstallSettings);
 });

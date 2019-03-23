@@ -1,20 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-    <Authors>Matthias GROSPERRIN</Authors>
-    <Company></Company>
-    <Product></Product>
-    <PackageLicenseUrl>https://github.com/mgrosperrin/guard/blob/dev/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/mgrosperrin/guard</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/mgrosperrin/guard</RepositoryUrl>
-    <Description>MGR.Guard is a very simple Guard library to check arguments, parameters, variables.</Description>
-    <RepositoryType>git</RepositoryType>
-    <IsPackable>true</IsPackable>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <DefineConstants>$(DefineConstants);MGR_GUARD_PUBLIC</DefineConstants>
   </PropertyGroup>
 

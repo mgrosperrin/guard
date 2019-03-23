@@ -1,0 +1,29 @@
+﻿<Project>
+    <PropertyGroup>
+        <Product>MGR.Guard</Product>
+        <TargetFramework>netstandard1.3</TargetFramework>
+        <DocumentationFile>bin\$(Configuration)\netstandard1.3\$(MSBuildProjectName).xml</DocumentationFile>
+        <LangVersion>latest</LangVersion>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsAsErrors />
+        <DebugType>portable</DebugType>
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+        <Authors>Matthias GROSPERRIN</Authors>
+        <Company></Company>
+        <PackageProjectUrl>https://github.com/mgrosperrin/guard</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/mgrosperrin/guard</RepositoryUrl>
+        <Description>MGR.Guard is a very simple Guard library to check arguments, parameters, variables.</Description>
+        <RepositoryType>git</RepositoryType>
+        <Copyright>Copyright © Matthias GROSPERRIN</Copyright>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+
+</Project>

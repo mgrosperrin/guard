@@ -33,7 +33,7 @@ var isBuildingPR = HasEnvironmentVariable("APPVEYOR_PULL_REQUEST_NUMBER");
 Task("Clean")
     .Does(() =>
 {
-    
+
 });
 
 Task("Install-Tools-Packages")

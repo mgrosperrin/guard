@@ -125,28 +125,11 @@ Task("Run-Unit-Tests")
     DotNetCoreTest(guardUnitTestProjectFile, settings);
 });
 
-Task("Publish-Package")
-    .IsDependentOn("Run-Unit-Tests")
-    .WithCriteria(() => publishPackage)
-    .Does(() =>
-{
-    var nugetPackageFiles = GetFiles(srcDir.Path + "\\**\\MGR.Guard.*.nupkg");
-    var nugetPushSettings = new NuGetPushSettings {
-        Source = nugetPackagePublicationFeed,
-        ApiKey = EnvironmentVariable(packagePublishingApiKeyName),
-        ToolPath = nugetFile
-    };
-    foreach(var nugetPackage in nugetPackageFiles)
-    {
-        NuGetPush(nugetPackage, nugetPushSettings);
-    }
-});
-
 //////////////////////////////////////////////////////////////////////
 // TASK TARGETS
 //////////////////////////////////////////////////////////////////////
 Task("Default")
-    .IsDependentOn("Publish-Package")
+    .IsDependentOn("Run-Unit-Tests")
     ;
 
 //////////////////////////////////////////////////////////////////////

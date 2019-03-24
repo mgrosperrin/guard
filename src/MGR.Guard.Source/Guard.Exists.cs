@@ -17,12 +17,10 @@ namespace MGR.Guard
         /// </summary>
         /// <param name="expression">The file as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.Exists instead.")]
         public static void Exists([NotNull] Expression<Func<FileSystemInfo>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (fileSystemInfo, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            Exists(fileSystemInfo, parameterName);
+            Guardian.ChecksThat.Exists(expression);
         }
         /// <summary>
         ///     Checks if the specified <see cref="FileSystemInfo " /> <paramref name="file" /> exists.
@@ -30,16 +28,10 @@ namespace MGR.Guard
         /// <param name="file">The file.</param>
         /// <param name="parameterName">The name of the file parameter.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.Exists instead.")]
         public static void Exists([NotNull] FileSystemInfo file, string parameterName)
         {
-
-            IsNotNull(file, nameof(file));
-
-            file.Refresh();
-            if (!file.Exists)
-            {
-                throw new FileNotFoundException(Messages.ExistsNotFoundFormat(parameterName), file.FullName);
-            }
+            Guardian.ChecksThat.Exists(file, parameterName);
         }
     }
 }

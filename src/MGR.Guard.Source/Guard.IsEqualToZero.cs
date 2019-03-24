@@ -16,12 +16,10 @@ namespace MGR.Guard
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualToZero instead.")]
         public static void IsEqualToZero([NotNull] Expression<Func<int>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsEqualToZero(value, parameterName);
+            Guardian.ChecksThat.IsEqualToZero(expression);
         }
         /// <summary>
         ///     Checks if the specified value is equal to zero.
@@ -29,12 +27,10 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualToZero instead.")]
         public static void IsEqualToZero(int value, [NotNull] string parameterName)
         {
-            if (value != 0)
-            {
-                throw new ArgumentException(Messages.IsEqualToZeroMessage, parameterName);
-            }
+            Guardian.ChecksThat.IsEqualToZero(value, parameterName);
         }
 
         /// <summary>
@@ -42,12 +38,10 @@ namespace MGR.Guard
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualToZero instead.")]
         public static void IsEqualToZero([NotNull] Expression<Func<long>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsEqualToZero(value, parameterName);
+            Guardian.ChecksThat.IsEqualToZero(expression);
         }
         /// <summary>
         ///     Checks if the specified value is equal to zero.
@@ -55,12 +49,10 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualToZero instead.")]
         public static void IsEqualToZero(long value, [NotNull] string parameterName)
         {
-            if (value != 0)
-            {
-                throw new ArgumentException(Messages.IsEqualToZeroMessage, parameterName);
-            }
+            Guardian.ChecksThat.IsEqualToZero(value, parameterName);
         }
 
         /// <summary>
@@ -68,24 +60,21 @@ namespace MGR.Guard
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualToZero instead.")]
         public static void IsEqualToZero([NotNull] Expression<Func<double>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsEqualToZero(value, parameterName);
+            Guardian.ChecksThat.IsEqualToZero(expression);
         }
         /// <summary>
         ///     Checks if the specified value is equal to zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
+        [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualToZero instead.")]
         public static void IsEqualToZero(double value, [NotNull] string parameterName)
         {
-            if (Math.Abs(value - 0) > double.Epsilon)
-            {
-                throw new ArgumentException(Messages.IsEqualToZeroMessage, parameterName);
-            }
+            Guardian.ChecksThat.IsEqualToZero(value, parameterName);
         }
 
         /// <summary>
@@ -93,12 +82,10 @@ namespace MGR.Guard
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualToZero instead.")]
         public static void IsEqualToZero([NotNull] Expression<Func<float>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsEqualToZero(value, parameterName);
+            Guardian.ChecksThat.IsEqualToZero(expression);
         }
         /// <summary>
         ///     Checks if the specified value is equal to zero.
@@ -106,12 +93,10 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsEqualToZero instead.")]
         public static void IsEqualToZero(float value, [NotNull] string parameterName)
         {
-            if (Math.Abs(value - 0) > float.Epsilon)
-            {
-                throw new ArgumentException(Messages.IsEqualToZeroMessage, parameterName);
-            }
+            Guardian.ChecksThat.IsEqualToZero(value, parameterName);
         }
     }
 }

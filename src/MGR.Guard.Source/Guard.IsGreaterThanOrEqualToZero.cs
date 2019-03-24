@@ -16,12 +16,10 @@ namespace MGR.Guard
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThanOrEqualToZero instead.")]
         public static void IsGreaterThanOrEqualToZero([NotNull] Expression<Func<int>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsGreaterThanOrEqualToZero(value, parameterName);
+            Guardian.ChecksThat.IsGreaterThanOrEqualToZero(expression);
         }
         /// <summary>
         ///     Checks if the specified value is greater than or equal to zero.
@@ -29,26 +27,20 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThanOrEqualToZero instead.")]
         public static void IsGreaterThanOrEqualToZero(int value, [NotNull] string parameterName)
         {
-            if (value < 0)
-            {
-                throw new ArgumentOutOfRangeException(parameterName, value, Messages.IsGreaterThanOrEqualToZeroMessage);
-            }
+            Guardian.ChecksThat.IsGreaterThanOrEqualToZero(value, parameterName);
         }
-
-
         /// <summary>
         ///     Checks if the specified value is greater than or equal to zero.
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThanOrEqualToZero instead.")]
         public static void IsGreaterThanOrEqualToZero([NotNull] Expression<Func<long>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsGreaterThanOrEqualToZero(value, parameterName);
+            Guardian.ChecksThat.IsGreaterThanOrEqualToZero(expression);
         }
         /// <summary>
         ///     Checks if the specified value is greater than or equal to zero.
@@ -56,53 +48,43 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThanOrEqualToZero instead.")]
         public static void IsGreaterThanOrEqualToZero(long value, [NotNull] string parameterName)
         {
-            if (value < 0)
-            {
-                throw new ArgumentOutOfRangeException(parameterName, value, Messages.IsGreaterThanOrEqualToZeroMessage);
-            }
+            Guardian.ChecksThat.IsGreaterThanOrEqualToZero(value, parameterName);
         }
-
-
         /// <summary>
         ///     Checks if the specified value is greater than or equal to zero.
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThanOrEqualToZero instead.")]
         public static void IsGreaterThanOrEqualToZero([NotNull] Expression<Func<double>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsGreaterThanOrEqualToZero(value, parameterName);
+            Guardian.ChecksThat.IsGreaterThanOrEqualToZero(expression);
         }
+
         /// <summary>
         ///     Checks if the specified value is greater than or equal to zero.
         /// </summary>
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThanOrEqualToZero instead.")]
         public static void IsGreaterThanOrEqualToZero(double value, [NotNull] string parameterName)
         {
-            if (value < 0)
-            {
-                throw new ArgumentOutOfRangeException(parameterName, value, Messages.IsGreaterThanOrEqualToZeroMessage);
-            }
+            Guardian.ChecksThat.IsGreaterThanOrEqualToZero(value, parameterName);
         }
-
 
         /// <summary>
         ///     Checks if the specified value is greater than or equal to zero.
         /// </summary>
         /// <param name="expression">The value as an Expression.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThanOrEqualToZero instead.")]
         public static void IsGreaterThanOrEqualToZero([NotNull] Expression<Func<float>> expression)
         {
-            IsNotNull(expression, nameof(expression));
-
-            var (value, parameterName) = ExtractValueAndParameterNameFromExpression(expression);
-            IsGreaterThanOrEqualToZero(value, parameterName);
+            Guardian.ChecksThat.IsGreaterThanOrEqualToZero(expression);
         }
         /// <summary>
         ///     Checks if the specified value is greater than or equal to zero.
@@ -110,12 +92,10 @@ namespace MGR.Guard
         /// <param name="value">The value.</param>
         /// <param name="parameterName">Name of the parameter.</param>
         [PublicAPI]
+        [Obsolete("Please use MGR.Guardian.ChecksThat.Guardian.ChecksThat.IsGreaterThanOrEqualToZero instead.")]
         public static void IsGreaterThanOrEqualToZero(float value, [NotNull] string parameterName)
         {
-            if (value < 0)
-            {
-                throw new ArgumentOutOfRangeException(parameterName, value, Messages.IsGreaterThanOrEqualToZeroMessage);
-            }
+            Guardian.ChecksThat.IsGreaterThanOrEqualToZero(value, parameterName);
         }
     }
 }

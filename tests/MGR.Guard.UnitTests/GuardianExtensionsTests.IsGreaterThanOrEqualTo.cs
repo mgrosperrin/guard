@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MGR.Guard
 {
-    public partial class GuardTests
+    public partial class GuardianExtensionsTests
     {
         public class IsGreaterThanOrEqualTo
         {
@@ -15,7 +15,7 @@ namespace MGR.Guard
                 string minLimit = "ZZZ";
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThanOrEqualTo(test, "test", minLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsGreaterThanOrEqualTo(test, "test", minLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -27,7 +27,7 @@ namespace MGR.Guard
                 string minLimit = "AAA";
 
                 // Act
-                Guard.IsGreaterThanOrEqualTo(test, minLimit, "test");
+                Guardian.ChecksThat.IsGreaterThanOrEqualTo(test, minLimit, "test");
                 // Assert
                 Assert.True(true);
             }
@@ -40,7 +40,7 @@ namespace MGR.Guard
                 string minLimit = "Value";
 
                 // Act
-                Guard.IsGreaterThanOrEqualTo(test, minLimit, "test");
+                Guardian.ChecksThat.IsGreaterThanOrEqualTo(test, minLimit, "test");
                 // Assert
                 Assert.True(true);
             }
@@ -53,7 +53,7 @@ namespace MGR.Guard
                 int minLimit = 10;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsGreaterThanOrEqualTo(test, "test", minLimit));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsGreaterThanOrEqualTo(test, "test", minLimit));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -65,7 +65,7 @@ namespace MGR.Guard
                 int minLimit = 0;
 
                 // Act
-                Guard.IsGreaterThanOrEqualTo(test, "test", minLimit);
+                Guardian.ChecksThat.IsGreaterThanOrEqualTo(test, "test", minLimit);
                 // Assert
                 Assert.True(true);
             }
@@ -78,7 +78,7 @@ namespace MGR.Guard
                 int minLimit = 5;
 
                 // Act
-                Guard.IsGreaterThanOrEqualTo(test, "test", minLimit);
+                Guardian.ChecksThat.IsGreaterThanOrEqualTo(test, "test", minLimit);
                 // Assert
                 Assert.True(true);
             }

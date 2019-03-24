@@ -21,6 +21,57 @@
       <Pack>true</Pack>
       <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
     </Compile>
+    <Compile Update="GuardianExtensions.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.Exists.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsBetween.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsDefined.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsEqualTo.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsEqualToZero.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsGreaterThan.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsGreaterThanOrEqualTo.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsGreaterThanOrEqualToZero.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsGreaterThanZero.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsLowerThan.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsLowerThanOrEqualTo.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsLowerThanOrEqualToZero.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsLowerThanZero.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsNotNullOrEmpty.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="GuardianExtensions.IsStrictlyBetween.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
+    <Compile Update="Guardian.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
   </ItemGroup>
 
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

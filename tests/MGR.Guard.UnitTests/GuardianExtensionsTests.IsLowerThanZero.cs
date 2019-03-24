@@ -3,7 +3,7 @@ using Xunit;
 
 namespace MGR.Guard
 {
-    public partial class GuardTests
+    public partial class GuardianExtensionsTests
     {
         public class IsLowerThanZero
         {
@@ -14,7 +14,7 @@ namespace MGR.Guard
                 int test = -5;
 
                 // Act
-                Guard.IsLowerThanZero(test, "test");
+                Guardian.ChecksThat.IsLowerThanZero(test, "test");
 
                 // Assert
                 Assert.True(true);
@@ -27,7 +27,7 @@ namespace MGR.Guard
                 int test = 5;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanZero(test, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThanZero(test, "test"));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -38,7 +38,7 @@ namespace MGR.Guard
                 int test = 0;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanZero(test, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThanZero(test, "test"));
                 Assert.Equal("test", actualException.ParamName);
             }
             [Fact]
@@ -48,7 +48,7 @@ namespace MGR.Guard
                 float test = -5;
 
                 // Act
-                Guard.IsLowerThanZero(test, "test");
+                Guardian.ChecksThat.IsLowerThanZero(test, "test");
 
                 // Assert
                 Assert.True(true);
@@ -61,7 +61,7 @@ namespace MGR.Guard
                 float test = 5;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanZero(test, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThanZero(test, "test"));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -72,7 +72,7 @@ namespace MGR.Guard
                 float test = 0;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanZero(test, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThanZero(test, "test"));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -83,7 +83,7 @@ namespace MGR.Guard
                 double test = -5;
 
                 // Act
-                Guard.IsLowerThanZero(test, "test");
+                Guardian.ChecksThat.IsLowerThanZero(test, "test");
 
                 // Assert
                 Assert.True(true);
@@ -96,7 +96,7 @@ namespace MGR.Guard
                 double test = 5;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanZero(test, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThanZero(test, "test"));
                 Assert.Equal("test", actualException.ParamName);
             }
 
@@ -107,7 +107,7 @@ namespace MGR.Guard
                 double test = 0;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guard.IsLowerThanZero(test, "test"));
+                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsLowerThanZero(test, "test"));
                 Assert.Equal("test", actualException.ParamName);
             }
         }

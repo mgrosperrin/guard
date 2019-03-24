@@ -20,7 +20,7 @@ namespace MGR.Guard.PerformanceTests.NetCore
 
         private void Direct(object obj)
         {
-            Guard.IsNotNull(obj, nameof(obj));
+            Guardian.ChecksThat.IsNotNull(obj, nameof(obj));
         }
 
         [Benchmark]
@@ -31,7 +31,7 @@ namespace MGR.Guard.PerformanceTests.NetCore
 
         private void SimpleExpression(object obj)
         {
-            Guard.IsNotNull(() => obj);
+            Guardian.ChecksThat.IsNotNull(() => obj);
         }
     }
 }

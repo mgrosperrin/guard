@@ -27,7 +27,7 @@ to be used to check arguments,
 parameters or variables.
 
 
-See the [docs](/docs/index.md) for more info.
+**See the [docs](/docs/index.md) for more info.**
 
    [appveyor-dev_url]: https://ci.appveyor.com/project/mgrosperrin/guard
    [appveyor-dev_img]: https://ci.appveyor.com/api/projects/status/l6l396cksltia027/branch/dev?img=true

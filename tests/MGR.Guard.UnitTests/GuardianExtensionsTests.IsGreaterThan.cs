@@ -8,7 +8,7 @@ namespace MGR.Guard
         public class IsGreaterThan
         {
             [Fact]
-            public void String_Value_Is_Not_Greather_Than_ZZZ()
+            public void String_Value_Is_Not_Greater_Than_ZZZ()
             {
                 // Arrange
                 string test = "Value";
@@ -20,7 +20,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void String_Value_Is_Greather_Than_AAA()
+            public void String_Value_Is_Greater_Than_AAA()
             {
                 // Arrange
                 string test = "Value";
@@ -33,7 +33,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void String_Value_Is_Not_Strictly_Greather_Than_Value()
+            public void String_Value_Is_Not_Strictly_Greater_Than_Value()
             {
                 // Arrange
                 string test = "Value";
@@ -45,7 +45,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void Five_Integer_Is_Not_Greather_Than_Ten()
+            public void Five_Integer_Is_Not_Greater_Than_Ten()
             {
                 // Arrange
                 int test = 5;
@@ -57,7 +57,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void Five_Integer_Is_Greather_Than_Zero()
+            public void Five_Integer_Is_Greater_Than_Zero()
             {
                 // Arrange
                 int test = 5;
@@ -70,7 +70,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void Five_Integer_Is_Not_Strictly_Greather_Than_Five()
+            public void Five_Integer_Is_Not_Strictly_Greater_Than_Five()
             {
                 // Arrange
                 int test = 5;

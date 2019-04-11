@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <ItemGroup>
+    <None Include="docfx.json" />
+    <None Include="toc.yml" />
+    <None Include="**/*.md" />
+  </ItemGroup>
+</Project>

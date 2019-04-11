@@ -45,3 +45,25 @@ jobs:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)/nuget'
       ArtifactName: packages
     condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq(variables['Build.SourceBranch'], 'refs/heads/dev'), startsWith(variables['Build.SourceBranch'], 'refs/heads/release-')))
+
+  - task: PowerShell@2
+    displayName: 'Build documentation site on master'
+    inputs:
+      filePath: 'generate_docs.ps1'
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: ArchiveFiles@2
+    displayName: 'Create archive of documentation site'
+    inputs:
+      archiveFile: '$(Build.ArtifactStagingDirectory)/documentation_site.zip'
+      archiveType: zip
+      rootFolderOrFile: 'artifacts/_site'
+      includeRootFolder: false
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: documentation site'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/documentation_site.zip'
+      ArtifactName: documentation
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.SourceBranch'], 'refs/heads/master'))

@@ -42,14 +42,14 @@ namespace MGR.Guard
 
             if (expression is BinaryExpression binaryExpression)
             {
-                return ExtractFromBinaryExpresion<T>(binaryExpression, finalParameterNamePart, valueExtractor);
+                return ExtractFromBinaryExpression<T>(binaryExpression, finalParameterNamePart, valueExtractor);
             }
 
             throw new NotImplementedException("Unable to parse the expression.");
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static ValueAndParameterName<T> ExtractFromBinaryExpresion<T>(BinaryExpression binaryExpression,
+        private static ValueAndParameterName<T> ExtractFromBinaryExpression<T>(BinaryExpression binaryExpression,
             string finalParameterNamePart, Func<object, object> valueExtractor)
         {
             if (binaryExpression.NodeType == ExpressionType.ArrayIndex)
@@ -129,14 +129,14 @@ namespace MGR.Guard
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static string ComputeExpressionMemberName(MemberExpression memberExpresion, object value)
+        private static string ComputeExpressionMemberName(MemberExpression memberExpression, object value)
         {
-            if (memberExpresion == null)
+            if (memberExpression == null)
             {
                 return value == null ? "null" : value.ToString();
             }
 
-            return memberExpresion.Member.Name;
+            return memberExpression.Member.Name;
         }
 
         /// <summary>

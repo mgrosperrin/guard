@@ -64,7 +64,7 @@ namespace JetBrains.Annotations
     /// // A method that returns null if the parameter is null,
     /// // and not null if the parameter is not null
     /// [ContractAnnotation("null => null; notnull => notnull")]
-    /// public object Transform(object data) 
+    /// public object Transform(object data)
     /// </code></item>
     /// <item><code>
     /// [ContractAnnotation("s:null=>false; =>true,result:notnull; =>false, result:null")]
@@ -72,7 +72,7 @@ namespace JetBrains.Annotations
     /// </code></item>
     /// </list></examples>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
-    public sealed class ContractAnnotationAttribute : Attribute
+    internal sealed class ContractAnnotationAttribute : Attribute
     {
         public ContractAnnotationAttribute([NotNull] string contract)
             : this(contract, false)

@@ -8,7 +8,7 @@ namespace MGR.Guard
         public class IsGreaterThanOrEqualTo
         {
             [Fact]
-            public void String_Value_Is_Not_Greather_Than_Or_Equals_To_ZZZ()
+            public void String_Value_Is_Not_Greater_Than_Or_Equals_To_ZZZ()
             {
                 // Arrange
                 string test = "Value";
@@ -20,7 +20,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void String_Value_Is_Greather_Than_Or_Equals_To_AAA()
+            public void String_Value_Is_Greater_Than_Or_Equals_To_AAA()
             {
                 // Arrange
                 string test = "Value";
@@ -33,7 +33,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void String_Value_Is_Greather_Than_Or_Equals_To_Value()
+            public void String_Value_Is_Greater_Than_Or_Equals_To_Value()
             {
                 // Arrange
                 string test = "Value";
@@ -46,7 +46,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void Five_Integer_Is_Not_Greather_Than_Or_Equals_To_Ten()
+            public void Five_Integer_Is_Not_Greater_Than_Or_Equals_To_Ten()
             {
                 // Arrange
                 int test = 5;
@@ -58,7 +58,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void Five_Integer_Is_Greather_Than_Or_Equals_To_Zero()
+            public void Five_Integer_Is_Greater_Than_Or_Equals_To_Zero()
             {
                 // Arrange
                 int test = 5;
@@ -71,7 +71,7 @@ namespace MGR.Guard
             }
 
             [Fact]
-            public void Five_Integer_Is_Greather_Than_Or_Equals_To_Five()
+            public void Five_Integer_Is_Greater_Than_Or_Equals_To_Five()
             {
                 // Arrange
                 int test = 5;

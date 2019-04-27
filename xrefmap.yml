@@ -1,0 +1,1639 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MGR.Guard
+  name: MGR.Guard
+  href: api/MGR.Guard.html
+  commentId: N:MGR.Guard
+  fullName: MGR.Guard
+  nameWithType: MGR.Guard
+- uid: MGR.Guard.Guard
+  name: Guard
+  href: api/MGR.Guard.Guard.html
+  commentId: T:MGR.Guard.Guard
+  fullName: MGR.Guard.Guard
+  nameWithType: Guard
+- uid: MGR.Guard.Guard.Exists(System.IO.FileSystemInfo,System.String)
+  name: Exists(FileSystemInfo, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_Exists_System_IO_FileSystemInfo_System_String_
+  commentId: M:MGR.Guard.Guard.Exists(System.IO.FileSystemInfo,System.String)
+  fullName: MGR.Guard.Guard.Exists(System.IO.FileSystemInfo, System.String)
+  nameWithType: Guard.Exists(FileSystemInfo, String)
+- uid: MGR.Guard.Guard.Exists(System.Linq.Expressions.Expression{System.Func{System.IO.FileSystemInfo}})
+  name: Exists(Expression<Func<FileSystemInfo>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_Exists_System_Linq_Expressions_Expression_System_Func_System_IO_FileSystemInfo___
+  commentId: M:MGR.Guard.Guard.Exists(System.Linq.Expressions.Expression{System.Func{System.IO.FileSystemInfo}})
+  name.vb: Exists(Expression(Of Func(Of FileSystemInfo)))
+  fullName: MGR.Guard.Guard.Exists(System.Linq.Expressions.Expression<System.Func<System.IO.FileSystemInfo>>)
+  fullName.vb: MGR.Guard.Guard.Exists(System.Linq.Expressions.Expression(Of System.Func(Of System.IO.FileSystemInfo)))
+  nameWithType: Guard.Exists(Expression<Func<FileSystemInfo>>)
+  nameWithType.vb: Guard.Exists(Expression(Of Func(Of FileSystemInfo)))
+- uid: MGR.Guard.Guard.Exists*
+  name: Exists
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_Exists_
+  commentId: Overload:MGR.Guard.Guard.Exists
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.Exists
+  nameWithType: Guard.Exists
+- uid: MGR.Guard.Guard.IsBetween*
+  name: IsBetween
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsBetween_
+  commentId: Overload:MGR.Guard.Guard.IsBetween
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsBetween
+  nameWithType: Guard.IsBetween
+- uid: MGR.Guard.Guard.IsBetween``1(``0,System.String,``0,``0)
+  name: IsBetween<T>(T, String, T, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsBetween__1___0_System_String___0___0_
+  commentId: M:MGR.Guard.Guard.IsBetween``1(``0,System.String,``0,``0)
+  name.vb: IsBetween(Of T)(T, String, T, T)
+  fullName: MGR.Guard.Guard.IsBetween<T>(T, System.String, T, T)
+  fullName.vb: MGR.Guard.Guard.IsBetween(Of T)(T, System.String, T, T)
+  nameWithType: Guard.IsBetween<T>(T, String, T, T)
+  nameWithType.vb: Guard.IsBetween(Of T)(T, String, T, T)
+- uid: MGR.Guard.Guard.IsBetween``1(``0,System.String,``0,``0,System.Collections.Generic.IComparer{``0})
+  name: IsBetween<T>(T, String, T, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsBetween__1___0_System_String___0___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsBetween``1(``0,System.String,``0,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsBetween(Of T)(T, String, T, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsBetween<T>(T, System.String, T, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsBetween(Of T)(T, System.String, T, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsBetween<T>(T, String, T, T, IComparer<T>)
+  nameWithType.vb: Guard.IsBetween(Of T)(T, String, T, T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsBetween``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0)
+  name: IsBetween<T>(Expression<Func<T>>, T, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsBetween__1_System_Linq_Expressions_Expression_System_Func___0_____0___0_
+  commentId: M:MGR.Guard.Guard.IsBetween``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0)
+  name.vb: IsBetween(Of T)(Expression(Of Func(Of T)), T, T)
+  fullName: MGR.Guard.Guard.IsBetween<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, T)
+  fullName.vb: MGR.Guard.Guard.IsBetween(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, T)
+  nameWithType: Guard.IsBetween<T>(Expression<Func<T>>, T, T)
+  nameWithType.vb: Guard.IsBetween(Of T)(Expression(Of Func(Of T)), T, T)
+- uid: MGR.Guard.Guard.IsBetween``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Collections.Generic.IComparer{``0})
+  name: IsBetween<T>(Expression<Func<T>>, T, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsBetween__1_System_Linq_Expressions_Expression_System_Func___0_____0___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsBetween``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsBetween(Of T)(Expression(Of Func(Of T)), T, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsBetween<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsBetween(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsBetween<T>(Expression<Func<T>>, T, T, IComparer<T>)
+  nameWithType.vb: Guard.IsBetween(Of T)(Expression(Of Func(Of T)), T, T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsDefined*
+  name: IsDefined
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsDefined_
+  commentId: Overload:MGR.Guard.Guard.IsDefined
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsDefined
+  nameWithType: Guard.IsDefined
+- uid: MGR.Guard.Guard.IsDefined``1(``0,System.String)
+  name: IsDefined<TEnum>(TEnum, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsDefined__1___0_System_String_
+  commentId: M:MGR.Guard.Guard.IsDefined``1(``0,System.String)
+  name.vb: IsDefined(Of TEnum)(TEnum, String)
+  fullName: MGR.Guard.Guard.IsDefined<TEnum>(TEnum, System.String)
+  fullName.vb: MGR.Guard.Guard.IsDefined(Of TEnum)(TEnum, System.String)
+  nameWithType: Guard.IsDefined<TEnum>(TEnum, String)
+  nameWithType.vb: Guard.IsDefined(Of TEnum)(TEnum, String)
+- uid: MGR.Guard.Guard.IsDefined``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  name: IsDefined<TEnum>(Expression<Func<TEnum>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsDefined__1_System_Linq_Expressions_Expression_System_Func___0___
+  commentId: M:MGR.Guard.Guard.IsDefined``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  name.vb: IsDefined(Of TEnum)(Expression(Of Func(Of TEnum)))
+  fullName: MGR.Guard.Guard.IsDefined<TEnum>(System.Linq.Expressions.Expression<System.Func<TEnum>>)
+  fullName.vb: MGR.Guard.Guard.IsDefined(Of TEnum)(System.Linq.Expressions.Expression(Of System.Func(Of TEnum)))
+  nameWithType: Guard.IsDefined<TEnum>(Expression<Func<TEnum>>)
+  nameWithType.vb: Guard.IsDefined(Of TEnum)(Expression(Of Func(Of TEnum)))
+- uid: MGR.Guard.Guard.IsEqualTo*
+  name: IsEqualTo
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualTo_
+  commentId: Overload:MGR.Guard.Guard.IsEqualTo
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsEqualTo
+  nameWithType: Guard.IsEqualTo
+- uid: MGR.Guard.Guard.IsEqualTo``1(``0,System.String,``0)
+  name: IsEqualTo<T>(T, String, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualTo__1___0_System_String___0_
+  commentId: M:MGR.Guard.Guard.IsEqualTo``1(``0,System.String,``0)
+  name.vb: IsEqualTo(Of T)(T, String, T)
+  fullName: MGR.Guard.Guard.IsEqualTo<T>(T, System.String, T)
+  fullName.vb: MGR.Guard.Guard.IsEqualTo(Of T)(T, System.String, T)
+  nameWithType: Guard.IsEqualTo<T>(T, String, T)
+  nameWithType.vb: Guard.IsEqualTo(Of T)(T, String, T)
+- uid: MGR.Guard.Guard.IsEqualTo``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsEqualTo<T>(T, String, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualTo__1___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsEqualTo``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsEqualTo(Of T)(T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsEqualTo<T>(T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsEqualTo(Of T)(T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsEqualTo<T>(T, String, T, IComparer<T>)
+  nameWithType.vb: Guard.IsEqualTo(Of T)(T, String, T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsEqualTo<T>(Expression<Func<T>>, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualTo__1_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.Guard.IsEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsEqualTo(Of T)(Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.Guard.IsEqualTo<T>(System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.Guard.IsEqualTo(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: Guard.IsEqualTo<T>(Expression<Func<T>>, T)
+  nameWithType.vb: Guard.IsEqualTo(Of T)(Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.Guard.IsEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsEqualTo<T>(Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualTo__1_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsEqualTo(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsEqualTo<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsEqualTo(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsEqualTo<T>(Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: Guard.IsEqualTo(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsEqualToZero(System.Double,System.String)
+  name: IsEqualToZero(Double, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_System_Double_System_String_
+  commentId: M:MGR.Guard.Guard.IsEqualToZero(System.Double,System.String)
+  fullName: MGR.Guard.Guard.IsEqualToZero(System.Double, System.String)
+  nameWithType: Guard.IsEqualToZero(Double, String)
+- uid: MGR.Guard.Guard.IsEqualToZero(System.Int32,System.String)
+  name: IsEqualToZero(Int32, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_System_Int32_System_String_
+  commentId: M:MGR.Guard.Guard.IsEqualToZero(System.Int32,System.String)
+  fullName: MGR.Guard.Guard.IsEqualToZero(System.Int32, System.String)
+  nameWithType: Guard.IsEqualToZero(Int32, String)
+- uid: MGR.Guard.Guard.IsEqualToZero(System.Int64,System.String)
+  name: IsEqualToZero(Int64, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_System_Int64_System_String_
+  commentId: M:MGR.Guard.Guard.IsEqualToZero(System.Int64,System.String)
+  fullName: MGR.Guard.Guard.IsEqualToZero(System.Int64, System.String)
+  nameWithType: Guard.IsEqualToZero(Int64, String)
+- uid: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsEqualToZero(Expression<Func<Double>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsEqualToZero(Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: Guard.IsEqualToZero(Expression<Func<Double>>)
+  nameWithType.vb: Guard.IsEqualToZero(Expression(Of Func(Of Double)))
+- uid: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsEqualToZero(Expression<Func<Int32>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsEqualToZero(Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: Guard.IsEqualToZero(Expression<Func<Int32>>)
+  nameWithType.vb: Guard.IsEqualToZero(Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsEqualToZero(Expression<Func<Int64>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsEqualToZero(Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: Guard.IsEqualToZero(Expression<Func<Int64>>)
+  nameWithType.vb: Guard.IsEqualToZero(Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsEqualToZero(Expression<Func<Single>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsEqualToZero(Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.Guard.IsEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: Guard.IsEqualToZero(Expression<Func<Single>>)
+  nameWithType.vb: Guard.IsEqualToZero(Expression(Of Func(Of Single)))
+- uid: MGR.Guard.Guard.IsEqualToZero(System.Single,System.String)
+  name: IsEqualToZero(Single, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_System_Single_System_String_
+  commentId: M:MGR.Guard.Guard.IsEqualToZero(System.Single,System.String)
+  fullName: MGR.Guard.Guard.IsEqualToZero(System.Single, System.String)
+  nameWithType: Guard.IsEqualToZero(Single, String)
+- uid: MGR.Guard.Guard.IsEqualToZero*
+  name: IsEqualToZero
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsEqualToZero_
+  commentId: Overload:MGR.Guard.Guard.IsEqualToZero
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsEqualToZero
+  nameWithType: Guard.IsEqualToZero
+- uid: MGR.Guard.Guard.IsGreaterThan*
+  name: IsGreaterThan
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThan_
+  commentId: Overload:MGR.Guard.Guard.IsGreaterThan
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsGreaterThan
+  nameWithType: Guard.IsGreaterThan
+- uid: MGR.Guard.Guard.IsGreaterThan``1(``0,System.String,``0)
+  name: IsGreaterThan<T>(T, String, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThan__1___0_System_String___0_
+  commentId: M:MGR.Guard.Guard.IsGreaterThan``1(``0,System.String,``0)
+  name.vb: IsGreaterThan(Of T)(T, String, T)
+  fullName: MGR.Guard.Guard.IsGreaterThan<T>(T, System.String, T)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThan(Of T)(T, System.String, T)
+  nameWithType: Guard.IsGreaterThan<T>(T, String, T)
+  nameWithType.vb: Guard.IsGreaterThan(Of T)(T, String, T)
+- uid: MGR.Guard.Guard.IsGreaterThan``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsGreaterThan<T>(T, String, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThan__1___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsGreaterThan``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsGreaterThan(Of T)(T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsGreaterThan<T>(T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThan(Of T)(T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsGreaterThan<T>(T, String, T, IComparer<T>)
+  nameWithType.vb: Guard.IsGreaterThan(Of T)(T, String, T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsGreaterThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsGreaterThan<T>(Expression<Func<T>>, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThan__1_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.Guard.IsGreaterThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsGreaterThan(Of T)(Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.Guard.IsGreaterThan<T>(System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThan(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: Guard.IsGreaterThan<T>(Expression<Func<T>>, T)
+  nameWithType.vb: Guard.IsGreaterThan(Of T)(Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.Guard.IsGreaterThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsGreaterThan<T>(Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThan__1_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsGreaterThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsGreaterThan(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsGreaterThan<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThan(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsGreaterThan<T>(Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: Guard.IsGreaterThan(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualTo*
+  name: IsGreaterThanOrEqualTo
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualTo_
+  commentId: Overload:MGR.Guard.Guard.IsGreaterThanOrEqualTo
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualTo
+  nameWithType: Guard.IsGreaterThanOrEqualTo
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualTo``1(``0,System.String,``0)
+  name: IsGreaterThanOrEqualTo<T>(T, String, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualTo__1___0_System_String___0_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualTo``1(``0,System.String,``0)
+  name.vb: IsGreaterThanOrEqualTo(Of T)(T, String, T)
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualTo<T>(T, System.String, T)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanOrEqualTo(Of T)(T, System.String, T)
+  nameWithType: Guard.IsGreaterThanOrEqualTo<T>(T, String, T)
+  nameWithType.vb: Guard.IsGreaterThanOrEqualTo(Of T)(T, String, T)
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualTo``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsGreaterThanOrEqualTo<T>(T, String, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualTo__1___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualTo``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsGreaterThanOrEqualTo(Of T)(T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualTo<T>(T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanOrEqualTo(Of T)(T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsGreaterThanOrEqualTo<T>(T, String, T, IComparer<T>)
+  nameWithType.vb: Guard.IsGreaterThanOrEqualTo(Of T)(T, String, T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsGreaterThanOrEqualTo<T>(Expression<Func<T>>, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualTo__1_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsGreaterThanOrEqualTo(Of T)(Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualTo<T>(System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanOrEqualTo(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: Guard.IsGreaterThanOrEqualTo<T>(Expression<Func<T>>, T)
+  nameWithType.vb: Guard.IsGreaterThanOrEqualTo(Of T)(Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsGreaterThanOrEqualTo<T>(Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualTo__1_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsGreaterThanOrEqualTo(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualTo<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanOrEqualTo(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsGreaterThanOrEqualTo<T>(Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: Guard.IsGreaterThanOrEqualTo(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Double,System.String)
+  name: IsGreaterThanOrEqualToZero(Double, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_System_Double_System_String_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Double,System.String)
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Double, System.String)
+  nameWithType: Guard.IsGreaterThanOrEqualToZero(Double, String)
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Int32,System.String)
+  name: IsGreaterThanOrEqualToZero(Int32, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_System_Int32_System_String_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Int32,System.String)
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Int32, System.String)
+  nameWithType: Guard.IsGreaterThanOrEqualToZero(Int32, String)
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Int64,System.String)
+  name: IsGreaterThanOrEqualToZero(Int64, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_System_Int64_System_String_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Int64,System.String)
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Int64, System.String)
+  nameWithType: Guard.IsGreaterThanOrEqualToZero(Int64, String)
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsGreaterThanOrEqualToZero(Expression<Func<Double>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsGreaterThanOrEqualToZero(Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: Guard.IsGreaterThanOrEqualToZero(Expression<Func<Double>>)
+  nameWithType.vb: Guard.IsGreaterThanOrEqualToZero(Expression(Of Func(Of Double)))
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsGreaterThanOrEqualToZero(Expression<Func<Int32>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsGreaterThanOrEqualToZero(Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: Guard.IsGreaterThanOrEqualToZero(Expression<Func<Int32>>)
+  nameWithType.vb: Guard.IsGreaterThanOrEqualToZero(Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsGreaterThanOrEqualToZero(Expression<Func<Int64>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsGreaterThanOrEqualToZero(Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: Guard.IsGreaterThanOrEqualToZero(Expression<Func<Int64>>)
+  nameWithType.vb: Guard.IsGreaterThanOrEqualToZero(Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsGreaterThanOrEqualToZero(Expression<Func<Single>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsGreaterThanOrEqualToZero(Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: Guard.IsGreaterThanOrEqualToZero(Expression<Func<Single>>)
+  nameWithType.vb: Guard.IsGreaterThanOrEqualToZero(Expression(Of Func(Of Single)))
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Single,System.String)
+  name: IsGreaterThanOrEqualToZero(Single, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_System_Single_System_String_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Single,System.String)
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero(System.Single, System.String)
+  nameWithType: Guard.IsGreaterThanOrEqualToZero(Single, String)
+- uid: MGR.Guard.Guard.IsGreaterThanOrEqualToZero*
+  name: IsGreaterThanOrEqualToZero
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanOrEqualToZero_
+  commentId: Overload:MGR.Guard.Guard.IsGreaterThanOrEqualToZero
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsGreaterThanOrEqualToZero
+  nameWithType: Guard.IsGreaterThanOrEqualToZero
+- uid: MGR.Guard.Guard.IsGreaterThanZero(System.Double,System.String)
+  name: IsGreaterThanZero(Double, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_System_Double_System_String_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanZero(System.Double,System.String)
+  fullName: MGR.Guard.Guard.IsGreaterThanZero(System.Double, System.String)
+  nameWithType: Guard.IsGreaterThanZero(Double, String)
+- uid: MGR.Guard.Guard.IsGreaterThanZero(System.Int32,System.String)
+  name: IsGreaterThanZero(Int32, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_System_Int32_System_String_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanZero(System.Int32,System.String)
+  fullName: MGR.Guard.Guard.IsGreaterThanZero(System.Int32, System.String)
+  nameWithType: Guard.IsGreaterThanZero(Int32, String)
+- uid: MGR.Guard.Guard.IsGreaterThanZero(System.Int64,System.String)
+  name: IsGreaterThanZero(Int64, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_System_Int64_System_String_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanZero(System.Int64,System.String)
+  fullName: MGR.Guard.Guard.IsGreaterThanZero(System.Int64, System.String)
+  nameWithType: Guard.IsGreaterThanZero(Int64, String)
+- uid: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsGreaterThanZero(Expression<Func<Double>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsGreaterThanZero(Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: Guard.IsGreaterThanZero(Expression<Func<Double>>)
+  nameWithType.vb: Guard.IsGreaterThanZero(Expression(Of Func(Of Double)))
+- uid: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsGreaterThanZero(Expression<Func<Int32>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsGreaterThanZero(Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: Guard.IsGreaterThanZero(Expression<Func<Int32>>)
+  nameWithType.vb: Guard.IsGreaterThanZero(Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsGreaterThanZero(Expression<Func<Int64>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsGreaterThanZero(Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: Guard.IsGreaterThanZero(Expression<Func<Int64>>)
+  nameWithType.vb: Guard.IsGreaterThanZero(Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsGreaterThanZero(Expression<Func<Single>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsGreaterThanZero(Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.Guard.IsGreaterThanZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: Guard.IsGreaterThanZero(Expression<Func<Single>>)
+  nameWithType.vb: Guard.IsGreaterThanZero(Expression(Of Func(Of Single)))
+- uid: MGR.Guard.Guard.IsGreaterThanZero(System.Single,System.String)
+  name: IsGreaterThanZero(Single, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_System_Single_System_String_
+  commentId: M:MGR.Guard.Guard.IsGreaterThanZero(System.Single,System.String)
+  fullName: MGR.Guard.Guard.IsGreaterThanZero(System.Single, System.String)
+  nameWithType: Guard.IsGreaterThanZero(Single, String)
+- uid: MGR.Guard.Guard.IsGreaterThanZero*
+  name: IsGreaterThanZero
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsGreaterThanZero_
+  commentId: Overload:MGR.Guard.Guard.IsGreaterThanZero
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsGreaterThanZero
+  nameWithType: Guard.IsGreaterThanZero
+- uid: MGR.Guard.Guard.IsLowerThan*
+  name: IsLowerThan
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThan_
+  commentId: Overload:MGR.Guard.Guard.IsLowerThan
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsLowerThan
+  nameWithType: Guard.IsLowerThan
+- uid: MGR.Guard.Guard.IsLowerThan``1(``0,System.String,``0)
+  name: IsLowerThan<T>(T, String, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThan__1___0_System_String___0_
+  commentId: M:MGR.Guard.Guard.IsLowerThan``1(``0,System.String,``0)
+  name.vb: IsLowerThan(Of T)(T, String, T)
+  fullName: MGR.Guard.Guard.IsLowerThan<T>(T, System.String, T)
+  fullName.vb: MGR.Guard.Guard.IsLowerThan(Of T)(T, System.String, T)
+  nameWithType: Guard.IsLowerThan<T>(T, String, T)
+  nameWithType.vb: Guard.IsLowerThan(Of T)(T, String, T)
+- uid: MGR.Guard.Guard.IsLowerThan``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsLowerThan<T>(T, String, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThan__1___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsLowerThan``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsLowerThan(Of T)(T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsLowerThan<T>(T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThan(Of T)(T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsLowerThan<T>(T, String, T, IComparer<T>)
+  nameWithType.vb: Guard.IsLowerThan(Of T)(T, String, T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsLowerThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsLowerThan<T>(Expression<Func<T>>, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThan__1_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.Guard.IsLowerThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsLowerThan(Of T)(Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.Guard.IsLowerThan<T>(System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.Guard.IsLowerThan(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: Guard.IsLowerThan<T>(Expression<Func<T>>, T)
+  nameWithType.vb: Guard.IsLowerThan(Of T)(Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.Guard.IsLowerThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsLowerThan<T>(Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThan__1_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsLowerThan``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsLowerThan(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsLowerThan<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThan(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsLowerThan<T>(Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: Guard.IsLowerThan(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualTo*
+  name: IsLowerThanOrEqualTo
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualTo_
+  commentId: Overload:MGR.Guard.Guard.IsLowerThanOrEqualTo
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualTo
+  nameWithType: Guard.IsLowerThanOrEqualTo
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualTo``1(``0,System.String,``0)
+  name: IsLowerThanOrEqualTo<T>(T, String, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualTo__1___0_System_String___0_
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualTo``1(``0,System.String,``0)
+  name.vb: IsLowerThanOrEqualTo(Of T)(T, String, T)
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualTo<T>(T, System.String, T)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanOrEqualTo(Of T)(T, System.String, T)
+  nameWithType: Guard.IsLowerThanOrEqualTo<T>(T, String, T)
+  nameWithType.vb: Guard.IsLowerThanOrEqualTo(Of T)(T, String, T)
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualTo``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsLowerThanOrEqualTo<T>(T, String, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualTo__1___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualTo``1(``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsLowerThanOrEqualTo(Of T)(T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualTo<T>(T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanOrEqualTo(Of T)(T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsLowerThanOrEqualTo<T>(T, String, T, IComparer<T>)
+  nameWithType.vb: Guard.IsLowerThanOrEqualTo(Of T)(T, String, T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsLowerThanOrEqualTo<T>(Expression<Func<T>>, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualTo__1_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsLowerThanOrEqualTo(Of T)(Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualTo<T>(System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanOrEqualTo(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: Guard.IsLowerThanOrEqualTo<T>(Expression<Func<T>>, T)
+  nameWithType.vb: Guard.IsLowerThanOrEqualTo(Of T)(Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsLowerThanOrEqualTo<T>(Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualTo__1_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualTo``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsLowerThanOrEqualTo(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualTo<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanOrEqualTo(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsLowerThanOrEqualTo<T>(Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: Guard.IsLowerThanOrEqualTo(Of T)(Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Double,System.String)
+  name: IsLowerThanOrEqualToZero(Double, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_System_Double_System_String_
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Double,System.String)
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Double, System.String)
+  nameWithType: Guard.IsLowerThanOrEqualToZero(Double, String)
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Int32,System.String)
+  name: IsLowerThanOrEqualToZero(Int32, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_System_Int32_System_String_
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Int32,System.String)
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Int32, System.String)
+  nameWithType: Guard.IsLowerThanOrEqualToZero(Int32, String)
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Int64,System.String)
+  name: IsLowerThanOrEqualToZero(Int64, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_System_Int64_System_String_
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Int64,System.String)
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Int64, System.String)
+  nameWithType: Guard.IsLowerThanOrEqualToZero(Int64, String)
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsLowerThanOrEqualToZero(Expression<Func<Double>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsLowerThanOrEqualToZero(Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: Guard.IsLowerThanOrEqualToZero(Expression<Func<Double>>)
+  nameWithType.vb: Guard.IsLowerThanOrEqualToZero(Expression(Of Func(Of Double)))
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsLowerThanOrEqualToZero(Expression<Func<Int32>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsLowerThanOrEqualToZero(Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: Guard.IsLowerThanOrEqualToZero(Expression<Func<Int32>>)
+  nameWithType.vb: Guard.IsLowerThanOrEqualToZero(Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsLowerThanOrEqualToZero(Expression<Func<Int64>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsLowerThanOrEqualToZero(Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: Guard.IsLowerThanOrEqualToZero(Expression<Func<Int64>>)
+  nameWithType.vb: Guard.IsLowerThanOrEqualToZero(Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsLowerThanOrEqualToZero(Expression<Func<Single>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsLowerThanOrEqualToZero(Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: Guard.IsLowerThanOrEqualToZero(Expression<Func<Single>>)
+  nameWithType.vb: Guard.IsLowerThanOrEqualToZero(Expression(Of Func(Of Single)))
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Single,System.String)
+  name: IsLowerThanOrEqualToZero(Single, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_System_Single_System_String_
+  commentId: M:MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Single,System.String)
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero(System.Single, System.String)
+  nameWithType: Guard.IsLowerThanOrEqualToZero(Single, String)
+- uid: MGR.Guard.Guard.IsLowerThanOrEqualToZero*
+  name: IsLowerThanOrEqualToZero
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanOrEqualToZero_
+  commentId: Overload:MGR.Guard.Guard.IsLowerThanOrEqualToZero
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsLowerThanOrEqualToZero
+  nameWithType: Guard.IsLowerThanOrEqualToZero
+- uid: MGR.Guard.Guard.IsLowerThanZero(System.Double,System.String)
+  name: IsLowerThanZero(Double, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_System_Double_System_String_
+  commentId: M:MGR.Guard.Guard.IsLowerThanZero(System.Double,System.String)
+  fullName: MGR.Guard.Guard.IsLowerThanZero(System.Double, System.String)
+  nameWithType: Guard.IsLowerThanZero(Double, String)
+- uid: MGR.Guard.Guard.IsLowerThanZero(System.Int32,System.String)
+  name: IsLowerThanZero(Int32, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_System_Int32_System_String_
+  commentId: M:MGR.Guard.Guard.IsLowerThanZero(System.Int32,System.String)
+  fullName: MGR.Guard.Guard.IsLowerThanZero(System.Int32, System.String)
+  nameWithType: Guard.IsLowerThanZero(Int32, String)
+- uid: MGR.Guard.Guard.IsLowerThanZero(System.Int64,System.String)
+  name: IsLowerThanZero(Int64, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_System_Int64_System_String_
+  commentId: M:MGR.Guard.Guard.IsLowerThanZero(System.Int64,System.String)
+  fullName: MGR.Guard.Guard.IsLowerThanZero(System.Int64, System.String)
+  nameWithType: Guard.IsLowerThanZero(Int64, String)
+- uid: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsLowerThanZero(Expression<Func<Double>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsLowerThanZero(Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: Guard.IsLowerThanZero(Expression<Func<Double>>)
+  nameWithType.vb: Guard.IsLowerThanZero(Expression(Of Func(Of Double)))
+- uid: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsLowerThanZero(Expression<Func<Int32>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsLowerThanZero(Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: Guard.IsLowerThanZero(Expression<Func<Int32>>)
+  nameWithType.vb: Guard.IsLowerThanZero(Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsLowerThanZero(Expression<Func<Int64>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsLowerThanZero(Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: Guard.IsLowerThanZero(Expression<Func<Int64>>)
+  nameWithType.vb: Guard.IsLowerThanZero(Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsLowerThanZero(Expression<Func<Single>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsLowerThanZero(Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.Guard.IsLowerThanZero(System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: Guard.IsLowerThanZero(Expression<Func<Single>>)
+  nameWithType.vb: Guard.IsLowerThanZero(Expression(Of Func(Of Single)))
+- uid: MGR.Guard.Guard.IsLowerThanZero(System.Single,System.String)
+  name: IsLowerThanZero(Single, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_System_Single_System_String_
+  commentId: M:MGR.Guard.Guard.IsLowerThanZero(System.Single,System.String)
+  fullName: MGR.Guard.Guard.IsLowerThanZero(System.Single, System.String)
+  nameWithType: Guard.IsLowerThanZero(Single, String)
+- uid: MGR.Guard.Guard.IsLowerThanZero*
+  name: IsLowerThanZero
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsLowerThanZero_
+  commentId: Overload:MGR.Guard.Guard.IsLowerThanZero
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsLowerThanZero
+  nameWithType: Guard.IsLowerThanZero
+- uid: MGR.Guard.Guard.IsNotEmptyGuid(System.Guid,System.String)
+  name: IsNotEmptyGuid(Guid, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotEmptyGuid_System_Guid_System_String_
+  commentId: M:MGR.Guard.Guard.IsNotEmptyGuid(System.Guid,System.String)
+  fullName: MGR.Guard.Guard.IsNotEmptyGuid(System.Guid, System.String)
+  nameWithType: Guard.IsNotEmptyGuid(Guid, String)
+- uid: MGR.Guard.Guard.IsNotEmptyGuid(System.Linq.Expressions.Expression{System.Func{System.Guid}})
+  name: IsNotEmptyGuid(Expression<Func<Guid>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotEmptyGuid_System_Linq_Expressions_Expression_System_Func_System_Guid___
+  commentId: M:MGR.Guard.Guard.IsNotEmptyGuid(System.Linq.Expressions.Expression{System.Func{System.Guid}})
+  name.vb: IsNotEmptyGuid(Expression(Of Func(Of Guid)))
+  fullName: MGR.Guard.Guard.IsNotEmptyGuid(System.Linq.Expressions.Expression<System.Func<System.Guid>>)
+  fullName.vb: MGR.Guard.Guard.IsNotEmptyGuid(System.Linq.Expressions.Expression(Of System.Func(Of System.Guid)))
+  nameWithType: Guard.IsNotEmptyGuid(Expression<Func<Guid>>)
+  nameWithType.vb: Guard.IsNotEmptyGuid(Expression(Of Func(Of Guid)))
+- uid: MGR.Guard.Guard.IsNotEmptyGuid*
+  name: IsNotEmptyGuid
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotEmptyGuid_
+  commentId: Overload:MGR.Guard.Guard.IsNotEmptyGuid
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsNotEmptyGuid
+  nameWithType: Guard.IsNotEmptyGuid
+- uid: MGR.Guard.Guard.IsNotNull(System.Object,System.String)
+  name: IsNotNull(Object, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotNull_System_Object_System_String_
+  commentId: M:MGR.Guard.Guard.IsNotNull(System.Object,System.String)
+  fullName: MGR.Guard.Guard.IsNotNull(System.Object, System.String)
+  nameWithType: Guard.IsNotNull(Object, String)
+- uid: MGR.Guard.Guard.IsNotNull*
+  name: IsNotNull
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotNull_
+  commentId: Overload:MGR.Guard.Guard.IsNotNull
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsNotNull
+  nameWithType: Guard.IsNotNull
+- uid: MGR.Guard.Guard.IsNotNull``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  name: IsNotNull<T>(Expression<Func<T>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotNull__1_System_Linq_Expressions_Expression_System_Func___0___
+  commentId: M:MGR.Guard.Guard.IsNotNull``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  name.vb: IsNotNull(Of T)(Expression(Of Func(Of T)))
+  fullName: MGR.Guard.Guard.IsNotNull<T>(System.Linq.Expressions.Expression<System.Func<T>>)
+  fullName.vb: MGR.Guard.Guard.IsNotNull(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)))
+  nameWithType: Guard.IsNotNull<T>(Expression<Func<T>>)
+  nameWithType.vb: Guard.IsNotNull(Of T)(Expression(Of Func(Of T)))
+- uid: MGR.Guard.Guard.IsNotNullOrEmpty(System.Linq.Expressions.Expression{System.Func{System.String}})
+  name: IsNotNullOrEmpty(Expression<Func<String>>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotNullOrEmpty_System_Linq_Expressions_Expression_System_Func_System_String___
+  commentId: M:MGR.Guard.Guard.IsNotNullOrEmpty(System.Linq.Expressions.Expression{System.Func{System.String}})
+  name.vb: IsNotNullOrEmpty(Expression(Of Func(Of String)))
+  fullName: MGR.Guard.Guard.IsNotNullOrEmpty(System.Linq.Expressions.Expression<System.Func<System.String>>)
+  fullName.vb: MGR.Guard.Guard.IsNotNullOrEmpty(System.Linq.Expressions.Expression(Of System.Func(Of System.String)))
+  nameWithType: Guard.IsNotNullOrEmpty(Expression<Func<String>>)
+  nameWithType.vb: Guard.IsNotNullOrEmpty(Expression(Of Func(Of String)))
+- uid: MGR.Guard.Guard.IsNotNullOrEmpty(System.String,System.String)
+  name: IsNotNullOrEmpty(String, String)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotNullOrEmpty_System_String_System_String_
+  commentId: M:MGR.Guard.Guard.IsNotNullOrEmpty(System.String,System.String)
+  fullName: MGR.Guard.Guard.IsNotNullOrEmpty(System.String, System.String)
+  nameWithType: Guard.IsNotNullOrEmpty(String, String)
+- uid: MGR.Guard.Guard.IsNotNullOrEmpty*
+  name: IsNotNullOrEmpty
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsNotNullOrEmpty_
+  commentId: Overload:MGR.Guard.Guard.IsNotNullOrEmpty
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsNotNullOrEmpty
+  nameWithType: Guard.IsNotNullOrEmpty
+- uid: MGR.Guard.Guard.IsStrictlyBetween*
+  name: IsStrictlyBetween
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsStrictlyBetween_
+  commentId: Overload:MGR.Guard.Guard.IsStrictlyBetween
+  isSpec: "True"
+  fullName: MGR.Guard.Guard.IsStrictlyBetween
+  nameWithType: Guard.IsStrictlyBetween
+- uid: MGR.Guard.Guard.IsStrictlyBetween``1(``0,System.String,``0,``0)
+  name: IsStrictlyBetween<T>(T, String, T, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsStrictlyBetween__1___0_System_String___0___0_
+  commentId: M:MGR.Guard.Guard.IsStrictlyBetween``1(``0,System.String,``0,``0)
+  name.vb: IsStrictlyBetween(Of T)(T, String, T, T)
+  fullName: MGR.Guard.Guard.IsStrictlyBetween<T>(T, System.String, T, T)
+  fullName.vb: MGR.Guard.Guard.IsStrictlyBetween(Of T)(T, System.String, T, T)
+  nameWithType: Guard.IsStrictlyBetween<T>(T, String, T, T)
+  nameWithType.vb: Guard.IsStrictlyBetween(Of T)(T, String, T, T)
+- uid: MGR.Guard.Guard.IsStrictlyBetween``1(``0,System.String,``0,``0,System.Collections.Generic.IComparer{``0})
+  name: IsStrictlyBetween<T>(T, String, T, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsStrictlyBetween__1___0_System_String___0___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsStrictlyBetween``1(``0,System.String,``0,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsStrictlyBetween(Of T)(T, String, T, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsStrictlyBetween<T>(T, System.String, T, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsStrictlyBetween(Of T)(T, System.String, T, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsStrictlyBetween<T>(T, String, T, T, IComparer<T>)
+  nameWithType.vb: Guard.IsStrictlyBetween(Of T)(T, String, T, T, IComparer(Of T))
+- uid: MGR.Guard.Guard.IsStrictlyBetween``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0)
+  name: IsStrictlyBetween<T>(Expression<Func<T>>, T, T)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsStrictlyBetween__1_System_Linq_Expressions_Expression_System_Func___0_____0___0_
+  commentId: M:MGR.Guard.Guard.IsStrictlyBetween``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0)
+  name.vb: IsStrictlyBetween(Of T)(Expression(Of Func(Of T)), T, T)
+  fullName: MGR.Guard.Guard.IsStrictlyBetween<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, T)
+  fullName.vb: MGR.Guard.Guard.IsStrictlyBetween(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, T)
+  nameWithType: Guard.IsStrictlyBetween<T>(Expression<Func<T>>, T, T)
+  nameWithType.vb: Guard.IsStrictlyBetween(Of T)(Expression(Of Func(Of T)), T, T)
+- uid: MGR.Guard.Guard.IsStrictlyBetween``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Collections.Generic.IComparer{``0})
+  name: IsStrictlyBetween<T>(Expression<Func<T>>, T, T, IComparer<T>)
+  href: api/MGR.Guard.Guard.html#MGR_Guard_Guard_IsStrictlyBetween__1_System_Linq_Expressions_Expression_System_Func___0_____0___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.Guard.IsStrictlyBetween``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsStrictlyBetween(Of T)(Expression(Of Func(Of T)), T, T, IComparer(Of T))
+  fullName: MGR.Guard.Guard.IsStrictlyBetween<T>(System.Linq.Expressions.Expression<System.Func<T>>, T, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.Guard.IsStrictlyBetween(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)), T, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: Guard.IsStrictlyBetween<T>(Expression<Func<T>>, T, T, IComparer<T>)
+  nameWithType.vb: Guard.IsStrictlyBetween(Of T)(Expression(Of Func(Of T)), T, T, IComparer(Of T))
+- uid: MGR.Guard.Guardian
+  name: Guardian
+  href: api/MGR.Guard.Guardian.html
+  commentId: T:MGR.Guard.Guardian
+  fullName: MGR.Guard.Guardian
+  nameWithType: Guardian
+- uid: MGR.Guard.Guardian.ChecksThat
+  name: ChecksThat
+  href: api/MGR.Guard.Guardian.html#MGR_Guard_Guardian_ChecksThat
+  commentId: P:MGR.Guard.Guardian.ChecksThat
+  fullName: MGR.Guard.Guardian.ChecksThat
+  nameWithType: Guardian.ChecksThat
+- uid: MGR.Guard.Guardian.ChecksThat*
+  name: ChecksThat
+  href: api/MGR.Guard.Guardian.html#MGR_Guard_Guardian_ChecksThat_
+  commentId: Overload:MGR.Guard.Guardian.ChecksThat
+  isSpec: "True"
+  fullName: MGR.Guard.Guardian.ChecksThat
+  nameWithType: Guardian.ChecksThat
+- uid: MGR.Guard.Guardian.MGR#Guard#IGuardian#ExtractValueAndParameterNameFromExpression*
+  name: IGuardian.ExtractValueAndParameterNameFromExpression
+  href: api/MGR.Guard.Guardian.html#MGR_Guard_Guardian_MGR_Guard_IGuardian_ExtractValueAndParameterNameFromExpression_
+  commentId: Overload:MGR.Guard.Guardian.MGR#Guard#IGuardian#ExtractValueAndParameterNameFromExpression
+  isSpec: "True"
+  name.vb: MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression
+  fullName: MGR.Guard.Guardian.MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression
+  nameWithType: Guardian.IGuardian.ExtractValueAndParameterNameFromExpression
+  nameWithType.vb: Guardian.MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression
+- uid: MGR.Guard.Guardian.MGR#Guard#IGuardian#ExtractValueAndParameterNameFromExpression``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  name: IGuardian.ExtractValueAndParameterNameFromExpression<T>(Expression<Func<T>>)
+  href: api/MGR.Guard.Guardian.html#MGR_Guard_Guardian_MGR_Guard_IGuardian_ExtractValueAndParameterNameFromExpression__1_System_Linq_Expressions_Expression_System_Func___0___
+  commentId: M:MGR.Guard.Guardian.MGR#Guard#IGuardian#ExtractValueAndParameterNameFromExpression``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  name.vb: MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression(Of T)(Expression(Of Func(Of T)))
+  fullName: MGR.Guard.Guardian.MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression<T>(System.Linq.Expressions.Expression<System.Func<T>>)
+  fullName.vb: MGR.Guard.Guardian.MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)))
+  nameWithType: Guardian.IGuardian.ExtractValueAndParameterNameFromExpression<T>(Expression<Func<T>>)
+  nameWithType.vb: Guardian.MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression(Of T)(Expression(Of Func(Of T)))
+- uid: MGR.Guard.GuardianExtensions
+  name: GuardianExtensions
+  href: api/MGR.Guard.GuardianExtensions.html
+  commentId: T:MGR.Guard.GuardianExtensions
+  fullName: MGR.Guard.GuardianExtensions
+  nameWithType: GuardianExtensions
+- uid: MGR.Guard.GuardianExtensions.Exists(MGR.Guard.Guardian,System.IO.FileSystemInfo,System.String)
+  name: Exists(Guardian, FileSystemInfo, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_Exists_MGR_Guard_Guardian_System_IO_FileSystemInfo_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.Exists(MGR.Guard.Guardian,System.IO.FileSystemInfo,System.String)
+  fullName: MGR.Guard.GuardianExtensions.Exists(MGR.Guard.Guardian, System.IO.FileSystemInfo, System.String)
+  nameWithType: GuardianExtensions.Exists(Guardian, FileSystemInfo, String)
+- uid: MGR.Guard.GuardianExtensions.Exists(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.IO.FileSystemInfo}})
+  name: Exists(Guardian, Expression<Func<FileSystemInfo>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_Exists_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_IO_FileSystemInfo___
+  commentId: M:MGR.Guard.GuardianExtensions.Exists(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.IO.FileSystemInfo}})
+  name.vb: Exists(Guardian, Expression(Of Func(Of FileSystemInfo)))
+  fullName: MGR.Guard.GuardianExtensions.Exists(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.IO.FileSystemInfo>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.Exists(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.IO.FileSystemInfo)))
+  nameWithType: GuardianExtensions.Exists(Guardian, Expression<Func<FileSystemInfo>>)
+  nameWithType.vb: GuardianExtensions.Exists(Guardian, Expression(Of Func(Of FileSystemInfo)))
+- uid: MGR.Guard.GuardianExtensions.Exists*
+  name: Exists
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_Exists_
+  commentId: Overload:MGR.Guard.GuardianExtensions.Exists
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.Exists
+  nameWithType: GuardianExtensions.Exists
+- uid: MGR.Guard.GuardianExtensions.IsBetween*
+  name: IsBetween
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsBetween_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsBetween
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsBetween
+  nameWithType: GuardianExtensions.IsBetween
+- uid: MGR.Guard.GuardianExtensions.IsBetween``1(MGR.Guard.Guardian,``0,System.String,``0,``0)
+  name: IsBetween<T>(Guardian, T, String, T, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsBetween__1_MGR_Guard_Guardian___0_System_String___0___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsBetween``1(MGR.Guard.Guardian,``0,System.String,``0,``0)
+  name.vb: IsBetween(Of T)(Guardian, T, String, T, T)
+  fullName: MGR.Guard.GuardianExtensions.IsBetween<T>(MGR.Guard.Guardian, T, System.String, T, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsBetween(Of T)(MGR.Guard.Guardian, T, System.String, T, T)
+  nameWithType: GuardianExtensions.IsBetween<T>(Guardian, T, String, T, T)
+  nameWithType.vb: GuardianExtensions.IsBetween(Of T)(Guardian, T, String, T, T)
+- uid: MGR.Guard.GuardianExtensions.IsBetween``1(MGR.Guard.Guardian,``0,System.String,``0,``0,System.Collections.Generic.IComparer{``0})
+  name: IsBetween<T>(Guardian, T, String, T, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsBetween__1_MGR_Guard_Guardian___0_System_String___0___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsBetween``1(MGR.Guard.Guardian,``0,System.String,``0,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsBetween(Of T)(Guardian, T, String, T, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsBetween<T>(MGR.Guard.Guardian, T, System.String, T, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsBetween(Of T)(MGR.Guard.Guardian, T, System.String, T, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsBetween<T>(Guardian, T, String, T, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsBetween(Of T)(Guardian, T, String, T, T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsBetween``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0)
+  name: IsBetween<T>(Guardian, Expression<Func<T>>, T, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsBetween__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsBetween``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0)
+  name.vb: IsBetween(Of T)(Guardian, Expression(Of Func(Of T)), T, T)
+  fullName: MGR.Guard.GuardianExtensions.IsBetween<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsBetween(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, T)
+  nameWithType: GuardianExtensions.IsBetween<T>(Guardian, Expression<Func<T>>, T, T)
+  nameWithType.vb: GuardianExtensions.IsBetween(Of T)(Guardian, Expression(Of Func(Of T)), T, T)
+- uid: MGR.Guard.GuardianExtensions.IsBetween``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Collections.Generic.IComparer{``0})
+  name: IsBetween<T>(Guardian, Expression<Func<T>>, T, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsBetween__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsBetween``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsBetween(Of T)(Guardian, Expression(Of Func(Of T)), T, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsBetween<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsBetween(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsBetween<T>(Guardian, Expression<Func<T>>, T, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsBetween(Of T)(Guardian, Expression(Of Func(Of T)), T, T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsDefined*
+  name: IsDefined
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsDefined_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsDefined
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsDefined
+  nameWithType: GuardianExtensions.IsDefined
+- uid: MGR.Guard.GuardianExtensions.IsDefined``1(MGR.Guard.Guardian,``0,System.String)
+  name: IsDefined<TEnum>(Guardian, TEnum, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsDefined__1_MGR_Guard_Guardian___0_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsDefined``1(MGR.Guard.Guardian,``0,System.String)
+  name.vb: IsDefined(Of TEnum)(Guardian, TEnum, String)
+  fullName: MGR.Guard.GuardianExtensions.IsDefined<TEnum>(MGR.Guard.Guardian, TEnum, System.String)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsDefined(Of TEnum)(MGR.Guard.Guardian, TEnum, System.String)
+  nameWithType: GuardianExtensions.IsDefined<TEnum>(Guardian, TEnum, String)
+  nameWithType.vb: GuardianExtensions.IsDefined(Of TEnum)(Guardian, TEnum, String)
+- uid: MGR.Guard.GuardianExtensions.IsDefined``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}})
+  name: IsDefined<TEnum>(Guardian, Expression<Func<TEnum>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsDefined__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0___
+  commentId: M:MGR.Guard.GuardianExtensions.IsDefined``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}})
+  name.vb: IsDefined(Of TEnum)(Guardian, Expression(Of Func(Of TEnum)))
+  fullName: MGR.Guard.GuardianExtensions.IsDefined<TEnum>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<TEnum>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsDefined(Of TEnum)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of TEnum)))
+  nameWithType: GuardianExtensions.IsDefined<TEnum>(Guardian, Expression<Func<TEnum>>)
+  nameWithType.vb: GuardianExtensions.IsDefined(Of TEnum)(Guardian, Expression(Of Func(Of TEnum)))
+- uid: MGR.Guard.GuardianExtensions.IsEqualTo*
+  name: IsEqualTo
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualTo_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsEqualTo
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsEqualTo
+  nameWithType: GuardianExtensions.IsEqualTo
+- uid: MGR.Guard.GuardianExtensions.IsEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name: IsEqualTo<T>(Guardian, T, String, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualTo__1_MGR_Guard_Guardian___0_System_String___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name.vb: IsEqualTo(Of T)(Guardian, T, String, T)
+  fullName: MGR.Guard.GuardianExtensions.IsEqualTo<T>(MGR.Guard.Guardian, T, System.String, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsEqualTo(Of T)(MGR.Guard.Guardian, T, System.String, T)
+  nameWithType: GuardianExtensions.IsEqualTo<T>(Guardian, T, String, T)
+  nameWithType.vb: GuardianExtensions.IsEqualTo(Of T)(Guardian, T, String, T)
+- uid: MGR.Guard.GuardianExtensions.IsEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsEqualTo<T>(Guardian, T, String, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualTo__1_MGR_Guard_Guardian___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsEqualTo(Of T)(Guardian, T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsEqualTo<T>(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsEqualTo(Of T)(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsEqualTo<T>(Guardian, T, String, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsEqualTo(Of T)(Guardian, T, String, T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsEqualTo<T>(Guardian, Expression<Func<T>>, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualTo__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.GuardianExtensions.IsEqualTo<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsEqualTo(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: GuardianExtensions.IsEqualTo<T>(Guardian, Expression<Func<T>>, T)
+  nameWithType.vb: GuardianExtensions.IsEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.GuardianExtensions.IsEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsEqualTo<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualTo__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsEqualTo<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsEqualTo(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsEqualTo<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Double,System.String)
+  name: IsEqualToZero(Guardian, Double, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_MGR_Guard_Guardian_System_Double_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Double,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Double, System.String)
+  nameWithType: GuardianExtensions.IsEqualToZero(Guardian, Double, String)
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Int32,System.String)
+  name: IsEqualToZero(Guardian, Int32, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_MGR_Guard_Guardian_System_Int32_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Int32,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Int32, System.String)
+  nameWithType: GuardianExtensions.IsEqualToZero(Guardian, Int32, String)
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Int64,System.String)
+  name: IsEqualToZero(Guardian, Int64, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_MGR_Guard_Guardian_System_Int64_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Int64,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Int64, System.String)
+  nameWithType: GuardianExtensions.IsEqualToZero(Guardian, Int64, String)
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsEqualToZero(Guardian, Expression<Func<Double>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsEqualToZero(Guardian, Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: GuardianExtensions.IsEqualToZero(Guardian, Expression<Func<Double>>)
+  nameWithType.vb: GuardianExtensions.IsEqualToZero(Guardian, Expression(Of Func(Of Double)))
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsEqualToZero(Guardian, Expression<Func<Int32>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsEqualToZero(Guardian, Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: GuardianExtensions.IsEqualToZero(Guardian, Expression<Func<Int32>>)
+  nameWithType.vb: GuardianExtensions.IsEqualToZero(Guardian, Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsEqualToZero(Guardian, Expression<Func<Int64>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsEqualToZero(Guardian, Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: GuardianExtensions.IsEqualToZero(Guardian, Expression<Func<Int64>>)
+  nameWithType.vb: GuardianExtensions.IsEqualToZero(Guardian, Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsEqualToZero(Guardian, Expression<Func<Single>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsEqualToZero(Guardian, Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: GuardianExtensions.IsEqualToZero(Guardian, Expression<Func<Single>>)
+  nameWithType.vb: GuardianExtensions.IsEqualToZero(Guardian, Expression(Of Func(Of Single)))
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Single,System.String)
+  name: IsEqualToZero(Guardian, Single, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_MGR_Guard_Guardian_System_Single_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian,System.Single,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero(MGR.Guard.Guardian, System.Single, System.String)
+  nameWithType: GuardianExtensions.IsEqualToZero(Guardian, Single, String)
+- uid: MGR.Guard.GuardianExtensions.IsEqualToZero*
+  name: IsEqualToZero
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsEqualToZero_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsEqualToZero
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsEqualToZero
+  nameWithType: GuardianExtensions.IsEqualToZero
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThan*
+  name: IsGreaterThan
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThan_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsGreaterThan
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThan
+  nameWithType: GuardianExtensions.IsGreaterThan
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThan``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name: IsGreaterThan<T>(Guardian, T, String, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThan__1_MGR_Guard_Guardian___0_System_String___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThan``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name.vb: IsGreaterThan(Of T)(Guardian, T, String, T)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThan<T>(MGR.Guard.Guardian, T, System.String, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThan(Of T)(MGR.Guard.Guardian, T, System.String, T)
+  nameWithType: GuardianExtensions.IsGreaterThan<T>(Guardian, T, String, T)
+  nameWithType.vb: GuardianExtensions.IsGreaterThan(Of T)(Guardian, T, String, T)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThan``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsGreaterThan<T>(Guardian, T, String, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThan__1_MGR_Guard_Guardian___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThan``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsGreaterThan(Of T)(Guardian, T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThan<T>(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThan(Of T)(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsGreaterThan<T>(Guardian, T, String, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThan(Of T)(Guardian, T, String, T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThan``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsGreaterThan<T>(Guardian, Expression<Func<T>>, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThan__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThan``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsGreaterThan(Of T)(Guardian, Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThan<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThan(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: GuardianExtensions.IsGreaterThan<T>(Guardian, Expression<Func<T>>, T)
+  nameWithType.vb: GuardianExtensions.IsGreaterThan(Of T)(Guardian, Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThan``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsGreaterThan<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThan__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThan``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsGreaterThan(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThan<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThan(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsGreaterThan<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThan(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo*
+  name: IsGreaterThanOrEqualTo
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualTo_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualTo
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name: IsGreaterThanOrEqualTo<T>(Guardian, T, String, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualTo__1_MGR_Guard_Guardian___0_System_String___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name.vb: IsGreaterThanOrEqualTo(Of T)(Guardian, T, String, T)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo<T>(MGR.Guard.Guardian, T, System.String, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo(Of T)(MGR.Guard.Guardian, T, System.String, T)
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualTo<T>(Guardian, T, String, T)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanOrEqualTo(Of T)(Guardian, T, String, T)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsGreaterThanOrEqualTo<T>(Guardian, T, String, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualTo__1_MGR_Guard_Guardian___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsGreaterThanOrEqualTo(Of T)(Guardian, T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo<T>(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo(Of T)(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualTo<T>(Guardian, T, String, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanOrEqualTo(Of T)(Guardian, T, String, T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsGreaterThanOrEqualTo<T>(Guardian, Expression<Func<T>>, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualTo__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsGreaterThanOrEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualTo<T>(Guardian, Expression<Func<T>>, T)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanOrEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsGreaterThanOrEqualTo<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualTo__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsGreaterThanOrEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualTo(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualTo<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanOrEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Double,System.String)
+  name: IsGreaterThanOrEqualToZero(Guardian, Double, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_MGR_Guard_Guardian_System_Double_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Double,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Double, System.String)
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Double, String)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Int32,System.String)
+  name: IsGreaterThanOrEqualToZero(Guardian, Int32, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_MGR_Guard_Guardian_System_Int32_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Int32,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Int32, System.String)
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Int32, String)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Int64,System.String)
+  name: IsGreaterThanOrEqualToZero(Guardian, Int64, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_MGR_Guard_Guardian_System_Int64_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Int64,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Int64, System.String)
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Int64, String)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsGreaterThanOrEqualToZero(Guardian, Expression<Func<Double>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsGreaterThanOrEqualToZero(Guardian, Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Expression<Func<Double>>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Expression(Of Func(Of Double)))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsGreaterThanOrEqualToZero(Guardian, Expression<Func<Int32>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsGreaterThanOrEqualToZero(Guardian, Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Expression<Func<Int32>>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsGreaterThanOrEqualToZero(Guardian, Expression<Func<Int64>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsGreaterThanOrEqualToZero(Guardian, Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Expression<Func<Int64>>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsGreaterThanOrEqualToZero(Guardian, Expression<Func<Single>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsGreaterThanOrEqualToZero(Guardian, Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Expression<Func<Single>>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Expression(Of Func(Of Single)))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Single,System.String)
+  name: IsGreaterThanOrEqualToZero(Guardian, Single, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_MGR_Guard_Guardian_System_Single_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian,System.Single,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero(MGR.Guard.Guardian, System.Single, System.String)
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero(Guardian, Single, String)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero*
+  name: IsGreaterThanOrEqualToZero
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanOrEqualToZero_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanOrEqualToZero
+  nameWithType: GuardianExtensions.IsGreaterThanOrEqualToZero
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Double,System.String)
+  name: IsGreaterThanZero(Guardian, Double, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_MGR_Guard_Guardian_System_Double_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Double,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Double, System.String)
+  nameWithType: GuardianExtensions.IsGreaterThanZero(Guardian, Double, String)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Int32,System.String)
+  name: IsGreaterThanZero(Guardian, Int32, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_MGR_Guard_Guardian_System_Int32_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Int32,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Int32, System.String)
+  nameWithType: GuardianExtensions.IsGreaterThanZero(Guardian, Int32, String)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Int64,System.String)
+  name: IsGreaterThanZero(Guardian, Int64, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_MGR_Guard_Guardian_System_Int64_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Int64,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Int64, System.String)
+  nameWithType: GuardianExtensions.IsGreaterThanZero(Guardian, Int64, String)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsGreaterThanZero(Guardian, Expression<Func<Double>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsGreaterThanZero(Guardian, Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: GuardianExtensions.IsGreaterThanZero(Guardian, Expression<Func<Double>>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanZero(Guardian, Expression(Of Func(Of Double)))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsGreaterThanZero(Guardian, Expression<Func<Int32>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsGreaterThanZero(Guardian, Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: GuardianExtensions.IsGreaterThanZero(Guardian, Expression<Func<Int32>>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanZero(Guardian, Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsGreaterThanZero(Guardian, Expression<Func<Int64>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsGreaterThanZero(Guardian, Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: GuardianExtensions.IsGreaterThanZero(Guardian, Expression<Func<Int64>>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanZero(Guardian, Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsGreaterThanZero(Guardian, Expression<Func<Single>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsGreaterThanZero(Guardian, Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: GuardianExtensions.IsGreaterThanZero(Guardian, Expression<Func<Single>>)
+  nameWithType.vb: GuardianExtensions.IsGreaterThanZero(Guardian, Expression(Of Func(Of Single)))
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Single,System.String)
+  name: IsGreaterThanZero(Guardian, Single, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_MGR_Guard_Guardian_System_Single_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian,System.Single,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero(MGR.Guard.Guardian, System.Single, System.String)
+  nameWithType: GuardianExtensions.IsGreaterThanZero(Guardian, Single, String)
+- uid: MGR.Guard.GuardianExtensions.IsGreaterThanZero*
+  name: IsGreaterThanZero
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsGreaterThanZero_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsGreaterThanZero
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsGreaterThanZero
+  nameWithType: GuardianExtensions.IsGreaterThanZero
+- uid: MGR.Guard.GuardianExtensions.IsLowerThan*
+  name: IsLowerThan
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThan_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsLowerThan
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThan
+  nameWithType: GuardianExtensions.IsLowerThan
+- uid: MGR.Guard.GuardianExtensions.IsLowerThan``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name: IsLowerThan<T>(Guardian, T, String, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThan__1_MGR_Guard_Guardian___0_System_String___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThan``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name.vb: IsLowerThan(Of T)(Guardian, T, String, T)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThan<T>(MGR.Guard.Guardian, T, System.String, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThan(Of T)(MGR.Guard.Guardian, T, System.String, T)
+  nameWithType: GuardianExtensions.IsLowerThan<T>(Guardian, T, String, T)
+  nameWithType.vb: GuardianExtensions.IsLowerThan(Of T)(Guardian, T, String, T)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThan``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsLowerThan<T>(Guardian, T, String, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThan__1_MGR_Guard_Guardian___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThan``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsLowerThan(Of T)(Guardian, T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThan<T>(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThan(Of T)(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsLowerThan<T>(Guardian, T, String, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsLowerThan(Of T)(Guardian, T, String, T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThan``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsLowerThan<T>(Guardian, Expression<Func<T>>, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThan__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThan``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsLowerThan(Of T)(Guardian, Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThan<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThan(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: GuardianExtensions.IsLowerThan<T>(Guardian, Expression<Func<T>>, T)
+  nameWithType.vb: GuardianExtensions.IsLowerThan(Of T)(Guardian, Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThan``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsLowerThan<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThan__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThan``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsLowerThan(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThan<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThan(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsLowerThan<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsLowerThan(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo*
+  name: IsLowerThanOrEqualTo
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualTo_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualTo
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name: IsLowerThanOrEqualTo<T>(Guardian, T, String, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualTo__1_MGR_Guard_Guardian___0_System_String___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0)
+  name.vb: IsLowerThanOrEqualTo(Of T)(Guardian, T, String, T)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo<T>(MGR.Guard.Guardian, T, System.String, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo(Of T)(MGR.Guard.Guardian, T, System.String, T)
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualTo<T>(Guardian, T, String, T)
+  nameWithType.vb: GuardianExtensions.IsLowerThanOrEqualTo(Of T)(Guardian, T, String, T)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name: IsLowerThanOrEqualTo<T>(Guardian, T, String, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualTo__1_MGR_Guard_Guardian___0_System_String___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo``1(MGR.Guard.Guardian,``0,System.String,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsLowerThanOrEqualTo(Of T)(Guardian, T, String, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo<T>(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo(Of T)(MGR.Guard.Guardian, T, System.String, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualTo<T>(Guardian, T, String, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanOrEqualTo(Of T)(Guardian, T, String, T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name: IsLowerThanOrEqualTo<T>(Guardian, Expression<Func<T>>, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualTo__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0)
+  name.vb: IsLowerThanOrEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T)
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualTo<T>(Guardian, Expression<Func<T>>, T)
+  nameWithType.vb: GuardianExtensions.IsLowerThanOrEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name: IsLowerThanOrEqualTo<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualTo__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsLowerThanOrEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualTo(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualTo<T>(Guardian, Expression<Func<T>>, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanOrEqualTo(Of T)(Guardian, Expression(Of Func(Of T)), T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Double,System.String)
+  name: IsLowerThanOrEqualToZero(Guardian, Double, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_MGR_Guard_Guardian_System_Double_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Double,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Double, System.String)
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Double, String)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Int32,System.String)
+  name: IsLowerThanOrEqualToZero(Guardian, Int32, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_MGR_Guard_Guardian_System_Int32_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Int32,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Int32, System.String)
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Int32, String)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Int64,System.String)
+  name: IsLowerThanOrEqualToZero(Guardian, Int64, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_MGR_Guard_Guardian_System_Int64_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Int64,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Int64, System.String)
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Int64, String)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsLowerThanOrEqualToZero(Guardian, Expression<Func<Double>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsLowerThanOrEqualToZero(Guardian, Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Expression<Func<Double>>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Expression(Of Func(Of Double)))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsLowerThanOrEqualToZero(Guardian, Expression<Func<Int32>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsLowerThanOrEqualToZero(Guardian, Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Expression<Func<Int32>>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsLowerThanOrEqualToZero(Guardian, Expression<Func<Int64>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsLowerThanOrEqualToZero(Guardian, Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Expression<Func<Int64>>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsLowerThanOrEqualToZero(Guardian, Expression<Func<Single>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsLowerThanOrEqualToZero(Guardian, Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Expression<Func<Single>>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Expression(Of Func(Of Single)))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Single,System.String)
+  name: IsLowerThanOrEqualToZero(Guardian, Single, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_MGR_Guard_Guardian_System_Single_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian,System.Single,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero(MGR.Guard.Guardian, System.Single, System.String)
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero(Guardian, Single, String)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero*
+  name: IsLowerThanOrEqualToZero
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanOrEqualToZero_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanOrEqualToZero
+  nameWithType: GuardianExtensions.IsLowerThanOrEqualToZero
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Double,System.String)
+  name: IsLowerThanZero(Guardian, Double, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_MGR_Guard_Guardian_System_Double_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Double,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Double, System.String)
+  nameWithType: GuardianExtensions.IsLowerThanZero(Guardian, Double, String)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Int32,System.String)
+  name: IsLowerThanZero(Guardian, Int32, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_MGR_Guard_Guardian_System_Int32_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Int32,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Int32, System.String)
+  nameWithType: GuardianExtensions.IsLowerThanZero(Guardian, Int32, String)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Int64,System.String)
+  name: IsLowerThanZero(Guardian, Int64, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_MGR_Guard_Guardian_System_Int64_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Int64,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Int64, System.String)
+  nameWithType: GuardianExtensions.IsLowerThanZero(Guardian, Int64, String)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name: IsLowerThanZero(Guardian, Expression<Func<Double>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Double___
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Double}})
+  name.vb: IsLowerThanZero(Guardian, Expression(Of Func(Of Double)))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Double>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Double)))
+  nameWithType: GuardianExtensions.IsLowerThanZero(Guardian, Expression<Func<Double>>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanZero(Guardian, Expression(Of Func(Of Double)))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name: IsLowerThanZero(Guardian, Expression<Func<Int32>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int32___
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int32}})
+  name.vb: IsLowerThanZero(Guardian, Expression(Of Func(Of Int32)))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int32>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int32)))
+  nameWithType: GuardianExtensions.IsLowerThanZero(Guardian, Expression<Func<Int32>>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanZero(Guardian, Expression(Of Func(Of Int32)))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name: IsLowerThanZero(Guardian, Expression<Func<Int64>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Int64___
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Int64}})
+  name.vb: IsLowerThanZero(Guardian, Expression(Of Func(Of Int64)))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Int64>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Int64)))
+  nameWithType: GuardianExtensions.IsLowerThanZero(Guardian, Expression<Func<Int64>>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanZero(Guardian, Expression(Of Func(Of Int64)))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name: IsLowerThanZero(Guardian, Expression<Func<Single>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Single___
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Single}})
+  name.vb: IsLowerThanZero(Guardian, Expression(Of Func(Of Single)))
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Single>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Single)))
+  nameWithType: GuardianExtensions.IsLowerThanZero(Guardian, Expression<Func<Single>>)
+  nameWithType.vb: GuardianExtensions.IsLowerThanZero(Guardian, Expression(Of Func(Of Single)))
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Single,System.String)
+  name: IsLowerThanZero(Guardian, Single, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_MGR_Guard_Guardian_System_Single_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian,System.Single,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero(MGR.Guard.Guardian, System.Single, System.String)
+  nameWithType: GuardianExtensions.IsLowerThanZero(Guardian, Single, String)
+- uid: MGR.Guard.GuardianExtensions.IsLowerThanZero*
+  name: IsLowerThanZero
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsLowerThanZero_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsLowerThanZero
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsLowerThanZero
+  nameWithType: GuardianExtensions.IsLowerThanZero
+- uid: MGR.Guard.GuardianExtensions.IsNotEmptyGuid(MGR.Guard.Guardian,System.Guid,System.String)
+  name: IsNotEmptyGuid(Guardian, Guid, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotEmptyGuid_MGR_Guard_Guardian_System_Guid_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsNotEmptyGuid(MGR.Guard.Guardian,System.Guid,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsNotEmptyGuid(MGR.Guard.Guardian, System.Guid, System.String)
+  nameWithType: GuardianExtensions.IsNotEmptyGuid(Guardian, Guid, String)
+- uid: MGR.Guard.GuardianExtensions.IsNotEmptyGuid(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Guid}})
+  name: IsNotEmptyGuid(Guardian, Expression<Func<Guid>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotEmptyGuid_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_Guid___
+  commentId: M:MGR.Guard.GuardianExtensions.IsNotEmptyGuid(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.Guid}})
+  name.vb: IsNotEmptyGuid(Guardian, Expression(Of Func(Of Guid)))
+  fullName: MGR.Guard.GuardianExtensions.IsNotEmptyGuid(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.Guid>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsNotEmptyGuid(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.Guid)))
+  nameWithType: GuardianExtensions.IsNotEmptyGuid(Guardian, Expression<Func<Guid>>)
+  nameWithType.vb: GuardianExtensions.IsNotEmptyGuid(Guardian, Expression(Of Func(Of Guid)))
+- uid: MGR.Guard.GuardianExtensions.IsNotEmptyGuid*
+  name: IsNotEmptyGuid
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotEmptyGuid_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsNotEmptyGuid
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsNotEmptyGuid
+  nameWithType: GuardianExtensions.IsNotEmptyGuid
+- uid: MGR.Guard.GuardianExtensions.IsNotNull(MGR.Guard.Guardian,System.Object,System.String)
+  name: IsNotNull(Guardian, Object, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotNull_MGR_Guard_Guardian_System_Object_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsNotNull(MGR.Guard.Guardian,System.Object,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsNotNull(MGR.Guard.Guardian, System.Object, System.String)
+  nameWithType: GuardianExtensions.IsNotNull(Guardian, Object, String)
+- uid: MGR.Guard.GuardianExtensions.IsNotNull*
+  name: IsNotNull
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotNull_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsNotNull
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsNotNull
+  nameWithType: GuardianExtensions.IsNotNull
+- uid: MGR.Guard.GuardianExtensions.IsNotNull``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}})
+  name: IsNotNull<T>(Guardian, Expression<Func<T>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotNull__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0___
+  commentId: M:MGR.Guard.GuardianExtensions.IsNotNull``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}})
+  name.vb: IsNotNull(Of T)(Guardian, Expression(Of Func(Of T)))
+  fullName: MGR.Guard.GuardianExtensions.IsNotNull<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsNotNull(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)))
+  nameWithType: GuardianExtensions.IsNotNull<T>(Guardian, Expression<Func<T>>)
+  nameWithType.vb: GuardianExtensions.IsNotNull(Of T)(Guardian, Expression(Of Func(Of T)))
+- uid: MGR.Guard.GuardianExtensions.IsNotNullOrEmpty(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.String}})
+  name: IsNotNullOrEmpty(Guardian, Expression<Func<String>>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotNullOrEmpty_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func_System_String___
+  commentId: M:MGR.Guard.GuardianExtensions.IsNotNullOrEmpty(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{System.String}})
+  name.vb: IsNotNullOrEmpty(Guardian, Expression(Of Func(Of String)))
+  fullName: MGR.Guard.GuardianExtensions.IsNotNullOrEmpty(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<System.String>>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsNotNullOrEmpty(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of System.String)))
+  nameWithType: GuardianExtensions.IsNotNullOrEmpty(Guardian, Expression<Func<String>>)
+  nameWithType.vb: GuardianExtensions.IsNotNullOrEmpty(Guardian, Expression(Of Func(Of String)))
+- uid: MGR.Guard.GuardianExtensions.IsNotNullOrEmpty(MGR.Guard.Guardian,System.String,System.String)
+  name: IsNotNullOrEmpty(Guardian, String, String)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotNullOrEmpty_MGR_Guard_Guardian_System_String_System_String_
+  commentId: M:MGR.Guard.GuardianExtensions.IsNotNullOrEmpty(MGR.Guard.Guardian,System.String,System.String)
+  fullName: MGR.Guard.GuardianExtensions.IsNotNullOrEmpty(MGR.Guard.Guardian, System.String, System.String)
+  nameWithType: GuardianExtensions.IsNotNullOrEmpty(Guardian, String, String)
+- uid: MGR.Guard.GuardianExtensions.IsNotNullOrEmpty*
+  name: IsNotNullOrEmpty
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsNotNullOrEmpty_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsNotNullOrEmpty
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsNotNullOrEmpty
+  nameWithType: GuardianExtensions.IsNotNullOrEmpty
+- uid: MGR.Guard.GuardianExtensions.IsStrictlyBetween*
+  name: IsStrictlyBetween
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsStrictlyBetween_
+  commentId: Overload:MGR.Guard.GuardianExtensions.IsStrictlyBetween
+  isSpec: "True"
+  fullName: MGR.Guard.GuardianExtensions.IsStrictlyBetween
+  nameWithType: GuardianExtensions.IsStrictlyBetween
+- uid: MGR.Guard.GuardianExtensions.IsStrictlyBetween``1(MGR.Guard.Guardian,``0,System.String,``0,``0)
+  name: IsStrictlyBetween<T>(Guardian, T, String, T, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsStrictlyBetween__1_MGR_Guard_Guardian___0_System_String___0___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsStrictlyBetween``1(MGR.Guard.Guardian,``0,System.String,``0,``0)
+  name.vb: IsStrictlyBetween(Of T)(Guardian, T, String, T, T)
+  fullName: MGR.Guard.GuardianExtensions.IsStrictlyBetween<T>(MGR.Guard.Guardian, T, System.String, T, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsStrictlyBetween(Of T)(MGR.Guard.Guardian, T, System.String, T, T)
+  nameWithType: GuardianExtensions.IsStrictlyBetween<T>(Guardian, T, String, T, T)
+  nameWithType.vb: GuardianExtensions.IsStrictlyBetween(Of T)(Guardian, T, String, T, T)
+- uid: MGR.Guard.GuardianExtensions.IsStrictlyBetween``1(MGR.Guard.Guardian,``0,System.String,``0,``0,System.Collections.Generic.IComparer{``0})
+  name: IsStrictlyBetween<T>(Guardian, T, String, T, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsStrictlyBetween__1_MGR_Guard_Guardian___0_System_String___0___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsStrictlyBetween``1(MGR.Guard.Guardian,``0,System.String,``0,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsStrictlyBetween(Of T)(Guardian, T, String, T, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsStrictlyBetween<T>(MGR.Guard.Guardian, T, System.String, T, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsStrictlyBetween(Of T)(MGR.Guard.Guardian, T, System.String, T, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsStrictlyBetween<T>(Guardian, T, String, T, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsStrictlyBetween(Of T)(Guardian, T, String, T, T, IComparer(Of T))
+- uid: MGR.Guard.GuardianExtensions.IsStrictlyBetween``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0)
+  name: IsStrictlyBetween<T>(Guardian, Expression<Func<T>>, T, T)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsStrictlyBetween__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0___0_
+  commentId: M:MGR.Guard.GuardianExtensions.IsStrictlyBetween``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0)
+  name.vb: IsStrictlyBetween(Of T)(Guardian, Expression(Of Func(Of T)), T, T)
+  fullName: MGR.Guard.GuardianExtensions.IsStrictlyBetween<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, T)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsStrictlyBetween(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, T)
+  nameWithType: GuardianExtensions.IsStrictlyBetween<T>(Guardian, Expression<Func<T>>, T, T)
+  nameWithType.vb: GuardianExtensions.IsStrictlyBetween(Of T)(Guardian, Expression(Of Func(Of T)), T, T)
+- uid: MGR.Guard.GuardianExtensions.IsStrictlyBetween``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Collections.Generic.IComparer{``0})
+  name: IsStrictlyBetween<T>(Guardian, Expression<Func<T>>, T, T, IComparer<T>)
+  href: api/MGR.Guard.GuardianExtensions.html#MGR_Guard_GuardianExtensions_IsStrictlyBetween__1_MGR_Guard_Guardian_System_Linq_Expressions_Expression_System_Func___0_____0___0_System_Collections_Generic_IComparer___0__
+  commentId: M:MGR.Guard.GuardianExtensions.IsStrictlyBetween``1(MGR.Guard.Guardian,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Collections.Generic.IComparer{``0})
+  name.vb: IsStrictlyBetween(Of T)(Guardian, Expression(Of Func(Of T)), T, T, IComparer(Of T))
+  fullName: MGR.Guard.GuardianExtensions.IsStrictlyBetween<T>(MGR.Guard.Guardian, System.Linq.Expressions.Expression<System.Func<T>>, T, T, System.Collections.Generic.IComparer<T>)
+  fullName.vb: MGR.Guard.GuardianExtensions.IsStrictlyBetween(Of T)(MGR.Guard.Guardian, System.Linq.Expressions.Expression(Of System.Func(Of T)), T, T, System.Collections.Generic.IComparer(Of T))
+  nameWithType: GuardianExtensions.IsStrictlyBetween<T>(Guardian, Expression<Func<T>>, T, T, IComparer<T>)
+  nameWithType.vb: GuardianExtensions.IsStrictlyBetween(Of T)(Guardian, Expression(Of Func(Of T)), T, T, IComparer(Of T))
+- uid: MGR.Guard.IGuardian
+  name: IGuardian
+  href: api/MGR.Guard.IGuardian.html
+  commentId: T:MGR.Guard.IGuardian
+  fullName: MGR.Guard.IGuardian
+  nameWithType: IGuardian
+- uid: MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression*
+  name: ExtractValueAndParameterNameFromExpression
+  href: api/MGR.Guard.IGuardian.html#MGR_Guard_IGuardian_ExtractValueAndParameterNameFromExpression_
+  commentId: Overload:MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression
+  isSpec: "True"
+  fullName: MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression
+  nameWithType: IGuardian.ExtractValueAndParameterNameFromExpression
+- uid: MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  name: ExtractValueAndParameterNameFromExpression<T>(Expression<Func<T>>)
+  href: api/MGR.Guard.IGuardian.html#MGR_Guard_IGuardian_ExtractValueAndParameterNameFromExpression__1_System_Linq_Expressions_Expression_System_Func___0___
+  commentId: M:MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  name.vb: ExtractValueAndParameterNameFromExpression(Of T)(Expression(Of Func(Of T)))
+  fullName: MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression<T>(System.Linq.Expressions.Expression<System.Func<T>>)
+  fullName.vb: MGR.Guard.IGuardian.ExtractValueAndParameterNameFromExpression(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)))
+  nameWithType: IGuardian.ExtractValueAndParameterNameFromExpression<T>(Expression<Func<T>>)
+  nameWithType.vb: IGuardian.ExtractValueAndParameterNameFromExpression(Of T)(Expression(Of Func(Of T)))
+- uid: MGR.Guard.ValueAndParameterName`1
+  name: ValueAndParameterName<T>
+  href: api/MGR.Guard.ValueAndParameterName-1.html
+  commentId: T:MGR.Guard.ValueAndParameterName`1
+  name.vb: ValueAndParameterName(Of T)
+  fullName: MGR.Guard.ValueAndParameterName<T>
+  fullName.vb: MGR.Guard.ValueAndParameterName(Of T)
+  nameWithType: ValueAndParameterName<T>
+  nameWithType.vb: ValueAndParameterName(Of T)
+- uid: MGR.Guard.ValueAndParameterName`1.Deconstruct(`0@,System.String@)
+  name: Deconstruct(out T, out String)
+  href: api/MGR.Guard.ValueAndParameterName-1.html#MGR_Guard_ValueAndParameterName_1_Deconstruct__0__System_String__
+  commentId: M:MGR.Guard.ValueAndParameterName`1.Deconstruct(`0@,System.String@)
+  name.vb: Deconstruct(ByRef T, ByRef String)
+  fullName: MGR.Guard.ValueAndParameterName<T>.Deconstruct(out T, out System.String)
+  fullName.vb: MGR.Guard.ValueAndParameterName(Of T).Deconstruct(ByRef T, ByRef System.String)
+  nameWithType: ValueAndParameterName<T>.Deconstruct(out T, out String)
+  nameWithType.vb: ValueAndParameterName(Of T).Deconstruct(ByRef T, ByRef String)
+- uid: MGR.Guard.ValueAndParameterName`1.Deconstruct*
+  name: Deconstruct
+  href: api/MGR.Guard.ValueAndParameterName-1.html#MGR_Guard_ValueAndParameterName_1_Deconstruct_
+  commentId: Overload:MGR.Guard.ValueAndParameterName`1.Deconstruct
+  isSpec: "True"
+  fullName: MGR.Guard.ValueAndParameterName<T>.Deconstruct
+  fullName.vb: MGR.Guard.ValueAndParameterName(Of T).Deconstruct
+  nameWithType: ValueAndParameterName<T>.Deconstruct
+  nameWithType.vb: ValueAndParameterName(Of T).Deconstruct
+- uid: MGR.Guard.ValueAndParameterName`1.ParameterName
+  name: ParameterName
+  href: api/MGR.Guard.ValueAndParameterName-1.html#MGR_Guard_ValueAndParameterName_1_ParameterName
+  commentId: P:MGR.Guard.ValueAndParameterName`1.ParameterName
+  fullName: MGR.Guard.ValueAndParameterName<T>.ParameterName
+  fullName.vb: MGR.Guard.ValueAndParameterName(Of T).ParameterName
+  nameWithType: ValueAndParameterName<T>.ParameterName
+  nameWithType.vb: ValueAndParameterName(Of T).ParameterName
+- uid: MGR.Guard.ValueAndParameterName`1.ParameterName*
+  name: ParameterName
+  href: api/MGR.Guard.ValueAndParameterName-1.html#MGR_Guard_ValueAndParameterName_1_ParameterName_
+  commentId: Overload:MGR.Guard.ValueAndParameterName`1.ParameterName
+  isSpec: "True"
+  fullName: MGR.Guard.ValueAndParameterName<T>.ParameterName
+  fullName.vb: MGR.Guard.ValueAndParameterName(Of T).ParameterName
+  nameWithType: ValueAndParameterName<T>.ParameterName
+  nameWithType.vb: ValueAndParameterName(Of T).ParameterName
+- uid: MGR.Guard.ValueAndParameterName`1.Value
+  name: Value
+  href: api/MGR.Guard.ValueAndParameterName-1.html#MGR_Guard_ValueAndParameterName_1_Value
+  commentId: P:MGR.Guard.ValueAndParameterName`1.Value
+  fullName: MGR.Guard.ValueAndParameterName<T>.Value
+  fullName.vb: MGR.Guard.ValueAndParameterName(Of T).Value
+  nameWithType: ValueAndParameterName<T>.Value
+  nameWithType.vb: ValueAndParameterName(Of T).Value
+- uid: MGR.Guard.ValueAndParameterName`1.Value*
+  name: Value
+  href: api/MGR.Guard.ValueAndParameterName-1.html#MGR_Guard_ValueAndParameterName_1_Value_
+  commentId: Overload:MGR.Guard.ValueAndParameterName`1.Value
+  isSpec: "True"
+  fullName: MGR.Guard.ValueAndParameterName<T>.Value
+  fullName.vb: MGR.Guard.ValueAndParameterName(Of T).Value
+  nameWithType: ValueAndParameterName<T>.Value
+  nameWithType.vb: ValueAndParameterName(Of T).Value

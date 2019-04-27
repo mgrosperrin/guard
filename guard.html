@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MGR.Guard API | MGR.Guard documentation site </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="MGR.Guard API | MGR.Guard documentation site ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="mgrguard-api">MGR.Guard API</h1>
+
+<p>All methods are extensions methods to the <code>MGR.Guard.Guardian</code> instance accessible via the <code>Guardian.ChecksThat</code> property.
+They throw exception when the condition is not met.</p>
+<p>The methods all have two forms:</p>
+<ol>
+<li>One that takes the parameter to check, the name of the parameter, and possibly some additional values;</li>
+<li>One that takes an <a href="guard-expression.html">expression to specify the value and the name of the parameter</a>, and possibly some additional values.</li>
+</ol>
+<h2 id="exists">Exists</h2>
+<p>Checks if a <code>System.IO.FileSystemInfo</code> exists.</p>
+<h4 id="exception-thrown">Exception thrown</h4>
+<p><code>System.IO.FileNotFoundException</code> if the file or directory doesn't exists.</p>
+<h2 id="isbetween">IsBetween</h2>
+<p>Checks if a value is between a min and a max limit.</p>
+<h4 id="exception-thrown-1">Exception thrown</h4>
+<p><code>System.ArgumentOutOfRangeException</code> if the value is not between the specified min and max limits.</p>
+<h2 id="isdefined">IsDefined</h2>
+<p>Checks if a value is a defined <em>enum</em> value.</p>
+<h4 id="exception-thrown-2">Exception thrown</h4>
+<p><code>System.ArgumentException</code> if the specified type is not an <em>enum</em>.</p>
+<p><code>System.ArgumentOutOfRangeException</code> if the value is not a defined value of the specified <em>enum</em>.</p>
+<h2 id="isequalto">IsEqualTo</h2>
+<p>Checks if a value is equal to another reference.</p>
+<h4 id="exception-thrown-3">Exception thrown</h4>
+<p><code>System.ArgumentNullException</code> if the specified comparer is null.</p>
+<p><code>System.ArgumentException</code> if the specified value is not equal to the reference.</p>
+<h2 id="isequaltozero">IsEqualToZero</h2>
+<p>Checks if a value is equal to zero.</p>
+<h4 id="exception-thrown-4">Exception thrown</h4>
+<p><code>System.IO.ArgumentException</code> if the specified value is not equal to zero.</p>
+<h2 id="isgreaterthan">IsGreaterThan</h2>
+<p>Checks if a value is greater than a minimal limit.</p>
+<h4 id="exception-thrown-5">Exception thrown</h4>
+<p><code>System.ArgumentNullException</code> if the specified comparer is null.</p>
+<p><code>System.ArgumentOutOfRangeException</code> if the specified value is lower than the minimal limit.</p>
+<h2 id="isgreaterthanorequalto">IsGreaterThanOrEqualTo</h2>
+<p>Checks if a value is greater than or equal to a minimal limit.</p>
+<h4 id="exception-thrown-6">Exception thrown</h4>
+<p><code>System.ArgumentNullException</code> if the specified comparer is null.</p>
+<p><code>System.ArgumentOutOfRangeException</code> if the specified value is lower than or equal to the minimal limit.</p>
+<h2 id="isgreaterthanorequaltozero">IsGreaterThanOrEqualToZero</h2>
+<p>Checks if a value is greater than or equal to zero.</p>
+<h4 id="exception-thrown-7">Exception thrown</h4>
+<p><code>System.ArgumentOutOfRangeException</code> if the specified value is lower than or equal to zero.</p>
+<h2 id="isgreaterthanzero">IsGreaterThanZero</h2>
+<p>Checks if a value is greater than zero.</p>
+<h4 id="exception-thrown-8">Exception thrown</h4>
+<p><code>System.ArgumentOutOfRangeException</code> if the specified value is lower than zero.</p>
+<h2 id="islowerthan">IsLowerThan</h2>
+<p>Checks if a value is lower than a maximal limit.</p>
+<h4 id="exception-thrown-9">Exception thrown</h4>
+<p><code>System.ArgumentNullException</code> if the specified comparer is null.</p>
+<p><code>System.ArgumentOutOfRangeException</code> if the specified value is greater than a maximal limit.</p>
+<h2 id="islowerthanorequalto">IsLowerThanOrEqualTo</h2>
+<p>Checks if a value is lower than or equal to a minimal limit.</p>
+<h4 id="exception-thrown-10">Exception thrown</h4>
+<p><code>System.ArgumentNullException</code> if the specified comparer is null.</p>
+<p><code>System.ArgumentOutOfRangeException</code> if the specified value is greater than or equal to the minimal limit.</p>
+<h2 id="islowerthanorequaltozero">IsLowerThanOrEqualToZero</h2>
+<p>Checks if a value is lower than or equal to zero.</p>
+<h4 id="exception-thrown-11">Exception thrown</h4>
+<p><code>System.ArgumentOutOfRangeException</code> if the specified value is greater than or equal to zero.</p>
+<h2 id="islowerthanzero">IsLowerThanZero</h2>
+<p>Checks if a value is lower than zero.</p>
+<h4 id="exception-thrown-12">Exception thrown</h4>
+<p><code>System.ArgumentOutOfRangeException</code> if the specified value is greater than zero.</p>
+<h2 id="isnotemptyguid">IsNotEmptyGuid</h2>
+<p>Checks if a <code>System.Guid</code> is not empty.</p>
+<h4 id="exception-thrown-13">Exception thrown</h4>
+<p><code>System.ArgumentNullException</code> if the specified <code>System.Guid</code> is empty.</p>
+<h2 id="isnotnull">IsNotNull</h2>
+<p>Checks if a value is not <code>null</code>.</p>
+<h4 id="exception-thrown-14">Exception thrown</h4>
+<p><code>System.ArgumentNullException</code> if the specified value is <code>null</code>.</p>
+<h2 id="isnotnullorempty">IsNotNullOrEmpty</h2>
+<p>Checks if a <code>string</code> is not <code>null</code> or empty.</p>
+<h4 id="exception-thrown-15">Exception thrown</h4>
+<p><code>System.ArgumentNullException</code> if the specified value is <code>null</code> or empty.</p>
+<h2 id="isstrictlybetween">IsStrictlyBetween</h2>
+<p>Checks if a value is strictly between a min and a max limit.</p>
+<h4 id="exception-thrown-16">Exception thrown</h4>
+<p><code>System.ArgumentOutOfRangeException</code> if the value is not strictly between the specified min and max limits.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mgrosperrin/guard/blob/master/docs/guard.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

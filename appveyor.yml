@@ -3,11 +3,6 @@ pull_requests:
   do_not_increment_build_number: true
 skip_tags: true
 image: Visual Studio 2017
-environment:
-  NUGET_API_KEY:
-    secure: 0hjjxYMcADMPHcJa/NV8zD28uRdxeoZU48bIzF/geGKtaXGO8FSrKoopphM69Iif
-  MYGET_API_KEY:
-    secure: zAEUfQNG2uoIH2x3nCBOv79cBa062vvodWhvHanxCxlMHv0agK4/wv/+rCz7paTM
 build_script:
 - ps: .\build.ps1 -MyGetFeed "https://www.myget.org/F/mgrosperrin/api/v2/package"
 test: off

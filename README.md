@@ -3,9 +3,9 @@ MGR.Guard
 
 ***Build status***
 
-| dev | [![Build status][appveyor-dev_img]][appveyor-dev_url] |
+| dev | [![Build status][build_status-dev-img]][build_status-dev-url] |
 |-|-|
-| **master** | [![Build status][appveyor-master_img]][appveyor-master_url] |
+| **master** | [![Build status][build_status-master-img]][build_status-master-url] |
 
 ***MyGet*** *(preview bits)*:
 
@@ -27,12 +27,12 @@ to be used to check arguments,
 parameters or variables.
 
 
-See the [docs](/docs/index.md) for more info.
+**Please check the [docs](https://mgrosperrin.github.io/guard/) for more info.**
 
-   [appveyor-dev_url]: https://ci.appveyor.com/project/mgrosperrin/guard
-   [appveyor-dev_img]: https://ci.appveyor.com/api/projects/status/l6l396cksltia027/branch/dev?img=true
-   [appveyor-master_url]: https://ci.appveyor.com/project/mgrosperrin/guard
-   [appveyor-master_img]: https://ci.appveyor.com/api/projects/status/l6l396cksltia027/branch/master?svg=true
+   [build_status-dev-url]: https://mgrosperrin.visualstudio.com/github/_build?definitionId=9
+   [build_status-dev-img]: https://mgrosperrin.visualstudio.com/github/_apis/build/status/MGR.Guard?branchName=dev
+   [build_status-master-url]: https://mgrosperrin.visualstudio.com/github/_build?definitionId=9
+   [build_status-master-img]: https://mgrosperrin.visualstudio.com/github/_apis/build/status/MGR.Guard?branchName=master
    [myget-guard_url]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard/
    [myget-guard-source_url]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard.Source/
    [myget-guard_img]: https://img.shields.io/myget/mgrosperrin/vpre/MGR.Guard.svg

@@ -1,0 +1,69 @@
+name: MGR.Guard - $(GitVersion.SemVer)$(rev:.r)
+
+variables:
+- name: DOTNET_SKIP_FIRST_TIME_EXPERIENCE
+  value: 1
+- name: System.Configuration
+  value: Release
+- name: GitVersion.SemVer
+  value: 1.0.0
+
+jobs:
+- job: Main
+  pool:
+    vmImage: vs2017-win2016
+  steps:
+  - task: gittools.gitversion.gitversion-task.GitVersion@4
+    displayName: 'Get version from Git'
+    inputs:
+      preferBundledVersion: false
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq(variables['Build.SourceBranch'], 'refs/heads/dev'), startsWith(variables['Build.SourceBranch'], 'refs/heads/release-')))
+
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet build'
+    inputs:
+      arguments: '-c $(System.Configuration) -p:Version=$(GitVersion.SemVer)'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet test'
+    inputs:
+      command: test
+      projects: 'tests/**Tests/*.csproj'
+      arguments: '-c $(System.Configuration) --no-build'
+
+  - task: CopyFiles@2
+    displayName: 'Copy Files to artifacts folder'
+    inputs:
+      SourceFolder: src/
+      Contents: '**/MGR.Guard.*.nupkg'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/nuget'
+      flattenFolders: true
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: packages'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/nuget'
+      ArtifactName: packages
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), or(eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq(variables['Build.SourceBranch'], 'refs/heads/dev'), startsWith(variables['Build.SourceBranch'], 'refs/heads/release-')))
+
+  - task: PowerShell@2
+    displayName: 'Build documentation site on master'
+    inputs:
+      filePath: 'generate_docs.ps1'
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: ArchiveFiles@2
+    displayName: 'Create archive of documentation site'
+    inputs:
+      archiveFile: '$(Build.ArtifactStagingDirectory)/documentation_site.zip'
+      archiveType: zip
+      rootFolderOrFile: 'artifacts/_site'
+      includeRootFolder: false
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: documentation site'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/documentation_site.zip'
+      ArtifactName: documentation
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'), eq(variables['Build.SourceBranch'], 'refs/heads/master'))

@@ -13,9 +13,7 @@
           "src": "../src"
         }
       ],
-      "dest": "../artifacts/docs/obj/api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "dest": "../artifacts/docs/obj/api"
     }
   ],
   "build": {
@@ -58,9 +56,6 @@
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
-    "noLangKeyword": false,
-    "keepFileLink": false,
-    "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "noLangKeyword": false
   }
 }

@@ -28,13 +28,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{F14E28C3-77CE-4709-858F-9F00167FEAA7}"
 	ProjectSection(SolutionItems) = preProject
 		build\azure-pipelines.yaml = build\azure-pipelines.yaml
+		build\coverlet.runsettings = build\coverlet.runsettings
 		build\generate_docs.ps1 = build\generate_docs.ps1
 		GitVersionConfig.yaml = GitVersionConfig.yaml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGR.Guard.PerformanceTests.NetCore", "tests\MGR.Guard.PerformanceTests.NetCore\MGR.Guard.PerformanceTests.NetCore.csproj", "{C3E5EDD7-94EC-4249-8B21-07F1600AF67F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docs", "docs\docs.csproj", "{64D39641-345A-450D-B902-ACFF89C19670}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docs", "docs\docs.csproj", "{64D39641-345A-450D-B902-ACFF89C19670}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

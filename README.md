@@ -29,10 +29,10 @@ parameters or variables.
 
 **Please check the [docs](https://mgrosperrin.github.io/guard/) for more info.**
 
-   [build_status-dev-url]: https://mgrosperrin.visualstudio.com/github/_build?definitionId=9
-   [build_status-dev-img]: https://mgrosperrin.visualstudio.com/github/_apis/build/status/MGR.Guard?branchName=dev
-   [build_status-master-url]: https://mgrosperrin.visualstudio.com/github/_build?definitionId=9
-   [build_status-master-img]: https://mgrosperrin.visualstudio.com/github/_apis/build/status/MGR.Guard?branchName=master
+   [build_status-dev-url]: https://dev.azure.com/mgrosperrin/github/_build?definitionId=15&_a=summary&repositoryFilter=5&branchFilter=43
+   [build_status-dev-img]: https://dev.azure.com/mgrosperrin/github/_apis/build/status/MGR.Guard?branchName=dev
+   [build_status-master-url]: https://dev.azure.com/mgrosperrin/github/_build?definitionId=15&_a=summary&repositoryFilter=5&branchFilter=74
+   [build_status-master-img]: https://dev.azure.com/mgrosperrin/github/_apis/build/status/MGR.Guard?branchName=master
    [myget-guard_url]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard/
    [myget-guard-source_url]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard.Source/
    [myget-guard_img]: https://img.shields.io/myget/mgrosperrin/vpre/MGR.Guard.svg

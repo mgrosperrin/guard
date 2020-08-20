@@ -37,6 +37,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGR.Guard.PerformanceTests.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docs", "docs\docs.csproj", "{64D39641-345A-450D-B902-ACFF89C19670}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{DC05C30F-86DF-4518-9E91-34B26334A03F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{A420B3C7-6ECD-4623-9C82-00B10AE33DBE}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\codeql-analysis.yml = .github\workflows\codeql-analysis.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +79,8 @@ Global
 		{B1A026EB-F152-43A6-9182-63C04C6FF593} = {49A836AD-AD50-44A3-9A8B-9F350193E1A3}
 		{C3E5EDD7-94EC-4249-8B21-07F1600AF67F} = {7413FE76-11A9-43B5-9D55-C2E46B25A5F3}
 		{64D39641-345A-450D-B902-ACFF89C19670} = {8980C947-6B0B-453B-9E58-1DEA0FE99828}
+		{DC05C30F-86DF-4518-9E91-34B26334A03F} = {F14E28C3-77CE-4709-858F-9F00167FEAA7}
+		{A420B3C7-6ECD-4623-9C82-00B10AE33DBE} = {DC05C30F-86DF-4518-9E91-34B26334A03F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0241D40-010D-4EC6-812C-33359DAA63FB}

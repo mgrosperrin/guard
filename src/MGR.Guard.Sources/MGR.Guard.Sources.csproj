@@ -22,6 +22,9 @@
       <Pack>true</Pack>
       <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
     </Compile>
+    <Compile Update="GuardianExtensions.IsNotEmpty.cs">
+      <PackagePath>$(ContentTargetFolders)\cs\$(TargetFramework)\$(PackageId)\%(RecursiveDir)</PackagePath>
+    </Compile>
   </ItemGroup>
 
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

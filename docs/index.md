@@ -19,14 +19,14 @@ The entry point of the library is the static propery `MGR.Guard.Guardian.ChecksT
 The methods allow you to guard against null value, lower or upper bound, file existence.
 If the check fails, an exception is thrown.
 
+You can find all [built-in methods here](guard.md), or [browse the API](/api).
+
 All built-in methods exists in two flavors:
 
 1. The first takes the value to check and the name of the value (to provide to the thrown exection),
 2. The second takes [an expression](guard-expression.md) from which the value and its name are extracted.
 
-*The first form is much more performant (~600x), but the second one is more maintenable.**
-
-You can find all [built-in methods here](guard.md), or [browse the API](/api).
+*The first form is much more performant (~600x), but the second one is more maintenable.*
 
 ## What if the provided methods are not enough?
 

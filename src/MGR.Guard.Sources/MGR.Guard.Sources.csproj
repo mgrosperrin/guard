@@ -8,6 +8,7 @@
     <ContentTargetFolders>contentFiles</ContentTargetFolders>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
     <NoWarn>CS8021</NoWarn>
     <NoBuild>true</NoBuild>
   </PropertyGroup>

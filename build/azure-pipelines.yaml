@@ -28,6 +28,7 @@ stages:
       displayName: 'Get version from Git'
       inputs:
         runtime: 'core'
+
     - task: CmdLine@2
       name: Version
       displayName: Sets the build variables to make them available to others jobs
@@ -35,6 +36,7 @@ stages:
         script: |
           echo "##vso[task.setvariable variable=FullSemVer;isOutput=true]$(GitVersion.FullSemVer)
           echo "##vso[task.setvariable variable=BuildMetadata;isOutput=true]$(GitVersion.BuildMetadata)
+
   - job: BuildLibrairies
     displayName: Build the libraries
     dependsOn: ComputeVersion
@@ -51,23 +53,33 @@ stages:
       displayName: 'Install the .NET Core SDK'
       inputs:
         packageType: 'sdk'
-        version: '3.1.x'
+        useGlobalJson: true
+        
     - task: DotNetCoreCLI@2
       displayName: 'Build & Pack the libraries'
       inputs:
         arguments: '-c $(System.Configuration) -p:Version=$(Version.FullSemVer)'
+
+    - task: VisualStudioTestPlatformInstaller@1
+      displayName: Install the VS test platform
+      inputs:
+        packageFeedSelector: 'nugetOrg'
+        versionSelector: 'latestStable'
+
     - task: DotNetCoreCLI@2
       displayName: 'Test the libraries'
       inputs:
         command: test
         projects: 'tests/**Tests/*.csproj'
         arguments: '-c $(System.Configuration) --no-build --collect:"XPlat Code Coverage" --settings build/coverlet.runsettings'
+
     - task: Palmmedia.reportgenerator.reportgenerator-build-release-task.reportgenerator@4
       displayName: 'Generate code coverage report'
       inputs:
         reports: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
         targetdir: '$(Build.ArtifactStagingDirectory)/Coverage'
       condition: succeededOrFailed()
+
     - task: PublishCodeCoverageResults@1
       displayName: 'Publish code coverage from $(Build.ArtifactStagingDirectory)/Coverage/  Cobertura.xml'
       inputs:
@@ -75,6 +87,7 @@ stages:
         summaryFileLocation: '$(Build.ArtifactStagingDirectory)/Coverage/Cobertura.xml'
         reportDirectory: '$(Build.ArtifactStagingDirectory)/Coverage'
       condition: succeededOrFailed()
+
     - task: CopyFiles@2
       displayName: 'Copy Files to artifacts folder'
       inputs:
@@ -82,11 +95,13 @@ stages:
         Contents: '**/MGR.Guard*.*nupkg'
         TargetFolder: '$(Build.ArtifactStagingDirectory)/nuget'
         flattenFolders: true
+
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact: $(Artifact.Packages.Name)'
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)/nuget'
         ArtifactName: $(Artifact.Packages.Name)
+
   - job: BuildDocumentation
     displayName: Build the documentation
     dependsOn: ComputeVersion
@@ -103,6 +118,7 @@ stages:
       displayName: 'Build documentation site'
       inputs:
         filePath: 'build/generate_docs.ps1'
+        
     - task: ArchiveFiles@2
       displayName: 'Create archive of documentation site'
       inputs:
@@ -110,11 +126,13 @@ stages:
         archiveType: zip
         rootFolderOrFile: 'artifacts/_site'
         includeRootFolder: false
+
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact: documentation site'
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Artifact.Documentation.FilePath)'
         ArtifactName: $(Artifact.Documentation.Name)
+
 - stage: PublishPrerelease
   displayName: Publish the prerelease packages
   dependsOn: Build
@@ -135,6 +153,7 @@ stages:
             inputs:
               versionSpec:
               checkLatest: true
+
           - task: NuGetCommand@2
             displayName: Publish the packages to MyGet
             inputs:
@@ -142,6 +161,7 @@ stages:
               packagesToPush: '$(Pipeline.Workspace)/$(Artifact.Packages.Name)/*.nupkg'
               nuGetFeedType: 'external'
               publishFeedCredentials: 'MyGet - mgrosperrin'
+
 - stage: PublishRelease
   displayName: 'Publish the release packages'
   dependsOn: Build
@@ -168,6 +188,7 @@ stages:
             inputs:
               versionSpec:
               checkLatest: true
+
           - task: NuGetCommand@2
             displayName: Publish the main NuGet packages
             inputs:
@@ -175,6 +196,7 @@ stages:
               packagesToPush: '$(Pipeline.Workspace)/$(Artifact.Packages.Name)/*.nupkg'
               nuGetFeedType: 'external'
               publishFeedCredentials: 'NuGet - MGR.Guard'
+
   - deployment: PublishDocumentation
     displayName: Deploy the documentation to GitHub Pages
     condition: |
@@ -206,20 +228,24 @@ stages:
           steps:
           - script: 'git clone https://github.com/$(GitHub.RepositoryName).git $(Path.GitHub.Clone.Temp) --branch $(GitHub.GH-Pages.BranchName)'
             displayName: 'Clone GitHub Pages branch'
+
           - task: ExtractFiles@1
             displayName: 'Extract documentation site'
             inputs:
               archiveFilePatterns: '$(Path.Documentation.Archive.FullPath)'
               destinationFolder: '$(Path.Documentation.Expansion.FullPath)'
+
           - script: 'git rm -r *'
             workingDirectory: '$(Path.GitHub.Clone.Temp)'
             displayName: 'Remove all files in Git'
+
           - task: CopyFiles@2
             displayName: 'Copy documentation site to Git'
             inputs:
               SourceFolder: '$(Path.Documentation.Expansion.FullPath)'
               Contents: '**/*.*'
               TargetFolder: '$(Path.GitHub.Clone.Temp)'
+
           - script: |
              git config --global user.email '$(GITHUB_EMAIL)'
              git config --global user.name '$(GITHUB_USER)'

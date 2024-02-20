@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+    DOTNET_VERSION: '8.0.x'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+    runs-on: windows-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Git Semantic Version
+      id: version
+      uses: PaulHatch/semantic-version@v5.4.0
+      with:
+        tag_prefix: ''
+        version_format: '${major}.${minor}.${patch}-preview${increment}'
+
+    - name: Setup dotnet ${{ env.DOTNET_VERSION }}
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Build and Pack
+      run: dotnet build -c Release -p:Version=${{ steps.version.outputs.version}}
+
+    - name: Run tests
+      run: dotnet test tests/MGR.Guard.UnitTests/MGR.Guard.UnitTests.csproj -c Release --no-build --collect:"XPlat Code Coverage" --settings coverlet.runsettings
+
+    - name: Upload dotnet test results
+      uses: actions/upload-artifact@v4
+      with:
+        name: dotnet-results
+        path: '**/coverage.cobertura.xml'
+        if-no-files-found: warn
+      # Use always() to always run this step to publish test results when there are test failures
+      if: ${{ always() }}
+
+    - name: Push to MyGet
+      env:
+        NUGET_URL: https://www.myget.org/F/mgrosperrin/api/v3/index.json
+        NUGET_API_KEY: ${{ secrets.MYGET_CI_API_KEY }}
+      run: dotnet nuget push '**/*.nupkg' --source "$($env:NUGET_URL)" --api-key "$($env:NUGET_API_KEY)"

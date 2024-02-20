@@ -1,8 +1,9 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 
 namespace MGR.Guard.PerformanceTests.NetCore
 {
-    [CoreJob]
+    [SimpleJob(RuntimeMoniker.Net80)]
     public class DirectVsSimpleExpression
     {
         private readonly object _obj;

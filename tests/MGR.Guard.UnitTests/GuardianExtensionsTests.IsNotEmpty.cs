@@ -16,7 +16,7 @@ namespace MGR.Guard
                 IEnumerable collection = null;
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsNotEmpty(collection, nameof(collection)));
+                var actualException = Assert.Throws<ArgumentNullException>(() => Guardian.ChecksThat.IsNotEmpty(collection, nameof(collection)));
                 Assert.Equal("collection", actualException.ParamName);
             }
 
@@ -27,7 +27,7 @@ namespace MGR.Guard
                 IEnumerable collection = Enumerable.Empty<object>();
 
                 // Act & Assert
-                var actualException = Assert.Throws<ArgumentOutOfRangeException>(() => Guardian.ChecksThat.IsNotEmpty(collection, nameof(collection)));
+                var actualException = Assert.Throws<ArgumentException>(() => Guardian.ChecksThat.IsNotEmpty(collection, nameof(collection)));
                 Assert.Equal("collection", actualException.ParamName);
             }
 

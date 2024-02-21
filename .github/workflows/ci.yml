@@ -45,17 +45,16 @@ jobs:
       run: dotnet build -c Release -p:Version=${{ steps.version.outputs.version}}
 
     - name: Run tests
-      run: dotnet test tests/MGR.Guard.UnitTests/MGR.Guard.UnitTests.csproj -c Release --no-build --collect:"XPlat Code Coverage" --settings coverlet.runsettings
+      run: dotnet test tests/MGR.Guard.UnitTests/MGR.Guard.UnitTests.csproj -c Release --no-build
 
     - name: Upload dotnet test results
-      uses: actions/upload-artifact@v4
+      uses: dorny/test-reporter@v4
+      if: always()
       with:
-        name: dotnet-results
-        path: '**/coverage.cobertura.xml'
-        if-no-files-found: warn
-      # Use always() to always run this step to publish test results when there are test failures
-      if: ${{ always() }}
-
+        name: .NET Tests
+        path: '**/test-results.trx'
+        fail-on-error: true
+        
     - name: Push to MyGet
       env:
         NUGET_URL: https://www.myget.org/F/mgrosperrin/api/v3/index.json

@@ -53,6 +53,7 @@ jobs:
       with:
         name: .NET Tests
         path: '**/test-results.trx'
+        reporter: dotnet-trx
         fail-on-error: true
         
     - name: Push to MyGet

@@ -48,7 +48,7 @@ jobs:
       run: dotnet test tests/MGR.Guard.UnitTests/MGR.Guard.UnitTests.csproj -c Release --no-build
 
     - name: Upload dotnet test results
-      uses: dorny/test-reporter@v4
+      uses: dorny/test-reporter@v1.8.0
       if: always()
       with:
         name: .NET Tests

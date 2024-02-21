@@ -52,7 +52,7 @@ jobs:
       if: always()
       with:
         name: .NET Tests
-        path: '**/test-results.trx'
+        path: '**/MGR.Guard.UnitTests.trx'
         reporter: dotnet-trx
         fail-on-error: true
         

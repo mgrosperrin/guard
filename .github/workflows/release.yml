@@ -1,4 +1,4 @@
-name: CI
+name: Release
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
     with:
       feedUrl: https://api.nuget.org/v3/index.json
     secrets:
-      feedAPIKey: ${{ secrets.NUGET_CI_API_KEY }}
+      feedAPIKey: ${{ secrets.NUGET_API_KEY }}
 
   generate_docs:
     runs-on: ubuntu-latest

@@ -45,3 +45,16 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: artifacts/_site
+  publish_docs:
+    needs: generate_docs
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.url }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Publish documentation
+      uses: actions/deploy-pages@v4
+      id: deployment

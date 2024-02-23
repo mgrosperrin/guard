@@ -41,9 +41,7 @@ jobs:
       with:
         type: tar
         filename: docs.tar.gz
-        path: artifacts
     - name: Upload documentation archive
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-pages-artifact@v3
       with:
-        name: documentation
-        path: docs.tar.gz
+        path: artifacts/_site

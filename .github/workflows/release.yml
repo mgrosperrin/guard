@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    tags:
+    - '*.*.*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+    DOTNET_VERSION: '8.0.x'
+
+permissions:
+  checks: write
+  contents: read
+
+jobs:
+  call_buildAndPublish:
+    uses: ./.github/actions/buildAndPublish.yml
+    with:
+      feedUrl: https://api.nuget.org/v3/index.json
+    secrets:
+      feedAPIKey: ${{ secrets.NUGET_CI_API_KEY }}

@@ -42,7 +42,7 @@ jobs:
         type: tar
         filename: docs.tar.gz
         path: artifacts
-    - name: Upload documentation
+    - name: Upload documentation archive
       uses: actions/upload-artifact@v4
       with:
         name: documentation

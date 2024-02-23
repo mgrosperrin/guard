@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   call_buildAndPublish:
-    uses: ./.github/actions/buildAndPublish.yml
+    uses: ./.github/workflows/buildAndPublish.yml
     with:
       feedUrl: https://api.nuget.org/v3/index.json
     secrets:

@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   call_buildAndPublish:
-    uses: ./.github/actions/buildAndPublish.yml
+    uses: ./.github/workflows/buildAndPublish.yml
     with:
       feedUrl: https://www.myget.org/F/mgrosperrin/api/v3/index.json
     secrets:

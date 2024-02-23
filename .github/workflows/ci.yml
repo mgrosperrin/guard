@@ -16,6 +16,7 @@ env:
     DOTNET_VERSION: '8.0.x'
 
 permissions:
+  checks: write
   contents: read
 
 jobs:

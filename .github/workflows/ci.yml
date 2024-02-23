@@ -36,11 +36,11 @@ jobs:
       uses: nunit/docfx-action@v3.1.0
       with:
         args: docs/docfx.json
-    - name: Zip documentation
-      uses: thedoctor0/zip-release@0.7.6
-      with:
-        type: tar
-        filename: docs.tar.gz
+    # - name: Zip documentation
+      # uses: thedoctor0/zip-release@0.7.6
+      # with:
+      #   type: tar
+      #   filename: docs.tar.gz
     - name: Upload documentation archive
       uses: actions/upload-pages-artifact@v3
       with:

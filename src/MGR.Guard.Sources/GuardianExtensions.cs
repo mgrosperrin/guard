@@ -35,6 +35,7 @@ namespace MGR.Guard
             internal const string IsLowerThanOrEqualToZeroMessage = "The argument must be lower than or equal to 0.";
             internal const string IsDefinedType = "TEnum must be an enumerated type.";
             internal static Func<TEnum, Type, string> IsDefinedFormat<TEnum>() => (value, enumType) => string.Format(CultureInfo.CurrentCulture, "The value '{0}' is not defined in the enum type '{1}'.", value, enumType);
+            internal const string IsNotEmptyMessage = "The collection cannot be empty.";
         }
     }
 }

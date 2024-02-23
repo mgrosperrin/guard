@@ -70,6 +70,12 @@ Checks if a value is greater than zero.
 #### Exception thrown
 `System.ArgumentOutOfRangeException` if the specified value is lower than zero.
 
+## IsNotEmpty
+Checks if a collection is not empty.
+
+#### Execption thrown
+`System.ArgumentException` if the specified value is empty.
+
 ## IsLowerThan
 Checks if a value is lower than a maximal limit.
 

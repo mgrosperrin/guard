@@ -6,6 +6,8 @@
         <DocumentationFile />
         <IsPackable>false</IsPackable>
         <RootNamespace>MGR.Guard</RootNamespace>
+        <VSTestLogger>trx%3bLogFileName=$(MSBuildProjectName).trx</VSTestLogger>
+        <VSTestResultsDirectory>$(MSBuildThisFileDirectory)/TestResults/$(TargetFramework)</VSTestResultsDirectory>
     </PropertyGroup>
 
     <ItemGroup>

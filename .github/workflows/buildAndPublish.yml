@@ -28,6 +28,7 @@ jobs:
         tag_prefix: ''
         version_format: '${major}.${minor}.${patch}-preview${increment}'
         search_commit_body: true
+        debug: true
 
     - name: Setup dotnet ${{ env.DOTNET_VERSION }}
       uses: actions/setup-dotnet@v3
@@ -49,9 +50,9 @@ jobs:
         reporter: dotnet-trx
         fail-on-error: true
           
-    - name: Push to NuGet package feed
-      env:
-        NUGET_URL: ${{ inputs.feedUrl }}
-        NUGET_API_KEY: ${{ secrets.feedAPIKey }}
-      run: dotnet nuget push '**/*.nupkg' --source "$($env:NUGET_URL)" --api-key "$($env:NUGET_API_KEY)"
-      if: github.event_name == 'push'
+    # - name: Push to NuGet package feed
+    #   env:
+    #     NUGET_URL: ${{ inputs.feedUrl }}
+    #     NUGET_API_KEY: ${{ secrets.feedAPIKey }}
+    #   run: dotnet nuget push '**/*.nupkg' --source "$($env:NUGET_URL)" --api-key "$($env:NUGET_API_KEY)"
+    #   if: github.event_name == 'push'

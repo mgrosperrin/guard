@@ -29,6 +29,9 @@ jobs:
         version_format: '${major}.${minor}.${patch}-preview${increment}'
         search_commit_body: true
         debug: true
+        
+    - name: Output version
+      run: echo "Version is ${{ steps.version.outputs.debug_output }}"
 
     - name: Setup dotnet ${{ env.DOTNET_VERSION }}
       uses: actions/setup-dotnet@v3

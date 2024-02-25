@@ -5,6 +5,10 @@ on:
         description: 'NuGet feed URL'
         required: true
         type: string
+      forRelease:
+        description: 'Run for release?'
+        required: true
+        type: boolean
     secrets:
       feedAPIKey:
         description: 'NuGet feed API key'
@@ -26,12 +30,12 @@ jobs:
       uses: PaulHatch/semantic-version@v5.4.0
       with:
         tag_prefix: ''
-        version_format: '${major}.${minor}.${patch}-preview${increment}'
+        version_format: "${major}.${minor}.${patch}${{ !inputs.forRelease && '-preview${increment}' || '' }}"
         search_commit_body: true
         debug: true
         
     - name: Output version
-      run: echo "Version is ${{ steps.version.outputs.debug_output }}"
+      run: echo "Version is ${{ toJSON(steps.version.outputs.debug_output) }}"
 
     - name: Setup dotnet ${{ env.DOTNET_VERSION }}
       uses: actions/setup-dotnet@v3
@@ -46,7 +50,7 @@ jobs:
 
     - name: Upload dotnet test results
       uses: dorny/test-reporter@v1.8.0
-      if: always()
+      if: ${{ !cancelled() }}
       with:
         name: .NET Tests
         path: '**/MGR.Guard.UnitTests.trx'

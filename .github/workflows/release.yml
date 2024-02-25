@@ -21,6 +21,7 @@ jobs:
     uses: ./.github/workflows/buildAndPublish.yml
     with:
       feedUrl: https://api.nuget.org/v3/index.json
+      forRelease: true
     secrets:
       feedAPIKey: ${{ secrets.NUGET_API_KEY }}
 

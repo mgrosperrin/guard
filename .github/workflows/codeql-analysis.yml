@@ -42,8 +42,8 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
   
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
+    - name: Build projects
+      run: dotnet build -c Release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

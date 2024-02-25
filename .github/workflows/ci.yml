@@ -24,5 +24,6 @@ jobs:
     uses: ./.github/workflows/buildAndPublish.yml
     with:
       feedUrl: https://www.myget.org/F/mgrosperrin/api/v3/index.json
+      forRelease: false
     secrets:
       feedAPIKey: ${{ secrets.MYGET_CI_API_KEY }}

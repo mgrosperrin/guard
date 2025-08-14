@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{49A836AD-AD50-44A3-9A8B-9F350193E1A3}"
 EndProject
@@ -15,12 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
-		appveyor.yml = appveyor.yml
-		azure-pipeline-build.yaml = azure-pipeline-build.yaml
-		build.ps1 = build.ps1
+		coverlet.runsettings = coverlet.runsettings
 		Directory.Build.props = Directory.Build.props
-		generate_docs.ps1 = generate_docs.ps1
-		GitVersionConfig.yaml = GitVersionConfig.yaml
+		Directory.Packages.props = Directory.Packages.props
 		global.json = global.json
 		LICENSE = LICENSE
 		README.md = README.md
@@ -39,6 +36,19 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGR.Guard.PerformanceTests.NetCore", "tests\MGR.Guard.PerformanceTests.NetCore\MGR.Guard.PerformanceTests.NetCore.csproj", "{C3E5EDD7-94EC-4249-8B21-07F1600AF67F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docs", "docs\docs.csproj", "{64D39641-345A-450D-B902-ACFF89C19670}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{2B3A84BF-7C2A-4E36-9B61-BEF6530E96EC}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\buildAndPublish.yml = .github\workflows\buildAndPublish.yml
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\codeql-analysis.yml = .github\workflows\codeql-analysis.yml
+		.github\workflows\release.yml = .github\workflows\release.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +85,8 @@ Global
 		{B1A026EB-F152-43A6-9182-63C04C6FF593} = {49A836AD-AD50-44A3-9A8B-9F350193E1A3}
 		{C3E5EDD7-94EC-4249-8B21-07F1600AF67F} = {7413FE76-11A9-43B5-9D55-C2E46B25A5F3}
 		{64D39641-345A-450D-B902-ACFF89C19670} = {8980C947-6B0B-453B-9E58-1DEA0FE99828}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {F674354D-D6E6-4930-AD98-E139AADA4991}
+		{2B3A84BF-7C2A-4E36-9B61-BEF6530E96EC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0241D40-010D-4EC6-812C-33359DAA63FB}

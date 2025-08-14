@@ -2,10 +2,18 @@
 
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);MGR_GUARD_PUBLIC</DefineConstants>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="..\MGR.Guard.Sources\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -48,7 +48,7 @@
       "_enableSearch": true,
       "_gitContribue": {
         "repo": "https://github.com/mgrosperrin/guard",
-        "branch": "dev"
+        "branch": "MAIN"
       },
       "_gitUrlPattern": "github"
     },

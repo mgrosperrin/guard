@@ -1,4 +1,4 @@
-[*.yml]
+[*.{yml,props,csproj}]
 indent_size = 2
 
 # You can learn more about editorconfig here: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference

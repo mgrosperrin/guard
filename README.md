@@ -3,7 +3,8 @@ MGR.Guard
 
 ***Build status***
 
-[![Build status][build_status-main-img]][build_status-main-url]
+[![CI][build-ci-status_img]][build-ci-status_url]
+[![CodeQL][build-codeql-status_img]][build-codeql-status_url]
 
 
 ***MyGet*** *(preview bits)*:
@@ -28,8 +29,10 @@ parameters or variables.
 
 **Please check the [docs](https://mgrosperrin.github.io/guard/) for more info.**
 
-   [build_status-main-url]: https://github.com/mgrosperrin/guard/actions/workflows/ci.yml
-   [build_status-main-img]: https://github.com/mgrosperrin/guard/actions/workflows/ci.yml/badge.svg
+   [build-ci-status_img]: https://github.com/mgrosperrin/guard/actions/workflows/ci.yml/badge.svg?branch=main
+   [build-ci-status_url]: https://github.com/mgrosperrin/guard/actions/workflows/ci.yml
+   [build-codeql-status_img]: https://github.com/mgrosperrin/guard/actions/workflows/codeql-analysis.yml/badge.svg?branch=main
+   [build-codeql-status_url]: https://github.com/mgrosperrin/guard/actions/workflows/codeql-analysis.yml
    [myget-guard_url]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard/
    [myget-guard-sources_url]: https://www.myget.org/feed/mgrosperrin/package/nuget/MGR.Guard.Sources/
    [myget-guard_img]: https://img.shields.io/myget/mgrosperrin/vpre/MGR.Guard.svg

@@ -1,6 +1,10 @@
 on:
   workflow_call: 
     inputs:
+      environmentName:
+        description: "Name of the environment"
+        required: true
+        type: string
       feedUrl:
         description: 'NuGet feed URL'
         required: true

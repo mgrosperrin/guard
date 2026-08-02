@@ -1,5 +1,10 @@
 on:
-  workflow_call: 
+  workflow_call:
+    inputs:
+      environmentName:
+        description: "Name of the environment"
+        required: true
+        type: string
     secrets:
       owner:
         description: 'NuGet feed owner'
@@ -25,8 +30,5 @@ jobs:
           user: ${{ secrets.owner }}
     
       - name: Push to NuGet package feed
-        env:
-          NUGET_URL: ${{ inputs.feedUrl }}
-          NUGET_API_KEY: ${{ secrets.feedAPIKey }}
         run: dotnet nuget push '**/*.nupkg' --source https://api.nuget.org/v3/index.json --api-key ${{steps.login.outputs.NUGET_API_KEY}}
         if: github.event_name == 'push'

@@ -49,7 +49,7 @@ jobs:
     - name: Generate code coverage report
       run: |
         reportgenerator \
-        -reports:"**/TestResults/**/*.corbertura.xml"
+        -reports:"**/TestResults/**/*.cobertura.xml"
         -targetDir:"codecoveragereport"
         -reporttypes:"Html;MarkdownSummaryGitHub"
 

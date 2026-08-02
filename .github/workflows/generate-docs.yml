@@ -1,6 +1,3 @@
-on:
-    workflow_call:
-      inputs: {}
 jobs:
   build:
     runs-on: ubuntu-latest

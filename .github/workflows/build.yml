@@ -23,10 +23,10 @@ jobs:
         version_format: "${major}.${minor}.${patch}${{ !inputs.forRelease && '-preview${increment}' || '' }}"
         search_commit_body: true
 
-    - name: Setup dotnet ${{ env.DOTNET_VERSION }}
+    - name: Setup dotnet from global.json
       uses: actions/setup-dotnet@v6
       with:
-        dotnet-version: ${{ env.DOTNET_VERSION }}
+        global-json-file: global.json
 
     - name: Build and Pack
       run: dotnet build -c Release -p:Version=${{ steps.version.outputs.version}}
@@ -54,13 +54,13 @@ jobs:
         -reporttypes:"Html;MarkdownSummaryGitHub"
 
     - name: Publish code coverage summary
-      run: cat codecovergagereport/SummaryGitHub.md >> $GITHUB_STEP_SUMMARY
+      run: cat codecoveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
 
     - name: Upload code coverage report
       uses: actions/upload-artifact@v7
       with:
         name: code-coverage-report
-        path: codecoveragereport"
+        path: codecoveragereport
 
     - name: Upload package artifact
       uses: actions/upload-artifact@v7

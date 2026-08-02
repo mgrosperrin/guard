@@ -8,9 +8,6 @@ on:
   schedule:
     - cron: '38 16 * * 5'
 
-env:
-  DOTNET_VERSION: '10.0.x'
-
 jobs:
   analyze:
     name: Analyze
@@ -36,11 +33,11 @@ jobs:
       uses: github/codeql-action/init@v4
       with:
         languages: ${{ matrix.language }}
-
-    - name: Setup dotnet ${{ env.DOTNET_VERSION }}
+        
+    - name: Setup dotnet from global.json
       uses: actions/setup-dotnet@v6
       with:
-        dotnet-version: ${{ env.DOTNET_VERSION }}
+        global-json-file: global.json
   
     - name: Build projects
       run: dotnet build -c Release

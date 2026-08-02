@@ -30,4 +30,3 @@ jobs:
           NUGET_URL: ${{ inputs.feedUrl }}
           NUGET_API_KEY: ${{ secrets.feedAPIKey }}
         run: dotnet nuget push '**/*.nupkg' --source "$NUGET_URL" --api-key "$NUGET_API_KEY"
-        if: github.event_name == 'push'

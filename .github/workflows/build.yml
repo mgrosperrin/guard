@@ -44,7 +44,7 @@ jobs:
         fail-on-error: true
 
     - name: Install ReportGenerator
-      run: dotnet tool install --go=lobal dotnet-reportgenerator-globaltool
+      run: dotnet tool install --global dotnet-reportgenerator-globaltool
 
     - name: Generate code coverage report
       run: |

@@ -10,36 +10,30 @@ concurrency:
   cancel-in-progress: true
 
 env:
-    DOTNET_VERSION: '9.0.x'
+  DOTNET_VERSION: '10.0.x'
 
 permissions:
   checks: write
   contents: read
 
 jobs:
-  call_buildAndPublish:
-    uses: ./.github/workflows/buildAndPublish.yml
+  build:
+    uses: ./.github/workflows/build.yml
     with:
-      feedUrl: https://api.nuget.org/v3/index.json
       forRelease: true
-    secrets:
-      feedAPIKey: ${{ secrets.NUGET_API_KEY }}
 
   generate_docs:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v5
-    - name: Build documenation site
-      uses: nunit/docfx-action@v4.1.0
-      with:
-        args: docs/docfx.json
-    - name: Upload documentation archive
-      uses: actions/upload-pages-artifact@v4
-      with:
-        path: artifacts/_site
+    uses: ./.github/workflows/generate-docs.yml
+
+  publish_package:
+    needs: [build, generate_docs]
+    uses: ./.github/workflows/publish-packages-nuget.yml
+    secrets:
+      owner: ${{ secrets.NUGET_OWNER }}
+    if: github.event_name == 'push'
+    
   publish_docs:
-    needs: [call_buildAndPublish, generate_docs]
+    needs: [publish_package, generate_docs]
     permissions:
       pages: write
       id-token: write
@@ -48,6 +42,6 @@ jobs:
       url: ${{ steps.deployment.outputs.url }}
     runs-on: ubuntu-latest
     steps:
-    - name: Publish documentation
-      uses: actions/deploy-pages@v4
-      id: deployment
+      - name: Publish documentation
+        uses: actions/deploy-pages@v5
+        id: deployment

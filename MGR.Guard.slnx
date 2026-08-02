@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/docs/">
     <Project Path="docs/docs.csproj">
-      <Build Solution="Release|*" Project="false" />
+      <Build Project="false" />
     </Project>
   </Folder>
   <Folder Name="/Solution Items/">
@@ -26,7 +26,9 @@
     <File Path=".github/workflows/release.yml" />
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src/MGR.Guard.Sources/MGR.Guard.Sources.csproj" />
+    <Project Path="src/MGR.Guard.Sources/MGR.Guard.Sources.csproj">
+      <Build Project="false" />
+    </Project>
     <Project Path="src/MGR.Guard/MGR.Guard.csproj" />
   </Folder>
   <Folder Name="/tests/">

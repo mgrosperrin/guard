@@ -9,6 +9,7 @@
 		<DebugType>portable</DebugType>
 		<IsPackable>true</IsPackable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<CheckNotRecommendedTargetFramework>false</CheckNotRecommendedTargetFramework>
 
 		<Authors>Matthias GROSPERRIN</Authors>
 		<Company></Company>

@@ -1,27 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework />
-        <TargetFrameworks>net8.0;net48</TargetFrameworks>
-        <DocumentationFile />
-        <IsPackable>false</IsPackable>
-        <RootNamespace>MGR.Guard</RootNamespace>
-        <VSTestLogger>trx%3bLogFileName=$(MSBuildProjectName).trx</VSTestLogger>
-        <VSTestResultsDirectory>$(MSBuildThisFileDirectory)/TestResults/$(TargetFramework)</VSTestResultsDirectory>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<!--<TargetFrameworks>net8.0;net48</TargetFrameworks>-->
+		<DocumentationFile />
+		<IsPackable>false</IsPackable>
+		<RootNamespace>MGR.Guard</RootNamespace>
 		<OutputType>Exe</OutputType>
-    </PropertyGroup>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <Compile Include="..\..\src\MGR.Guard.Sources\**\*.cs">
-            <Link>_src\%(RecursiveDir)%(FileName)</Link>
-        </Compile>
-    </ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\src\MGR.Guard.Sources\**\*.cs">
+			<Link>_src\%(RecursiveDir)%(FileName)</Link>
+		</Compile>
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk"  />
-    <PackageReference Include="xunit.v3" />
-    <PackageReference Include="xunit.runner.visualstudio"/>
-    <PackageReference Include="coverlet.collector" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" />
+		<PackageReference Include="Microsoft.Testing.Extensions.TrxReport" />
+		<PackageReference Include="xunit.v3.mtp-v2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Xunit" />
+	</ItemGroup>
 
 </Project>
